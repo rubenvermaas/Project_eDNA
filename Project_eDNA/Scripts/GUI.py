@@ -10,6 +10,7 @@ import re
 import shutil
 import os
 import time
+import csv
 
 class window(QMainWindow):
 
@@ -114,7 +115,7 @@ class window(QMainWindow):
         self.checkBox.setChecked(False)
         self.checkBox.move(10, 80)
 
-        self.checkBox = QCheckBox("Cluster filtering:", self)
+        self.checkBox = QCheckBox("Exclude singletons", self)
         self.checkBox.setChecked(False)
         self.checkBox.resize(150, 25)
         self.checkBox.move(10, 255)
@@ -139,10 +140,6 @@ class window(QMainWindow):
         self.box4.resize(100,25)
         self.box4.move(10,345)
 
-        self.box5 = QLineEdit(self)
-        self.box5.resize(50,25)
-        self.box5.move(170,280)
-
         label1 = QLabel(self)
         label1.setText("Sequence divergence")
         label1.resize(150,25)
@@ -162,11 +159,6 @@ class window(QMainWindow):
         label4.setText("Database:")
         label4.resize(200, 25)
         label4.move(10, 320)
-
-        label6 = QLabel(self)
-        label6.setText("OTU cut-off")
-        label6.resize(150, 22)
-        label6.move(31, 280)
 
         self.progress = QProgressBar(self)
         self.progress.setGeometry(227, 500, 275, 20)
@@ -299,7 +291,7 @@ class window(QMainWindow):
 
     #This function turns a fastq file to an fasta file
 
-    def Fastq_omzetter(self):  # works
+    def Fastq_omzetter(self):
 
         from io import StringIO
 
@@ -312,16 +304,14 @@ class window(QMainWindow):
 
     #This function will call on Porchop on the commandline to trimm the adapters from the reads
 
-    def Porechop(self): #works
+    def Porechop(self):
 
-        InputPore = "Testfasta.fasta" #str(self.fileName)
-        #OutputPore = "output_reads.fasta"
+        InputPore = "Testfasta.fasta"
 
         self.command_line = ["porechop", "-i", InputPore,
                              "-o", "output_reads.fasta"]
         subprocess.call(self.command_line)
 
-        #self.Pop_up2()
 
     #This function will call on VSearch on the commandline to cluster the reads into OTU's
 
@@ -358,22 +348,17 @@ class window(QMainWindow):
         src_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/"  # Specify base directory
         result_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Singletons/"
 
-        rginput = "(seq=)[1-" + str(self.box5.text()) + "]\n"
-        print(rginput)
-        reseqs = re.compile(rginput)
-        print(reseqs)
+        reseqs = re.compile("(seqs=)[1]\n") #searches for seq= 1 to 3
 
         self.result = seqs = []
-
 
         for filename in os.listdir(src_dict):
             path = os.path.join(src_dict, filename)
             x = open(path, "r")
             regex = re.findall(reseqs, x.read())
-            print(seqs)
             if regex:
                 shutil.move(path, result_dict)
-                print("moved", path)
+                #print("moved", path)
             else:
                 seqs.append(filename)
 
@@ -381,7 +366,7 @@ class window(QMainWindow):
 
     #This function will run a BLAST with the found concensus clusters against the selected local blast database
 
-    def local_Blast(self): #works
+    def local_Blast(self):
 
         l = 1
 
@@ -480,7 +465,17 @@ class window(QMainWindow):
                 print(item)
                 f.write(str(item).replace("]", "").replace("[", "").replace("'", "").replace(">", ""))
                 f.write("\n")
+
+        file2 = open("Names.txt", "r")
+        filenew = file2.readlines()
+
+        with open("Results.csv", mode="w") as Results:
+            for item2 in filenew:
+                Results_writer = csv.writer(Results, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                Results_writer.writerow([item2])
+
         self.Pop_up()
+
 
 
     #This function will give a pop-up message if the analysis is completed
