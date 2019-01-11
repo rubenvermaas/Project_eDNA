@@ -2,7 +2,7 @@
 
 This is my biodiversity analyser tool, to detect fish in the North Sea. With the use of envoirmental DNA samples
 
-Programs needed:
+Programs needes:
 - VSEARCH
 - Porechop
 - Filtlong 
