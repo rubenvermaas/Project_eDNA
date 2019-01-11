@@ -11,6 +11,7 @@ import shutil
 import os
 import time
 import csv
+import mplcursors
 
 class window(QMainWindow):
 
@@ -115,10 +116,10 @@ class window(QMainWindow):
         self.checkBox.setChecked(False)
         self.checkBox.move(10, 80)
 
-        self.checkBox = QCheckBox("Exclude singletons", self)
-        self.checkBox.setChecked(False)
-        self.checkBox.resize(150, 25)
-        self.checkBox.move(10, 255)
+        self.checkBox3 = QCheckBox("Exclude singletons", self)
+        self.checkBox3.setChecked(False)
+        self.checkBox3.resize(150, 25)
+        self.checkBox3.move(10, 255)
 
         box = self.myTextBox = QTextEdit(self)
         box.resize(732, 25)
@@ -138,7 +139,7 @@ class window(QMainWindow):
 
         self.box4 = QLineEdit(self)
         self.box4.resize(100,25)
-        self.box4.move(10,345)
+        self.box4.move(10,320)
 
         label1 = QLabel(self)
         label1.setText("Sequence divergence")
@@ -158,7 +159,7 @@ class window(QMainWindow):
         label4 = QLabel(self)
         label4.setText("Database:")
         label4.resize(200, 25)
-        label4.move(10, 320)
+        label4.move(10, 290)
 
         self.progress = QProgressBar(self)
         self.progress.setGeometry(227, 500, 275, 20)
@@ -234,8 +235,7 @@ class window(QMainWindow):
                 self.plot()
 
         elif self.checkBox.isChecked():
-            self.Remove_tmp()
-            self.local_Blast()
+            self.plot()
 
         else:
             self.Clustering()
@@ -248,22 +248,29 @@ class window(QMainWindow):
     #This function will create a plot with the frequency results
 
     def plot(self):
+
         file = open("Names.txt", "r")
         Taxa = file.readlines()
         d = defaultdict(int)
+        print(d)
         acession = re.compile("[A-Z]{2}_?[0-9]{6}\.1")
 
         for item in Taxa:
             for word in item.split("\n"):
                 d[word] += 1
-
+        print(d.keys())
         del d['']
         ax = self.figure.add_subplot(111)
         ax.set_title("eDNA  classification results")
         ax.set_ylabel("Frequency")
         ax.set_xlabel("Organisme")
         ax.bar(range(len(d)), list(d.values()), align="center")
-        #ax.xticks(range(len(d)), list(d.keys()), rotation="50")
+        ax.set_xticks(range(len(d)))
+        ax.set_xticklabels(list(d.keys()), rotation=0)
+
+
+        #ax.set_xticks(range(len(d)), list(d.keys()), rotation="50")
+        # ax.get_xaxis().set_visible(False)
         self.canvas.draw()
 
     def style_choice(self, text):
