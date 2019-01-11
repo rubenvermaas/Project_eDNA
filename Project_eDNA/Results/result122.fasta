@@ -12,12 +12,49 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=50b17d5f-1072-4f7a-a746-58dfef33ebe3_t;seqs=1
+Query= consensus=e39c7d13-66f2-4651-b650-f26378b96406_t;seqs=2
 
-Length=1202
+Length=1221
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  163     5e-41
+  EF120855.1 Pseudanthias squamipinnis 16S ribosomal RNA gene, pa...  150     4e-37
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  134     4e-32
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   134     4e-32
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  134     4e-32
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            124     2e-29
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           124     2e-29
 
 
-***** No hits found *****
+> FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, 
+partial sequence; tRNA-Val gene, complete sequence; and 16S 
+ribosomal RNA gene, partial sequence; mitochondrial
+Length=1787
+
+ Score = 163 bits (88),  Expect = 5e-41
+ Identities = 206/261 (79%), Gaps = 16/261 (6%)
+ Strand=Plus/Minus
+
+Query  348   TAAAGCTCCATAGGGTCTTCTCGTCTTGCTGTGTGTCATGCCCGCCTCTTCACGGGCAGG  407
+             |||||||||||||||||||||||||||  ||| | | |||||||| ||| |||||| || 
+Sbjct  1449  TAAAGCTCCATAGGGTCTTCTCGTCTTA-TGTCTAT-ATGCCCGCTTCTGCACGGGGAGA  1392
+
+Query  408   TCAATTTCACTGGT-TAAAAGTAAGAGAGACAGCTGAACCCCAGTGGAGCCATTCATAAC  466
+             |||| |||| ||   | |||  ||| ||||||| | | |||  ||   |||||||||| |
+Sbjct  1391  TCAAGTTCATTGACCTGAAA--AAG-GAGACAGTTAAGCCCTCGTTATGCCATTCATA-C  1336
+
+Query  467   AAGTCCT-ATTTAGGA-ACAAGTGATTATACTACCTTTGCACGGTTAGGGTACCGCGGCC  524
+             | ||||  ||||| || ||||||||||   ||||||||||||||||||||||||||||||
+Sbjct  1335  AGGTCCCCATTTAAGAGACAAGTGATTGCGCTACCTTTGCACGGTTAGGGTACCGCGGCC  1276
+
+Query  525   GTTAAAC-A-TGTCACTGGGCGAGGCGTTGCCTCTAATACTGAGTGATACTAGAGGTGAT  582
+             ||||||| | |||||| |||| |||||   ||||| ||  |  |  |||| ||||| |||
+Sbjct  1275  GTTAAACTAGTGTCACAGGGC-AGGCGGGACCTCTTATTTTT-GGAATACAAGAGGCGAT  1218
+
+Query  583   GttttttttGATAAACAGGCG  603
+             ||||||   | ||||||||||
+Sbjct  1217  GTTTTTG--G-TAAACAGGCG  1200
 
 
 
@@ -28,7 +65,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 826461438
+Effective search space used: 839757600
 
 
   Database: BurgerZoo_Koraal_16S.fasta

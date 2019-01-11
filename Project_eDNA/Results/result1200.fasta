@@ -12,66 +12,68 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=6e899e41-7935-4feb-98e4-f04605f0ab25_t;seqs=1
+Query= consensus=c31ecc06-603f-4e91-b4ae-c93718348794_t;seqs=5
 
-Length=700
+Length=629
                                                                       Score     E
 Sequences producing significant alignments:                          (Bits)  Value
 
-  KM881715.1 Taeniura lymma mitochondrion, complete genome            222     4e-59
-  NC_026210.1 Taeniura lymma mitochondrion, complete genome           222     4e-59
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            507     9e-145
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           507     9e-145
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  309     3e-85 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   309     3e-85 
 
 
 > KM881715.1 Taeniura lymma mitochondrion, complete genome
 Length=17652
 
- Score = 222 bits (120),  Expect = 4e-59
- Identities = 477/639 (75%), Gaps = 65/639 (10%)
- Strand=Plus/Plus
+ Score = 507 bits (274),  Expect = 9e-145
+ Identities = 528/646 (82%), Gaps = 36/646 (6%)
+ Strand=Plus/Minus
 
-Query  64    CTGTTTACCAAAAACATCGCCTCTTGCTTAA--A-C---TATAAGAGGTCCAGCCTGCCC  117
-             ||||||||||||||||||||||||||||| |  | |   |||||||||||| ||||||||
-Sbjct  2016  CTGTTTACCAAAAACATCGCCTCTTGCTTTACCATCATGTATAAGAGGTCCCGCCTGCCC  2075
+Query  1     GGTCTGAACTCAGATCACGTAGGACTATTAATCGTTGAACAAACAGGCCCTTAATAGCAG  60
+             |||||||||||||||||||||||||| |||||||||||||||||   ||||||||||| |
+Sbjct  2641  GGTCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGC-G  2583
 
-Query  118   TGTGATATGAATTTTTTAGCGACGCGTGCATCTTTGACA-TGCG-AGGTGGCGTAATCAC  175
-             |||||| | | |||   |  | |||| | ||||| |||  |||| |||| ||||||||||
-Sbjct  2076  TGTGATTT-A-TTTA--ACGGCCGCG-GTATCTT-GACCGTGCGAAGGTAGCGTAATCAC  2129
+Query  61    TTTACACC-TTAGGATGTCCTGATCCAACATCG-GGTCGTAAGCCCTTTCGTCGATAGGA  118
+               |||||| |||||||||||||||||||||||| |||||||| |||||||| |||| || 
+Sbjct  2582  GCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGGGG  2523
 
-Query  176   CTATCTTTTAAATGAGG-CCC-T-TGAA-GGCA--ATGCG-GTTTAACTGTCTCTACTTC  228
-              | |||||||| ||| | ||| | |||| ||||  | | | ||||||||||||||| || 
-Sbjct  2130  TTGTCTTTTAATTGAAGACCCGTATGAAAGGCATCACGAGAGTTTAACTGTCTCTATTTT  2189
+Query  119   ACTCTGGGAAAGG-TTGCGCTGTTATCCCTAAGGGTAACTTGGTTCATTATTCAGGTTTA  177
+             ||||| ||||||| ||||||||||||||||| |||||||||||||||||  |||||  | 
+Sbjct  2522  ACTCTAGGAAAGGATTGCGCTGTTATCCCTA-GGGTAACTTGGTTCATTGATCAGGAGTG  2464
 
-Query  229   CCAATCAATGAGAATTGATCTTCCCGATACAAAAGCGGGAATAATTACGATGA-AC-AGA  286
-             | ||||||||| |||||| | || || | || || || |||||| ||| || | || |||
-Sbjct  2190  CTAATCAATGA-AATTGACCATCTCG-TGCAGAACCGAGAATAAATAC-ATAAGACGAGA  2246
+Query  178   AGGATATCCCTGGGTCATT-TTCGATAAATGTTTTATCATTTAGAACTGTGGTTCTAGtt  236
+             | |   | ||||||||||| |||| || || || ||| | |||||| |||  |||||  |
+Sbjct  2463  ATGG-GT-CCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAATTCTA-AT  2407
 
-Query  287   AGACCCTATGG-GCTTAAAACACTTAAATTAAGTGTAGGTACATTTATATTTAAGGACGC  345
-             ||||||||||| |||| |||||||||| |||| | ||   | |   | |   ||  || |
-Sbjct  2247  AGACCCTATGGAGCTTTAAACACTTAAGTTAATT-TAAAAA-AC--ACA---AACTAC-C  2298
+Query  237   tttttttAAGTATAGTAATACTTAGTCGATAAGGAGGATTTGTTTTTCTCCTTGGTCGCC  296
+             |||   | | | |  | | ||  | ||||||||| || |||||| ||| |||||||||||
+Sbjct  2406  TTTGAGTGA-T-TTCTCACAC--ACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCC  2351
 
-Query  346   AAGCAATGGCACAATATTCACTTAAT-T-TAACATA--T-G-TTTTGGTTGGGGCGACAA  399
-             |  |   |||| || ||  || |||| | |||| ||  | | |||||||||||||||| |
-Sbjct  2299  ACCCTCGGGCATAAAATCAACATAATCTCTAACTTAACTTGTTTTTGGTTGGGGCGACCA  2358
+Query  297   CCAACCAAAAACATGTTAAATTAAATATTGTATTATTTGTTTATGGTCCTTGGAT-ATA-  354
+             ||||||||||||| ||||| ||| | ||| | ||   | ||||| | ||  || |  || 
+Sbjct  2350  CCAACCAAAAACAAGTTAAGTTAGAGATTATGTT-GAT-TTTAT-GCCCGAGGGTGGTAG  2294
 
-Query  400   AAGGGA--AACAAATCCTCCTTATCGACTAAGT-ATTACTATACTTAGAAACTTTAGAAC  456
-             | ||||  |||||| || ||||||||| |  || |  | |  ||| | |||  |||||| 
-Sbjct  2359  AGGGGAATAACAAAACCCCCTTATCGAGTGTGTGAGAAATC-ACTCA-AAA--TTAGAAT  2414
+Query  355   -ATGCAATTACATAATTAATTTAAGTGTTTTATAAGCTCCATA-AGTCTTCCTCGTCTAA  412
+               ||   ||    |||||| |||||||||| | ||||||||||  ||||| ||||||| |
+Sbjct  2293  TTTGTGTTTTTTAAATTAACTTAAGTGTTT-A-AAGCTCCATAGGGTCTT-CTCGTCTTA  2237
 
-Query  457   CACAGTTCAAA-TGATAAAACATTTATCCAGTATTGGG--AT-ATCCTTAAG-CCTAGA-  510
-              ||| ||| || | ||| || || || | |  | ||    |  | || | |  ||| || 
-Sbjct  2415  TACAATTCTAACTAATAGAAAATCTAACGAACAATGACCCAGGACCCATCACTCCT-GAT  2473
+Query  413   TGTAATTATTC-C-CTTTTGCACGGGAAGATCAATTTCATTGATTGGGAAGTAGAGACAG  470
+             |||| |||||| |  || |||||| || | ||||||||||||||| | || |||||||||
+Sbjct  2236  TGTATTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAGAAAATAGAGACAG  2177
 
-Query  511   C-ATGAACCAAGTTACCCTAGGGATAACGGCGCAATCCTTTCGG-GA--CCTG-T-GACG  564
-             | |||||||||||||||||||||||||| |||||||||||||   ||  ||   | | ||
-Sbjct  2474  CAATGAACCAAGTTACCCTAGGGATAACAGCGCAATCCTTTCCTAGAGTCCCCATCGCCG  2533
+Query  471   TTAAACTCTCGTGATGCCTTTCATACAGGTCTTCA-TTTAAAGACAGGTGATTACGCTAC  529
+             |||||||||||||||||||||||||| |||||||| || ||||||| |||||||||||||
+Sbjct  2176  TTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGCTAC  2117
 
-Query  565   AAAGAC-TTACGGCCTCGATGTTGGATCAAGGACATCCTAATAGATGTAACCGCTATTTA  623
-             ||||   ||||| ||||||||||||||| ||||||||||||| | |||| |||||| |||
-Sbjct  2534  AAAGGGTTTACGACCTCGATGTTGGATC-AGGACATCCTAATGG-TGTAGCCGCTA-TTA  2590
+Query  530   CTTCGCACGGTCAAGATACCGCGGCCGTTAAAAAAGTATCACAGGGCAGGCTGGACCTCT  589
+             |||||||||||||||||||||||||||||||| ||  |||||||||||||| ||||||||
+Sbjct  2116  CTTCGCACGGTCAAGATACCGCGGCCGTTAAATAA--ATCACAGGGCAGGCGGGACCTCT  2059
 
-Query  624   AGGGCTCGTTTGTTCAGCAGTTAATAGTCCTACGTGATC  662
-             |||| ||||||||||| |  |||| ||||||||||||||
-Sbjct  2591  AGGGTTCGTTTGTTCAACGATTAACAGTCCTACGTGATC  2629
+Query  590   TATAG-T--T--TAA-GCAAGAGGCGTGATGTTTTTGATAAACAGG  629
+             ||||  |  |  ||| |||||||||  |||||||||| ||||||||
+Sbjct  2058  TATACATGATGGTAAAGCAAGAGGC--GATGTTTTTGGTAAACAGG  2015
 
 
 
@@ -82,7 +84,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 475946280
+Effective search space used: 426251889
 
 
   Database: BurgerZoo_Koraal_16S.fasta

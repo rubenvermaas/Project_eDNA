@@ -12,12 +12,68 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=91af8d32-4685-4a36-93e9-d1cf30593b82_t;seqs=1
+Query= consensus=73df0701-d9d0-4fb0-86b8-f047940fe5a5_t;seqs=2
 
-Length=1227
+Length=1264
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            457     2e-129
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           457     2e-129
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  213     5e-56 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   213     5e-56 
 
 
-***** No hits found *****
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 457 bits (247),  Expect = 2e-129
+ Identities = 524/652 (80%), Gaps = 41/652 (6%)
+ Strand=Plus/Minus
+
+Query  1     GTCTGAACTCAGATCACGTAGGACTATTAATCGTTGAACAAACAGGCCCGTAAACAGCAG  60
+             ||||||||||||||||||||||||| ||||||||||||||||| |  || | || ||| |
+Sbjct  2640  GTCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAAC-GAACCCTTAATAGC-G  2583
+
+Query  61    ACAACACCATTAGGATGTCCTGATC-AACATCGAGGTCATAAAGCCCTTTCGTCGATAGG  119
+              | |||||||||||||||||||||| |||||||||||| |||| |||||||| |||| ||
+Sbjct  2582  GCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAA-CCCTTTCGGCGATGGG  2524
+
+Query  120   AACTCTGGGAAAGGATTGCGCTGTTAACCCTAGGGTAACTTGGTTCATTATTCAGGTTTA  179
+              ||||| ||||||||||||||||||| ||||||||||||||||||||||  |||||  | 
+Sbjct  2523  GACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGAGTG  2464
+
+Query  180   AGGATATCCTGGGTCATT-TTCGATAAATGTTTTTATCATTTAGAACTGTGGTTCTAGtt  238
+             | |   |||||||||||| |||| || || ||| ||| | |||||| |||  |||||   
+Sbjct  2463  ATGG-GTCCTGGGTCATTGTTCGTTAGAT-TTTCTATTAGTTAGAATTGTAATTCTA---  2409
+
+Query  239   tttttAAGTATAGTAATACTTA-GTAGTCGATAAGGAGGATTTGTTTTTTCTCCTTGAAC  297
+              |||| ||  | | | | || |   | ||||||||| || ||||||  ||| |||||  |
+Sbjct  2408  ATTTTGAG--T-G-ATTTCTCACACACTCGATAAGGGGGTTTTGTT-ATTCCCCTTGGTC  2354
+
+Query  298   GCCCCAACCAAAAGCATGTTAAATTA-AGAATATTGTATTATTTGTTTATGTCCTTGGAA  356
+             ||||||||||||| || ||||| ||| ||| || ||| | |  | |||||| ||  ||  
+Sbjct  2353  GCCCCAACCAAAAACAAGTTAAGTTAGAGATTA-TGT-TGA--T-TTTATGCCCGAGGGT  2299
+
+Query  357   TATA-ATACAATTACATAA-TTAATTTAAGTGTTTTAAGCTCCATAGGGTCTTCTCGTCT  414
+               ||  |    ||   ||| |||| |||||||||| ||||||||||||||||||||||||
+Sbjct  2298  GGTAGTTTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCGTCT  2239
+
+Query  415   AACGTAATTATTC-CGCTTTTGCACAGGAAGATCAATTTCATT-ATT-GATTGATAGAGA  471
+              | ||| |||||| || || |||||  || | ||||||||||| ||| ||   |||||||
+Sbjct  2238  TATGTATTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAGA-AAATAGAGA  2180
+
+Query  472   CAGTTAAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTAAAAGACAGGTGATTACGC  531
+             ||||||||||||||||||||||||||||| |||||||| |||||||||| ||||||||||
+Sbjct  2179  CAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGC  2120
+
+Query  532   TACCTTCGCACGGTCAAGATACCGCGGCCGTTAAA-AAATAACAACAGGGCCAAGCTGGA  590
+             ||||||||||||||||||||||||||||||||||| ||||  || ||||| || || |||
+Sbjct  2119  TACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAAAT--CA-CAGGG-CAGGCGGGA  2064
+
+Query  591   CATCTTATAGTT--T--TAA-GCAA-AGGCGATGTTTTTAGTGACGACAGGC  636
+             | |||||||  |  |  ||| |||| ||||||||||||| || |  ||||||
+Sbjct  2063  CCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAA--ACAGGC  2014
 
 
 
@@ -28,7 +84,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 843956388
+Effective search space used: 869848914
 
 
   Database: BurgerZoo_Koraal_16S.fasta

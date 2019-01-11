@@ -12,66 +12,154 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=49175c26-3f6f-44c9-8738-591927b4708e_t;seqs=1
+Query= consensus=d19917ba-8236-44aa-bc85-9dd2bf47cc16_t;seqs=2
 
-Length=616
+Length=617
                                                                       Score     E
 Sequences producing significant alignments:                          (Bits)  Value
 
-  KM881715.1 Taeniura lymma mitochondrion, complete genome            394     8e-111
-  NC_026210.1 Taeniura lymma mitochondrion, complete genome           394     8e-111
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            412     2e-116
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           412     2e-116
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  187     1e-48 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   187     1e-48 
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       187     1e-48 
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          183     2e-47 
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         183     2e-47 
+  KF709954.1 Siganus puellus mitochondrion, complete genome           183     2e-47 
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          183     2e-47 
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          183     2e-47 
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         183     2e-47 
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     182     6e-47 
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    182     6e-47 
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  182     6e-47 
+  KU244264.1 UNVERIFIED: Zebrasoma desjardinii mitochondrion sequ...  178     8e-46 
+  AP004447.1 Pterocaesio tile mitochondrial DNA, complete genome      178     8e-46 
+  NC_004408.1 Pterocaesio tile mitochondrion, complete genome         178     8e-46 
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   178     8e-46 
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      178     8e-46 
+  JF457624.1 Pseudocheilinus hexataenia voucher NBE0414 16S ribos...  178     8e-46 
+  JF457625.1 Pseudocheilinus hexataenia voucher NBE0412 16S ribos...  178     8e-46 
+  KT826539.1 Paracanthurus hepatus mitochondrion, complete genome     178     8e-46 
+  NC_029237.1 Paracanthurus hepatus mitochondrion, complete genome    178     8e-46 
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         178     8e-46 
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        178     8e-46 
+  JF457238.1 Anampses lineatus voucher REU0922 16S ribosomal RNA ...  178     8e-46 
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  178     8e-46 
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   178     8e-46 
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  176     3e-45 
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  176     3e-45 
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       176     3e-45 
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      176     3e-45 
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        176     3e-45 
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       176     3e-45 
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   176     3e-45 
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      176     3e-45 
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          176     3e-45 
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         176     3e-45 
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  176     3e-45 
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  176     3e-45 
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     176     3e-45 
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  176     3e-45 
+  JX026504.1 Scarus quoyi 16S ribosomal RNA gene, partial sequenc...  174     1e-44 
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  174     1e-44 
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  172     4e-44 
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  172     4e-44 
+  JF457479.1 Halichoeres marginatus voucher REU1023 16S ribosomal...  172     4e-44 
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  172     4e-44 
+  JF457481.1 Halichoeres marginatus voucher REU0793 16S ribosomal...  172     4e-44 
+  EF419265.1 Amblyglyphidodon aureus voucher AMS I.33717-001 16S ...  172     4e-44 
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  171     1e-43 
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  171     1e-43 
+  JF457442.1 Dascyllus aruanus voucher NBE0189 16S ribosomal RNA ...  171     1e-43 
+  JF457443.1 Dascyllus aruanus voucher NBE0188 16S ribosomal RNA ...  171     1e-43 
+  JF457444.1 Dascyllus aruanus voucher NBE0187 16S ribosomal RNA ...  171     1e-43 
+  KT952629.1 Zebrasoma desjardinii voucher Zdes02 16S ribosomal R...  169     5e-43 
+  KT952630.1 Zebrasoma desjardinii voucher Zdes03 16S ribosomal R...  169     5e-43 
+  KJ551857.1 Pomacanthus xanthometopon voucher NMMBP:19850 16S ri...  169     5e-43 
+  KJ551858.1 Pomacanthus xanthometopon voucher NMMBP:19851 16S ri...  169     5e-43 
+  KJ551868.1 Centropyge eibli voucher NMMBP:20397 16S ribosomal R...  169     5e-43 
+  JF457395.1 Chromis viridis voucher NBE1074 16S ribosomal RNA ge...  165     6e-42 
+  JF457396.1 Chromis viridis voucher NBE1073 16S ribosomal RNA ge...  165     6e-42 
+  JF457397.1 Chromis viridis voucher NBE1072 16S ribosomal RNA ge...  165     6e-42 
+  JF457623.1 Pseudocheilinus evanidus voucher MBIO0560 16S riboso...  161     8e-41 
+  EF419268.1 Pomacentrus moluccensis voucher AMS I.43781-005 16S ...  161     8e-41 
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  161     8e-41 
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  161     8e-41 
+  EU601251.1 Scarus quoyi voucher FMNH 110859 16S ribosomal RNA g...  159     3e-40 
+  KY815443.1 Pseudocheilinus hexataenia voucher FMNH:ICHTHY:MIN00...  159     3e-40 
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  159     3e-40 
+  FJ616482.1 Pomacentrus moluccensis voucher FMNH Liz04-14 T-025 ...  158     1e-39 
+  DQ898112.1 Siganus puellus voucher Spue 2 16S ribosomal RNA gen...  154     1e-38 
+  DQ898108.1 Siganus guttatus voucher Sgut 2 16S ribosomal RNA ge...  154     1e-38 
+  FJ616448.1 Dascyllus reticulatus voucher FMNH Bus03-10 T-224 16...  152     5e-38 
+  FJ616447.1 Dascyllus melanurus voucher FMNH Bus03-20 T-373 16S ...  152     5e-38 
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  152     5e-38 
+  FJ616415.1 Amphiprion melanopus voucher FMNH MIN00-06 T-31 16S ...  152     5e-38 
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  152     5e-38 
+  EF616959.1 Chelmon rostratus 16S ribosomal RNA gene, partial se...  148     6e-37 
+  FJ616426.1 Chromis margaritifer voucher FMNH Bus03-2 T-080 16S ...  147     2e-36 
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  145     8e-36 
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  145     8e-36 
+  KY815442.1 Pseudocheilinus evanidus voucher FMNH:ICHTHY:BUS03-0...  143     3e-35 
+  AY264623.1 Naso vlamingii isolate Nv_G1338 16S ribosomal RNA ge...  141     1e-34 
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  141     1e-34 
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  141     1e-34 
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  141     1e-34 
+  AF055627.1 Zebrasoma scopas 16S small subunit ribosomal RNA gen...  139     4e-34 
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  124     1e-29 
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  115     7e-27 
 
 
 > KM881715.1 Taeniura lymma mitochondrion, complete genome
 Length=17652
 
- Score = 394 bits (213),  Expect = 8e-111
- Identities = 513/649 (79%), Gaps = 55/649 (8%)
+ Score = 412 bits (223),  Expect = 2e-116
+ Identities = 488/608 (80%), Gaps = 49/608 (8%)
  Strand=Plus/Minus
 
-Query  1     GGTCTGAACTCTCGATCACGTAGGACTATTAATCGTTGAACAAACAGGCCCTTAATACTT  60
-             |||||||||||  |||||||||||||| |||||||||||||||||   |||||||||   
-Sbjct  2641  GGTCTGAACTC-AGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATA-GC  2584
+Query  1     GTCTAAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCAGT  60
+             |||| |||||||||||||||||||||||||||||||||||||||||||||||||||| | 
+Sbjct  2640  GTCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCGGC  2581
 
-Query  61    GGTTACACCATTAGGATGTC-TGAT-CAACATCGAGGTCGTAAGCCCTTTCGTCGATAGG  118
-             || ||||||||||||||||| |||| ||||||||||||||||| |||||||| |||| ||
-Sbjct  2583  GGCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGGG  2524
+Query  61    TGCACCATTAGGATGTCCTGATC-AACATCGAGGTCGTAAACCCTTTCTTCGATAGGGAC  119
+             | ||||||||||||||||||||| ||||||||||||||||||||||||  |||| |||||
+Sbjct  2580  TACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGGGGAC  2521
 
-Query  119   AACTCTGGGAAAGGATTGCGCTGTTATCCCTAAGGGTAACTTGGTTCATTATTCAGG-TT  177
-              ||||| ||||||||||||||||||||||||| |||||||||||||||||  |||||  |
-Sbjct  2523  GACTCTAGGAAAGGATTGCGCTGTTATCCCTA-GGGTAACTTGGTTCATTGATCAGGAGT  2465
+Query  120   TCT-G-AAA-GATTGCGCTGTTACGCCCTAAG-TG-CTTGGTTCATTGATCAGGAA--AT  172
+             ||| | ||| |||||||||||||  ||||| | |  |||||||||||||||||||   ||
+Sbjct  2520  TCTAGGAAAGGATTGCGCTGTTAT-CCCTAGGGTAACTTGGTTCATTGATCAGGAGTGAT  2462
 
-Query  178   TAAGGATATCTGGGTCATT-TTCGATAAATGTTTTATCATTTTAGAACTGTGGTTCTAGT  236
-              | || |  |||||||||| |||| || || || ||| |  |||||| |||  |||||  
-Sbjct  2464  GATGGGT-CCTGGGTCATTGTTCGTTAGATTTTCTATTA-GTTAGAATTGTAATTCTA-A  2408
+Query  173   ----CCTGGGTCATT-TTCGATAAATATTTTATTAATTAGAACTGTTATTCTAATTTTTA  227
+                 ||||||||||| |||| || || || ||||| |||||| ||| ||||||||||| |
+Sbjct  2461  GGGTCCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAATTCTAATTTTGA  2402
 
-Query  237   TTTTAAAGTATAGTAAT-ACTTAGTCGATAAGG---ATTTGTTTTTCTCCTTGGTCGCCC  292
-             ||||  |||  | |  | ||  | |||||||||    |||||| ||| ||||||||||||
-Sbjct  2407  TTTT-GAGT-GATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCC  2350
+Query  228   AGT-ACTTAGTACTCAGTCGATAAGGGGATTT-GTT-TTCCCCCTGG--GCAATAACCAA  282
+              || | ||   || || ||||||||||| ||| ||| |||||| |||  ||   ||||||
+Sbjct  2401  -GTGATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCCCAACCAA  2343
 
-Query  293   CAACCAAAAACATGTTAAATTA-AGAATATTGTATTATTTGTATGTCC----TTGG-A-A  345
-             |||||||||||| ||||| ||| ||| || ||| | |||| |||| ||     ||| |  
-Sbjct  2349  CAACCAAAAACAAGTTAAGTTAGAGATTA-TGT-TGATTT-TATGCCCGAGGGTGGTAGT  2293
+Query  283   AA-C-AGTGAAATTAGAAATATTGGACATGTATTTGTTTATGTCCTTAGAGAGATA-TAG  339
+             || | ||| || ||||| ||  ||    || |||| |  ||| ||  || | | || |  
+Sbjct  2342  AAACAAGTTAAGTTAGAGATTATGT---TG-ATTT-T--ATGCCCG-AGGGTGGTAGTTT  2291
 
-Query  346   TACAG-----TACATAGTGTTAAGTGTTTAA-GCTCCATA-AGTCTTCTCGTCTAATGTA  398
-             |   |     || ||    |||||||||||| ||||||||  |||||||||||| |||||
-Sbjct  2292  TTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCGTCTTATGTA  2233
+Query  340   G-GTTACATGTAGTTAATTTAAGTGTTTGAAGCTCCATAGGGATGTCTTCTCGTCTAATA  398
+             | |||   |  | |||| |||||||||| |||||||||||||   ||||||||||| || 
+Sbjct  2290  GTGTTTTTTAAA-TTAACTTAAGTGTTTAAAGCTCCATAGGG---TCTTCTCGTCTTATG  2235
 
-Query  399   ATTATTCCCGCTTTTGCA-G-GAAGATCAATTTCATTGATTGGGAAGTAGAGAGACAGTT  456
-              |||||| || || |||| | || | |||||||||||||||  |||  | ||||||||||
-Sbjct  2232  TTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATT-AGAA-AATAGAGACAGTT  2175
+Query  399   TTAGTATATTA-CGCTTCTGCACGA-ATAGATCAATTTCATTGATTAGAAAATAGAGTAC  456
+             | | | ||||  || |||||||||| || | |||||||||||||||||||||||||| ||
+Sbjct  2234  T-ATT-TATTCTCGGTTCTGCACGAGATGG-TCAATTTCATTGATTAGAAAATAGAG-AC  2179
 
-Query  457   AAACTCTCGTGATGCCTTTTCATACAGGTCTTCATTTAAA-GACTTGAGTGATTGCACTT  515
-             ||||||||||||||||||| ||||| |||||||| ||||| |||   ||||||| | || 
-Sbjct  2174  AAACTCTCGTGATGCCTTT-CATACGGGTCTTCAATTAAAAGACA--AGTGATTACGCT-  2119
+Query  457   CGATTTAAAACTCTCGTGGTGCCTTTTCATACGGGGCTTCATTTAAAGAACAAGTGATTA  516
+              | ||  ||||||||||| ||||||| |||||||| ||||| |||||  |||||||||||
+Sbjct  2178  AG-TT--AAACTCTCGTGATGCCTTT-CATACGGGTCTTCAATTAAAAGACAAGTGATTA  2123
 
-Query  516   CACCTTTACTTTTGAGTCAAGATACCGCGGCCGTTAAAAATTATCACAGGGCAGGCTGGA  575
-              |||||  |    | ||||||||||||||||||||||| |  |||||||||||||| |||
-Sbjct  2118  -ACCTTCGCAC--G-GTCAAGATACCGCGGCCGTTAAATAA-ATCACAGGGCAGGCGGGA  2064
+Query  517   CGCTACCTTTGCACGGTAAA-ATACCGCGGCCGTTGAACAT-TGTCTGGGGCAGGCAGGA  574
+             ||||||||| ||||||| || |||||||||||||| || |  |  |  |||||||| |||
+Sbjct  2122  CGCTACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAAATCACA-GGGCAGGCGGGA  2064
 
-Query  576   CCTCTTATAG-T--T--TAA-GC-AGAGGCGATGTTTT-GGTAAACGGG  616
-             |||||||||  |  |  ||| || |||||||||||||| ||||||| ||
-Sbjct  2063  CCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAACAGG  2015
+Query  575   CCTCTTAT  582
+             ||||||||
+Sbjct  2063  CCTCTTAT  2056
 
 
 
@@ -82,7 +170,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 417152916
+Effective search space used: 417852837
 
 
   Database: BurgerZoo_Koraal_16S.fasta

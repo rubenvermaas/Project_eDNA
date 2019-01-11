@@ -12,66 +12,92 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=7c5fe6bd-424d-474f-82d5-78c465ba7505_t;seqs=1
+Query= consensus=67fee113-0a3c-4f85-b75b-aca4c07cb19d_t;seqs=2
 
-Length=628
+Length=625
                                                                       Score     E
 Sequences producing significant alignments:                          (Bits)  Value
 
-  KM881715.1 Taeniura lymma mitochondrion, complete genome            385     5e-108
-  NC_026210.1 Taeniura lymma mitochondrion, complete genome           385     5e-108
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            405     4e-114
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           405     4e-114
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        219     5e-58 
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       219     5e-58 
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  207     1e-54 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   207     1e-54 
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  193     3e-50 
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  182     6e-47 
+  JF457238.1 Anampses lineatus voucher REU0922 16S ribosomal RNA ...  180     2e-46 
+  JX026504.1 Scarus quoyi 16S ribosomal RNA gene, partial sequenc...  176     3e-45 
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  176     3e-45 
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   176     3e-45 
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  174     1e-44 
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  174     1e-44 
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  174     1e-44 
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  163     2e-41 
+  EU601251.1 Scarus quoyi voucher FMNH 110859 16S ribosomal RNA g...  161     8e-41 
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  150     2e-37 
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  143     3e-35 
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  143     3e-35 
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  143     3e-35 
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  143     3e-35 
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  143     3e-35 
+  KJ866399.1 Anampses lineatus 16S ribosomal RNA gene, partial se...  121     1e-28 
+  AY057289.1 Acanthurus pyroferus clone 1 16S ribosomal RNA gene,...  110     3e-25 
+  AY057290.1 Acanthurus pyroferus clone 2 16S ribosomal RNA gene,...  110     3e-25 
+  AY057286.1 Acanthurus nigricans clone 1 16S ribosomal RNA gene,...  110     3e-25 
+  AY057287.1 Acanthurus nigricans clone 2 16S ribosomal RNA gene,...  110     3e-25 
 
 
 > KM881715.1 Taeniura lymma mitochondrion, complete genome
 Length=17652
 
- Score = 385 bits (208),  Expect = 5e-108
- Identities = 490/616 (80%), Gaps = 60/616 (10%)
+ Score = 405 bits (219),  Expect = 4e-114
+ Identities = 517/650 (80%), Gaps = 63/650 (10%)
  Strand=Plus/Minus
 
-Query  7     GAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGGGAGCCCTTAATAGCGGTTG  66
-             ||||||||||||||||||||||||||||||||||||||||  | ||||||||||||| | 
-Sbjct  2636  GAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACG--AACCCTTAATAGCGGCTA  2579
+Query  7     AACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACAAACCCTTAAGAGCGATTGCTG  66
+             |||||||||||||||||||||||||||||||||||||| ||||||||| ||||   ||| 
+Sbjct  2635  AACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCG---GCTA  2579
 
-Query  67    CACCCATTACAGGATGTCCTGATCAGCAACATCG-GGT-GTACAAGCCCTTTCTTCCCGA  124
-             |||| |||  ||||||||||||||  |||||||| ||| ||| || |||||||    |||
-Sbjct  2578  CACC-ATT--AGGATGTCCTGATC--CAACATCGAGGTCGTA-AA-CCCTTTC--GGCGA  2528
+Query  67    CACCATTAGGATGTCCTGATGATCCAACATCGAGGGTCGTAAACCCTTTCTTCGATAGGG  126
+             ||||||||||||||||||||   |||||||||| ||||||||||||||||  |||| |||
+Sbjct  2578  CACCATTAGGATGTCCTGAT---CCAACATCGA-GGTCGTAAACCCTTTCGGCGATGGGG  2523
 
-Query  125   TAGGGACTCTGAGAAAAGGATTGCGCTGTTATCC-TAGGGTAACTTGGTTCATTGATCAG  183
-             | |||||||| || |||||||||||||||||||| |||||||||||||||||||||||||
-Sbjct  2527  TGGGGACTCT-AGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAG  2469
+Query  127   ACTCTGAGAAAAGATTGCGCTGTTATCCCTAGGGTAACTTGGATCATCAATCAGGAA--A  184
+             |||||  |||| |||||||||||||||||||||||||||||| ||||  |||||||   |
+Sbjct  2522  ACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGAGTGA  2463
 
-Query  184   GAA--AT----CCTGGGTCATT-TTCGATAAATATTTTATTAGCAATTAGAACTGTTATT  236
-             ||   ||    ||||||||||| |||| || || || ||||||   |||||| ||| |||
-Sbjct  2468  GAGTGATGGGTCCTGGGTCATTGTTCGTTAGATTTTCTATTAG---TTAGAATTGTAATT  2412
+Query  185   T----CCTGGAGTCATT-TTCGATAAATATTTAATAAGTGTAGAACTGTTATTCTAATTT  239
+             |    ||||| |||||| |||| || || ||  || ||| ||||| ||| ||||||||||
+Sbjct  2462  TGGGTCCTGG-GTCATTGTTCGTTAGATTTTCTATTAGT-TAGAATTGTAATTCTAATTT  2405
 
-Query  237   TCTGATTTTTGAGGTACTTAGTACTCAGTCGATAAAGGGGGATTTGTT-TTCCCCTTGGT  295
-              || ||||| |||  | ||   || || ||||| ||||||| |||||| |||||||||||
-Sbjct  2411  -CTAATTTT-GAGTGATTTCTCACACACTCGAT-AAGGGGGTTTTGTTATTCCCCTTGGT  2355
+Query  240   TTAAGT-ACTTAGTACTCAGTCGATAAAGAAGTT--GTT-TTCCCCTTAGTCACT--AAC  293
+             | | || | ||   || || ||||||| |  |||  ||| |||||||| ||| |   |||
+Sbjct  2404  TGA-GTGATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCCCAAC  2346
 
-Query  296   CACT--AACCAAAAAC-AGTTAAATTAGAAATATTGTATGTATTTGTTTTATGTCCTTAG  352
-             | |   |||||||||| |||||| ||||| ||  ||| || |||| |   ||| ||  ||
-Sbjct  2354  CGCCCCAACCAAAAACAAGTTAAGTTAGAGATTATGT-TG-ATTT-T---ATGCCCG-AG  2302
+Query  294   CAAAA-CA-GTTAGAATTAGAAATATTGTATGTGTTGTTGTTTACATGTCCTTAGAG-GG  350
+             ||||| || |||| | ||||| || |   |||| | | | ||||  || ||  || | ||
+Sbjct  2345  CAAAAACAAGTTA-AGTTAGAGAT-T---ATGT-T-GAT-TTTA--TGCCCG-AGGGTGG  2297
 
-Query  353   AATT-TA-TAGG-GTTACATAG-TTAATTTAAGTGTTTGAAGCTCCATAGGGTCTTCTCG  408
-               |  || |  | |||   ||  |||| |||||||||| |||||||||||||||||||||
-Sbjct  2301  GGTGGTAGTTTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCG  2242
+Query  351   TA-TAGG-GTTACATAG-TTAATTTAAGTGTTTGAAGCTCCACAGGGTCTTCTCTCGTCT  407
+             || |  | |||   ||  |||| |||||||||| |||||||| |||||||||||  ||||
+Sbjct  2296  TAGTTTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTC--GTCT  2239
 
-Query  409   TCTAATGTTATTATATTCGCTTTACTGCACGA-ATGGGTC-ATTTCGGTGATTAGAAAAT  466
-             ||| |||| ||| ||||| |  | |||||||| |||| || |||||  ||||||||||||
-Sbjct  2241  TCTTATGT-ATT-TATTCTCGGTTCTGCACGAGATGG-TCAATTTCATTGATTAGAAAAT  2185
+Query  408   AATGTTAATATATTCGC--TTCTGCACGA-ATAGATCAATTTCATTGATTAGAAATAAAG  464
+              |||| | | ||||| |  |||||||||| || | |||||||||||||||||||| | ||
+Sbjct  2238  TATGT-ATT-TATTCTCGGTTCTGCACGAGATGG-TCAATTTCATTGATTAGAAA-ATAG  2183
 
-Query  467   -GAGACAGTTAAACTCGTGGTACTTGCTTTCATACGAGTCTTCATTTAAA-GACAAGTGA  524
-              ||||||||||||||| | ||  |  |||||||||| ||||||| ||||| |||||||||
-Sbjct  2184  AGAGACAGTTAAACTC-TCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGA  2126
+Query  465   AGACAGTTAAGAAGCTCGTGAAGTGCCTTTCATACAGGTCTTCATTTAAA-GACAAGTGA  523
+             |||||||||| |  |||||||  |||||||||||| |||||||| ||||| |||||||||
+Sbjct  2182  AGACAGTTAA-ACTCTCGTGA--TGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGA  2126
 
-Query  525   TT--GCATACCTTTGCACGGTCAAAATACTGCCGCGGC-GTTGAACATTGTCACGGGGCA  581
-             ||  || |||||| |||||||||| ||||  | ||||| ||| || |   |||| |||||
-Sbjct  2125  TTACGC-TACCTTCGCACGGTCAAGATAC--C-GCGGCCGTTAAATAAA-TCACAGGGCA  2071
+Query  524   TTACGCTACCTTTGCACAGTCAAAATACCGAAGCCGTTGAACAGTGTCTGCAGGGCAGGC  583
+             |||||||||||| |||| ||||| ||||||  |||||| || |   ||  ||||||||||
+Sbjct  2125  TTACGCTACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAAA-TCA-CAGGGCAGGC  2068
 
-Query  582   GGTAAGGACCTCTTAT  597
-             ||   |||||||||||
-Sbjct  2070  GGCG-GGACCTCTTAT  2056
+Query  584   GGGACCTCTTATAG-T--T--TA--GCAAGAGGCG-TGTTTTTGATAAAC  625
+             |||||||||||||  |  |  ||  |||||||||| |||||||| |||||
+Sbjct  2067  GGGACCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAAC  2018
 
 
 
@@ -82,7 +108,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 425551968
+Effective search space used: 423452205
 
 
   Database: BurgerZoo_Koraal_16S.fasta

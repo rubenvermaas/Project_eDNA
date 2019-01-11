@@ -12,40 +12,12 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=f122b03c-ccee-44cc-9516-1a1a9c41017f_t;seqs=1
+Query= consensus=d776b599-6a62-4829-b679-119ed07576fb_t;seqs=2
 
-Length=591
-                                                                      Score     E
-Sequences producing significant alignments:                          (Bits)  Value
-
-  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  148     6e-37
-  EF120855.1 Pseudanthias squamipinnis 16S ribosomal RNA gene, pa...  143     3e-35
+Length=571
 
 
-> FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, 
-partial sequence; tRNA-Val gene, complete sequence; and 16S 
-ribosomal RNA gene, partial sequence; mitochondrial
-Length=1787
-
- Score = 148 bits (80),  Expect = 6e-37
- Identities = 175/219 (80%), Gaps = 14/219 (6%)
- Strand=Plus/Minus
-
-Query  332   TAAAGCTCCATA-AGTCTTCTCGTCTTGCTGTGT-CATGCCCACGCCTCTTCACGGGACT  389
-             ||||||||||||  |||||||||||||  ||| |  ||| || ||| ||| ||||||   
-Sbjct  1449  TAAAGCTCCATAGGGTCTTCTCGTCTT-ATGTCTATATG-CC-CGCTTCTGCACGGGGA-  1394
-
-Query  390   TGAGTCAATTTCACT-AGTTAAAAGTAGTAGAGACAGCTGAACCCTCATTAAGGACCATT  448
-              || |||| |||| | |  | |||  ||  ||||||| | | ||||| || | | |||||
-Sbjct  1393  -GA-TCAAGTTCATTGACCTGAAAA-AG--GAGACAGTTAAGCCCTCGTT-ATG-CCATT  1341
-
-Query  449   CATACAGGTCCCTATTTAAGGAACAAGTGATTATACTACCTTTGCACGGTTAGGGTACCG  508
-             |||||||||||| |||||||  ||||||||||   |||||||||||||||||||||||||
-Sbjct  1340  CATACAGGTCCCCATTTAAGAGACAAGTGATTGCGCTACCTTTGCACGGTTAGGGTACCG  1281
-
-Query  509   CGGCCGTTAAACATGTGTCACTGGGCAGGCGGTGCCTCT  547
-             ||||||||||||  ||||||| ||||||||||  |||||
-Sbjct  1280  CGGCCGTTAAACTAGTGTCACAGGGCAGGCGGGACCTCT  1242
+***** No hits found *****
 
 
 
@@ -56,7 +28,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 399654891
+Effective search space used: 385656471
 
 
   Database: BurgerZoo_Koraal_16S.fasta

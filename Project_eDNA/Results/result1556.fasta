@@ -12,9 +12,9 @@ Database: BurgerZoo_Koraal_16S.fasta
 
 
 
-Query= consensus=17f25200-9422-4893-9b5d-587d1a603a17_t;seqs=1
+Query= consensus=f20a8d45-a5f0-48e8-aab7-08cb2cf5ac80_t;seqs=2
 
-Length=648
+Length=645
 
 
 ***** No hits found *****
@@ -28,7 +28,7 @@ Gapped
 Lambda      K        H
     1.28    0.460    0.850 
 
-Effective search space used: 439550388
+Effective search space used: 437450625
 
 
   Database: BurgerZoo_Koraal_16S.fasta
