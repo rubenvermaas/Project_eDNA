@@ -1,0 +1,88 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=8106de7b-d434-4bcf-9510-848263662f67_t;seqs=1
+
+Length=614
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     230     2e-61
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  230     2e-61
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  219     5e-58
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   219     5e-58
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         215     6e-57
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        215     6e-57
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        213     2e-56
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       213     2e-56
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  206     4e-54
+  KJ551857.1 Pomacanthus xanthometopon voucher NMMBP:19850 16S ri...  206     4e-54
+  KJ551858.1 Pomacanthus xanthometopon voucher NMMBP:19851 16S ri...  206     4e-54
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  193     3e-50
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  193     3e-50
+  EF616959.1 Chelmon rostratus 16S ribosomal RNA gene, partial se...  193     3e-50
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  191     1e-49
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  183     2e-47
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       174     1e-44
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  171     1e-43
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  171     1e-43
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  154     1e-38
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  154     1e-38
+  DQ343906.1 Amphiprion bicinctus 16S ribosomal RNA gene, partial...  145     8e-36
+
+
+> NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome
+Length=16645
+
+ Score = 230 bits (124),  Expect = 2e-61
+ Identities = 172/194 (89%), Gaps = 8/194 (4%)
+ Strand=Plus/Minus
+
+Query  428   TCAATTTCATTGATTAGAAATAG-AGACAGTTAA--ACTCGTGATGCCTTTCATACAGGT  484
+             ||||||||||||| | |||| || ||||||||||   |||||  |||| |||||||||||
+Sbjct  2204  TCAATTTCATTGACTGGAAAAAGGAGACAGTTAAGCCCTCGTCGTGCCATTCATACAGGT  2145
+
+Query  485   CTTCATTTAAAAGACAAGTGATTACGCTACCTTTGCACGGTCAAA-TACCGCGGCCGTTG  543
+             ||||||||||||||||||||||| ||||||||| ||||||||||| ||||||||||||| 
+Sbjct  2144  CTTCATTTAAAAGACAAGTGATTGCGCTACCTTCGCACGGTCAAAGTACCGCGGCCGTTA  2085
+
+Query  544   AACATT--GTCACAGGGCAGGCAGGACCTCTTATATG-GTTTATCAAGAGGCGATGTTTT  600
+             ||||||  ||||| ||||||||||||||||||||||  |||| |||||||||||||||||
+Sbjct  2084  AACATTTAGTCACTGGGCAGGCAGGACCTCTTATATTAGTTTTTCAAGAGGCGATGTTTT  2025
+
+Query  601   TTGGTAAACAGACG  614
+             | ||||||||| ||
+Sbjct  2024  T-GGTAAACAGGCG  2012
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 415753074
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

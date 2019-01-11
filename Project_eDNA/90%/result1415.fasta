@@ -1,0 +1,81 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=17140603-91ad-4c98-9c50-d88c31d1f5cb_t;seqs=1
+
+Length=657
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        158     1e-39
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       158     1e-39
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  152     5e-38
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  152     5e-38
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  152     5e-38
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  152     5e-38
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       152     5e-38
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      152     5e-38
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  139     4e-34
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   139     4e-34
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  139     4e-34
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  135     5e-33
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  135     5e-33
+  EF616959.1 Chelmon rostratus 16S ribosomal RNA gene, partial se...  130     3e-31
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         130     3e-31
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        130     3e-31
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  126     3e-30
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  110     3e-25
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  108     1e-24
+
+
+> KP965877.1 Genicanthus bellus mitochondrion, complete genome
+Length=16734
+
+ Score = 158 bits (85),  Expect = 1e-39
+ Identities = 111/123 (90%), Gaps = 4/123 (3%)
+ Strand=Plus/Plus
+
+Query  111   GGCCGCGGTATTTTGACCGATGCAAAGGTAGCGTAATCACTTGTCTTTTAAATGAAGACC  170
+             ||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||
+Sbjct  2100  GGCCGCGGTATTTTGACCG-TGCAAAGGTAGCGTAATCACTTGTCTTTTAAATGAAGACC  2158
+
+Query  171   CGTATGAAAGGCACCACGAGAGTTTAACTGTCTCTATTTTTCTAATCCGATAGAAATTGA  230
+             |||||||| ||||| ||||| | |||||||||||| | |||| | ||  || ||||||||
+Sbjct  2159  CGTATGAACGGCACAACGAGGGCTTAACTGTCTCT-TCTTTCAAGTCA-AT-GAAATTGA  2215
+
+Query  231   TCT  233
+             |||
+Sbjct  2216  TCT  2218
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 445849677
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

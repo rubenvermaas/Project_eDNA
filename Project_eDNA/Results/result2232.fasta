@@ -1,0 +1,137 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=74bec100-68ca-4be9-b0a3-97496953e4ef_t;seqs=1
+
+Length=621
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            278     8e-76
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           278     8e-76
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          172     4e-44
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         172     4e-44
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        167     2e-42
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       167     2e-42
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   167     2e-42
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      167     2e-42
+  KJ551868.1 Centropyge eibli voucher NMMBP:20397 16S ribosomal R...  163     2e-41
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     161     8e-41
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    161     8e-41
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  161     8e-41
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  161     8e-41
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  161     8e-41
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       161     8e-41
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      161     8e-41
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  161     8e-41
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  161     8e-41
+  KY815443.1 Pseudocheilinus hexataenia voucher FMNH:ICHTHY:MIN00...  158     1e-39
+  KY815442.1 Pseudocheilinus evanidus voucher FMNH:ICHTHY:BUS03-0...  158     1e-39
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  158     1e-39
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  158     1e-39
+  KJ866399.1 Anampses lineatus 16S ribosomal RNA gene, partial se...  158     1e-39
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  156     4e-39
+  JF457238.1 Anampses lineatus voucher REU0922 16S ribosomal RNA ...  156     4e-39
+  AY279718.1 Labroides dimidiatus 16S ribosomal RNA gene, partial...  152     5e-38
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       150     2e-37
+  JF457623.1 Pseudocheilinus evanidus voucher MBIO0560 16S riboso...  145     8e-36
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  143     3e-35
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  143     3e-35
+  JF457395.1 Chromis viridis voucher NBE1074 16S ribosomal RNA ge...  143     3e-35
+  JF457396.1 Chromis viridis voucher NBE1073 16S ribosomal RNA ge...  143     3e-35
+  JF457397.1 Chromis viridis voucher NBE1072 16S ribosomal RNA ge...  143     3e-35
+  AY530856.1 Centropyge loriculus 16S ribosomal RNA gene, partial...  143     3e-35
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  141     1e-34
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  141     1e-34
+  JF457479.1 Halichoeres marginatus voucher REU1023 16S ribosomal...  139     4e-34
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  139     4e-34
+  JF457481.1 Halichoeres marginatus voucher REU0793 16S ribosomal...  139     4e-34
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  134     2e-32
+  JF457624.1 Pseudocheilinus hexataenia voucher NBE0414 16S ribos...  134     2e-32
+  JF457625.1 Pseudocheilinus hexataenia voucher NBE0412 16S ribos...  134     2e-32
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  130     2e-31
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 278 bits (150),  Expect = 8e-76
+ Identities = 501/659 (76%), Gaps = 70/659 (11%)
+ Strand=Plus/Minus
+
+Query  1     GGTCTGAACTCAGATC--GTAAGGACTGATAATCGTTAAGAACAAACG-GGCCTT-GTAG  56
+             ||||||||||||||||  || ||||||| ||||||||  |||||||||   ||||  |||
+Sbjct  2641  GGTCTGAACTCAGATCACGT-AGGACTGTTAATCGTT--GAACAAACGAACCCTTAATAG  2585
+
+Query  57    CAG-TTTA-C--T-GGATGT-CTGAGTCAACATCGAGGGTCAATAAGCCCTTTTCTTCGG  110
+             | | |  | |  | |||||| ||||  ||||||||| ||||  ||| ||| ||||  || 
+Sbjct  2584  CGGCTACACCATTAGGATGTCCTGATCCAACATCGA-GGTC-GTAAACCC-TTTCGGCGA  2528
+
+Query  111   TAGGGACTCT--GAAAGGATTGCTTTGTTATCC-TAGGAACAACTTGGTTCATTGATCAG  167
+             | ||||||||  |||||||||||  |||||||| ||||   |||||||||||||||||||
+Sbjct  2527  TGGGGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGG-GTAACTTGGTTCATTGATCAG  2469
+
+Query  168   GA---A---ATCCTGGGTCATT-TTCGATAAATATTTTGATAATTAGAATTGTCATTCTG  220
+             ||   |    |||||||||||| |||| || || || |  || |||||||||| ||||| 
+Sbjct  2468  GAGTGATGGGTCCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAATTCT-  2410
+
+Query  221   AATTTTTAAGTGTTAGTACTC-CA-A-TCGATAAGAGGGATTTATT-TTCCCCTTAGT-G  275
+             || |||| ||||  | | ||| || | |||||||| ||| ||| || |||||||| || |
+Sbjct  2409  AA-TTTTGAGTG--ATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCG  2353
+
+Query  276   -CCCAAGCAAAAGCA-GTTAAATTACAGGGTATTGTATATTTTG-TTTTATACCTGAAAT  332
+              ||||| ||||| || ||||| ||  || | |   | ||| ||| |||||| || | |  
+Sbjct  2352  CCCCAACCAAAAACAAGTTAAGTT--AGAG-A---T-TATGTTGATTTTATGCCCG-AGG  2301
+
+Query  333   TTGGATAG--CG-GCTGCAT-AATTAATTTAAGTGTTTGAAGCTCCATGAGATTAGCTAT  388
+              ||| |||   | | |   | |||||| |||||||||| ||||||||| ||  |  || |
+Sbjct  2300  GTGG-TAGTTTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCAT-AGGGT--CT-T  2246
+
+Query  389   AAAAGTCTAATATTTGTTATATTCGCTTCTGCACAGAATAAGATCAATTTCATTG-GT-G  446
+                 |||| || | | ||||  ||| |||||||| | | | | ||||||||||||  | |
+Sbjct  2245  -CTCGTCTTATGTAT-TTATTCTCGGTTCTGCAC-G-AGATGGTCAATTTCATTGATTAG  2190
+
+Query  447   AAAATAGGAACAGTTAAACTCTCGTGATGCCTTTCATACAGATTCTTCATTTAAAAGACA  506
+             |||||||  |||||||||||||||||||||||||||||| | | ||||| ||||||||||
+Sbjct  2189  AAAATAGAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGT-CTTCAATTAAAAGACA  2131
+
+Query  507   AGTGATTACTTTACACTTTGCACGGTCAAAATACCGCGGCCGTTGAACATTGTCACAGGG  566
+             |||||||||  ||| ||| |||||||||| |||||||||||||| || |   ||||||||
+Sbjct  2130  AGTGATTACGCTAC-CTTCGCACGGTCAAGATACCGCGGCCGTTAAATAAA-TCACAGGG  2073
+
+Query  567   GTGGTAGGACCTCTTATA--T-ATGGTTTATC-AGAGGCGATGTTTTTGATAAACGAGG  621
+               ||  ||||||||||||  | |||||  | | |||||||||||||||| ||||| |||
+Sbjct  2072  CAGGCGGGACCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAAC-AGG  2015
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 420652521
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,60 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=790dd9e3-e91a-46bc-82f5-5e8b9091e392_t;seqs=1
+
+Length=604
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            80.5    2e-16
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           80.5    2e-16
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 80.5 bits (43),  Expect = 2e-16
+ Identities = 80/97 (82%), Gaps = 5/97 (5%)
+ Strand=Plus/Minus
+
+Query  1     TCTGAACTTTCGGTCACGTAGGACTGTTAATCGTTGAACAAACAGACCCTTAATAGCGGA  60
+             ||||||| |  | ||||||||||||||||||||||||||||||  |||||||||||||| 
+Sbjct  2639  TCTGAAC-TCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCGGC  2581
+
+Query  61    TTTGCACCATTGCGGGATATTCTGGTCCAACATCCAG  97
+             |   |||||||   |||| | ||| ||||||||| ||
+Sbjct  2580  TA--CACCATTA--GGATGTCCTGATCCAACATCGAG  2548
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 408753864
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

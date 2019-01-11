@@ -1,0 +1,113 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=a729db56-8b32-4d66-b619-fba2b89d4c18_t;seqs=1
+
+Length=655
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            287     1e-78
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           287     1e-78
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  147     2e-36
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  145     9e-36
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   145     9e-36
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  119     5e-28
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  117     2e-27
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  117     2e-27
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  117     2e-27
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  117     2e-27
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  117     2e-27
+  AY057289.1 Acanthurus pyroferus clone 1 16S ribosomal RNA gene,...  108     1e-24
+  AY057290.1 Acanthurus pyroferus clone 2 16S ribosomal RNA gene,...  108     1e-24
+  AY057286.1 Acanthurus nigricans clone 1 16S ribosomal RNA gene,...  108     1e-24
+  AY057287.1 Acanthurus nigricans clone 2 16S ribosomal RNA gene,...  108     1e-24
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 287 bits (155),  Expect = 1e-78
+ Identities = 515/677 (76%), Gaps = 72/677 (11%)
+ Strand=Plus/Minus
+
+Query  1     GGTCT-AGCTCAGATCACGTAGGACTATTAATCGTTGTTGAATTAAAACGAGCCCTTAAT  59
+             ||||| | |||||||||||||||||| ||||||||||   ||   |||||| ||||||||
+Sbjct  2641  GGTCTGAACTCAGATCACGTAGGACTGTTAATCGTTG---AA--CAAACGAACCCTTAAT  2587
+
+Query  60    AGCAGTTACACCATTAGGATGTCCTGATC-AACATCGAGGTCGTAAGCCCTTTCGTCGAT  118
+             ||| | ||||||||||||||||||||||| |||||||||||||||| |||||||| ||||
+Sbjct  2586  AGCGGCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGAT  2527
+
+Query  119   AGGAACTCTGGGAAAG--TTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTATTCAGGT  176
+              || ||||| ||||||  ||||||||||||||||||||||||||||||||||  ||||| 
+Sbjct  2526  GGGGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGA  2467
+
+Query  177   TTAA-GGATATCCTGGATCATT-TTCGATAAATGTTTTTATCATTTAGAACTGTATGGTT  234
+              | | || |  ||||| ||||| |||| || || ||| ||| | |||||| ||||   ||
+Sbjct  2466  GTGATGGGT--CCTGGGTCATTGTTCGTTAGAT-TTTCTATTAGTTAGAATTGTAA--TT  2412
+
+Query  235   CTGAAAGTTTTTTAATCATAAGTAATACTTGGTGTCGATAAGGAGGATTTGTTTTTCTCC  294
+             || ||  ||||  | | ||   | | ||      ||||||||| || |||||| ||| ||
+Sbjct  2411  CT-AA--TTTTG-AGTGATTTCTCACACAC----TCGATAAGGGGGTTTTGTTATTCCCC  2360
+
+Query  295   TTGGAGTCGCCCCAACCAAAAACTATGTTAAAATTA-AGAATATTGTATTATTTGTTTGT  353
+             ||||  ||||||||||||||||| | |||||  ||| ||| ||| || | |||| | || 
+Sbjct  2359  TTGG--TCGCCCCAACCAAAAACAA-GTTAAG-TTAGAGATTAT-GT-TGATTT-TATG-  2308
+
+Query  354   AATCCCAGGAATATAGTA-GAATTACATGAGT-AATTTAAGTGTTTAAA--T--ATAAAG  407
+                || |||    ||||  |  ||   | | | || |||||||||||||  |  |||  |
+Sbjct  2307  --CCCGAGGGTGGTAGTTTGTGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAGGG  2250
+
+Query  408   TCTTCTCCGTCAGCCATAATTATTCCCGCTTTTGCTTTTTTAGGAGGAAGATGTTCCGAT  467
+             ||||||| |||     || |||||| || || |||      ||  ||   || |||  ||
+Sbjct  2249  TCTTCTC-GTCTTATGTATTTATTCTCGGTTCTGCACG---AGATGGTCAAT-TTC--AT  2197
+
+Query  468   AATGAATTAGGGAAGTAGAGACAGTTAAACTCTCGTGATGCCTTTCATGCAG-TCTTCAT  526
+               ||| ||||  || ||||||||||||||||||||||||||||||||| | | |||||| 
+Sbjct  2196  --TGA-TTAGAAAA-TAGAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAA  2141
+
+Query  527   TTAAAAAGACAGGTGATTACGCTACCTTCCTTTACAGTCAAGATAC-GCGGCCGTTAAAA  585
+             || |||||||| |||||||||||||||||    || |||||||||| |||||||||||| 
+Sbjct  2140  TT-AAAAGACAAGTGATTACGCTACCTTCGC--ACGGTCAAGATACCGCGGCCGTTAAAT  2084
+
+Query  586   AGGAAATATCTACAAGGGCAGGCTGGACCTCTTATAG-T--T--TAA-GC-AGAGGCGAT  638
+             |  || |  | || ||||||||| ||||||||||||  |  |  ||| || |||||||||
+Sbjct  2083  A--AA-T--C-AC-AGGGCAGGCGGGACCTCTTATACATGATGGTAAAGCAAGAGGCGAT  2031
+
+Query  639   GTTTTTTGGTAAACAGG  655
+             |||||| ||||||||||
+Sbjct  2030  GTTTTT-GGTAAACAGG  2015
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 444449835
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,69 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=a35e8f74-3b31-4f6c-a053-bd2c987f1c1a_t;seqs=1
+
+Length=665
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  178     9e-46
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   178     9e-46
+
+
+> AP012317.1 Synchiropus splendidus mitochondrial DNA, complete 
+genome
+Length=16430
+
+ Score = 178 bits (96),  Expect = 9e-46
+ Identities = 178/215 (83%), Gaps = 15/215 (7%)
+ Strand=Plus/Minus
+
+Query  418   AAAACTCCATAAGGTCTTCTCGTCTAATGTAATTATTCCCGCTT-T--TTGGAGAGGTCA  474
+             ||| ||||||| ||||||||||||| |||| ||||| ||||||| |    || ||| |||
+Sbjct  2242  AAAGCTCCATAGGGTCTTCTCGTCTTATGTTATTATCCCCGCTTCTGCACGGGGAGATCA  2183
+
+Query  475   ATTTCATTGATTGGGAAGTGA-GAGACAGTTAAACTCTCATGATGCCTTTCATACAGGTC  533
+             |||| ||||| ||||| | || ||||||||||| | ||| ||||||||||||||||||||
+Sbjct  2182  ATTTTATTGACTGGGA-G-GAGGAGACAGTTAAGCCCTCGTGATGCCTTTCATACAGGTC  2125
+
+Query  534   TTCATTTAAA-GACAGGTAGTTACGCTACCTTCGCACGATTAAAGATACCGCGCGGCCGT  592
+             |||||||||| |||| ||  |||||||||||| ||||| ||||| |||||||| | ||||
+Sbjct  2124  TTCATTTAAAAGACAAGTGATTACGCTACCTTTGCACGGTTAAA-ATACCGCG-G-CCGT  2068
+
+Query  593   TAAAGAATTA--TCACAGGGCAGGCACCGGACCTC  625
+             |||| | |||  |||| ||||||||   |||||||
+Sbjct  2067  TAAACA-TTATGTCACCGGGCAGGCG--GGACCTC  2036
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 451449045
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

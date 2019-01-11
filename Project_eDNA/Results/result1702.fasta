@@ -1,0 +1,66 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=bc9de133-4280-401c-9de4-8a9a32339ede_t;seqs=1
+
+Length=641
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         204     1e-53
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        204     1e-53
+  EF616959.1 Chelmon rostratus 16S ribosomal RNA gene, partial se...  165     7e-42
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  100     2e-22
+
+
+> KM978959.1 Chelmon rostratus mitochondrion, complete genome
+Length=16538
+
+ Score = 204 bits (110),  Expect = 1e-53
+ Identities = 150/168 (89%), Gaps = 7/168 (4%)
+ Strand=Plus/Minus
+
+Query  1     CGGTCTGAACTCAGATCACGTAGGACTATTAATCGTTGAACAAACGAACCACTTAATAGC  60
+             ||||||||||||||||||||||||||| |||||||||||||||||||||| |||||||||
+Sbjct  2623  CGGTCTGAACTCAGATCACGTAGGACT-TTAATCGTTGAACAAACGAACC-CTTAATAGC  2566
+
+Query  61    GGTTACACCATTAGGATATCCTGATCCAACATCGAGGTCGTAAGCCCTTTCGTCGATAGG  120
+             || | |||||||||||| |||||||||||||||||||||||||||||  | ||||||| |
+Sbjct  2565  GGCTGCACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAGCCCCCTTGTCGATATG  2506
+
+Query  121   AACTCTGGGGAGAAAAGGATTGCGCTGTTATCC-TAGGGTAACTTGGT  167
+              |||||    ||||  ||||||||||||||||| |||||||||| |||
+Sbjct  2505  GACTCT----AGAAGGGGATTGCGCTGTTATCCCTAGGGTAACTCGGT  2462
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 434650941
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

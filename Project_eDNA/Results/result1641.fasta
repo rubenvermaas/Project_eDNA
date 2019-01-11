@@ -1,0 +1,85 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=bf205668-8fff-4ce6-889d-eaa9faeb87aa_t;seqs=1
+
+Length=644
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            189     4e-49
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           189     4e-49
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  117     2e-27
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   117     2e-27
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  113     2e-26
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  93.5    3e-20
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  91.6    1e-19
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  91.6    1e-19
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  91.6    1e-19
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  91.6    1e-19
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  91.6    1e-19
+  AY057289.1 Acanthurus pyroferus clone 1 16S ribosomal RNA gene,...  76.8    3e-15
+  AY057290.1 Acanthurus pyroferus clone 2 16S ribosomal RNA gene,...  76.8    3e-15
+  AY057286.1 Acanthurus nigricans clone 1 16S ribosomal RNA gene,...  76.8    3e-15
+  AY057287.1 Acanthurus nigricans clone 2 16S ribosomal RNA gene,...  76.8    3e-15
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 189 bits (102),  Expect = 4e-49
+ Identities = 203/249 (82%), Gaps = 17/249 (7%)
+ Strand=Plus/Minus
+
+Query  1     GGTCTGAACTCAGATC--GTAGGACTGATAATCGTTGAACAAACGAACC-TTTATAGCCG  57
+             ||||||||||||||||  ||||||||| ||||||||||||||||||||| || |||| ||
+Sbjct  2641  GGTCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAG-CG  2583
+
+Query  58    CAGTTACACACCGGCTAGGATGT-CTGAT-CAACATCGAGGGTCGTAAGCCCTTTCGTCG  115
+               | |  |||||   |||||||| ||||| ||||||||| |||||||| |||||||| ||
+Sbjct  2582  --GCT--ACACC-ATTAGGATGTCCTGATCCAACATCGA-GGTCGTAAACCCTTTCGGCG  2529
+
+Query  116   ATAGGAACTCTGGGGAAGAGTTGCGCTGTTATCCCTAGGGTAACTTGGTTCATT-ATTCG  174
+             || || ||||| || |||  |||||||||||||||||||||||||||||||||| ||  |
+Sbjct  2528  ATGGGGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAG  2469
+
+Query  175   GAGTTTTAAGGATATCCTGGGTCATTTTTCGATAAATGTTTTATCATTTAGAACTGTGGT  234
+             ||||  |  ||   |||||||||||| |||| || || || ||| | |||||| |||  |
+Sbjct  2468  GAGTGATG-GG---TCCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAAT  2413
+
+Query  235   TCTAGTTTT  243
+             |||| ||||
+Sbjct  2412  TCTAATTTT  2404
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 436750704
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

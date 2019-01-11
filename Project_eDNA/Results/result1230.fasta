@@ -1,0 +1,102 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=3b5d0179-8e3b-40e0-8eb9-9262facaa836_t;seqs=1
+
+Length=687
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            219     5e-58
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           219     5e-58
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  132     7e-32
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   132     7e-32
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 219 bits (118),  Expect = 5e-58
+ Identities = 496/667 (74%), Gaps = 71/667 (11%)
+ Strand=Plus/Plus
+
+Query  51    CCGCCTGTTTGCTACAAAACTATCACCTCTTGCTAAACC-T-A---CCAAGAGGTCCCCT  105
+             |||||||||| | | ||||| ||| |||||||||  ||| | |     ||||||||||  
+Sbjct  2012  CCGCCTGTTTACCA-AAAAC-ATCGCCTCTTGCTTTACCATCATGTATAAGAGGTCCCGC  2069
+
+Query  106   TTG-CCTGTGACTGTGTTCCAGCAGCCGCGGTATTTTGA---TGCAAAGGTAAGCGTAAT  161
+              || ||||||| | | ||  | | |||||||||| ||||   ||| ||||| ||||||||
+Sbjct  2070  CTGCCCTGTGA-TTTATT-TAACGGCCGCGGTATCTTGACCGTGCGAAGGT-AGCGTAAT  2126
+
+Query  162   CCACTTGTCTTTTAAATG-AGGCCAGTATGAAAGGCACCAC--GAGTTTAACTGTCTCTA  218
+              |||||||||||||| || || || |||||||||||| |||  |||||||||||||||||
+Sbjct  2127  -CACTTGTCTTTTAATTGAAGACCCGTATGAAAGGCATCACGAGAGTTTAACTGTCTCTA  2185
+
+Query  219   TTTTCTAATCAATGAGAGATTGATCTAT-TCGTGCA-AGC--AGAATATAATAACATGGA  274
+             ||||||||||||||| | ||||| | || ||||||| | |  |||||| |||| |||   
+Sbjct  2186  TTTTCTAATCAATGA-A-ATTGACC-ATCTCGTGCAGAACCGAGAATA-AATA-CATAAG  2240
+
+Query  275   ACCCAGAAGAGACCCTGGAGCTTCAATTGCCCAAATTAACTATACTTGC-CTTA-TACCT  332
+             ||  ||||||  |  |||||||| ||   |  || |||| |  |    | |  | |||| 
+Sbjct  2241  ACG-AGAAGACCCTATGGAGCTTTAAACACTTAAGTTAATTTAAAAAACACAAACTACCA  2299
+
+Query  333   C-TAAGGACGCAAACAACCACAATATTTCCTGAATTTAACT-GTTTTTGGATTTGGGGGT  390
+             |    ||  ||| | || ||  ||| |  || || |||||| |||||||| || ||||  
+Sbjct  2300  CCCTCGG--GCATAAAATCAACATAATCTCT-AACTTAACTTGTTTTTGG-TT-GGGGC-  2353
+
+Query  391   GAT-AGGGGAGAAGAAGCAGTCACC-TTATCGACTG-GAGTACTAAGTACTTAAAAATTA  447
+             ||  | ||| ||| ||  |  | || ||||||| || | | |  ||  ||| |||| |||
+Sbjct  2354  GACCAAGGG-GAATAACAAAACCCCCTTATCGAGTGTGTG-AGAAATCACTCAAAA-TTA  2410
+
+Query  448   GAATAGCAGTTCTAATTAATAAAATATTTATCGAAAAATGACCCAGGAT---T---TCCT  501
+             ||||  || |||||| ||||| || || || |||| ||||||||||||    |   ||||
+Sbjct  2411  GAATTACAATTCTAACTAATAGAAAATCTAACGAACAATGACCCAGGACCCATCACTCCT  2470
+
+Query  502   GATCAATGAACCAAGTTACC-TAGGGATAGCAAAAGCGCAATCCTTTCTCA-AGTCCT-A  558
+             |||||||||||||||||||| |||||||| |   ||||||||||||||  | |||||  |
+Sbjct  2471  GATCAATGAACCAAGTTACCCTAGGGATAAC---AGCGCAATCCTTTCCTAGAGTCCCCA  2527
+
+Query  559   TCG---AAAGAGGTTTTGAAGGCCCTCCAGTATTTGGATCAGGT-ATCCTAATGAATTGC  614
+             |||   |||| |||||  | | || || | | || ||||||||  |||||||||   || 
+Sbjct  2528  TCGCCGAAAG-GGTTT--ACGACC-TCGA-TGTT-GGATCAGGACATCCTAATGG--TGT  2579
+
+Query  615   AACCGCTATTAAGGGTTCGTTTGTTCCAACGATTAATAGTCCCTGCGTGATCTGAGTTCC  674
+             | ||||||||||||||||||||||| |||||||||| ||| ||| |||||||||||||| 
+Sbjct  2580  AGCCGCTATTAAGGGTTCGTTTGTT-CAACGATTAACAGT-CCTACGTGATCTGAGTTC-  2636
+
+Query  675   AGACCGG  681
+             |||||||
+Sbjct  2637  AGACCGG  2643
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 466847307
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

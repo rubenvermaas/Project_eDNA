@@ -1,0 +1,147 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=29ccb722-92c5-4b29-9270-c5fbb0e54ebd_t;seqs=1
+
+Length=633
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            372     4e-104
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           372     4e-104
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  213     2e-56 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   213     2e-56 
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         145     9e-36 
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        145     9e-36 
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          139     4e-34 
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         139     4e-34 
+  KF709954.1 Siganus puellus mitochondrion, complete genome           139     4e-34 
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          139     4e-34 
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          139     4e-34 
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         139     4e-34 
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  139     4e-34 
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  139     4e-34 
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  135     5e-33 
+  AP004447.1 Pterocaesio tile mitochondrial DNA, complete genome      134     2e-32 
+  NC_004408.1 Pterocaesio tile mitochondrion, complete genome         134     2e-32 
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   134     2e-32 
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      134     2e-32 
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  134     2e-32 
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   134     2e-32 
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  132     7e-32 
+  EF616959.1 Chelmon rostratus 16S ribosomal RNA gene, partial se...  130     2e-31 
+  KU244264.1 UNVERIFIED: Zebrasoma desjardinii mitochondrion sequ...  128     9e-31 
+  KT826539.1 Paracanthurus hepatus mitochondrion, complete genome     128     9e-31 
+  NC_029237.1 Paracanthurus hepatus mitochondrion, complete genome    128     9e-31 
+  JF457479.1 Halichoeres marginatus voucher REU1023 16S ribosomal...  128     9e-31 
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  128     9e-31 
+  JF457481.1 Halichoeres marginatus voucher REU0793 16S ribosomal...  128     9e-31 
+  DQ898112.1 Siganus puellus voucher Spue 2 16S ribosomal RNA gen...  124     1e-29 
+  DQ898108.1 Siganus guttatus voucher Sgut 2 16S ribosomal RNA ge...  124     1e-29 
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  122     4e-29 
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  122     4e-29 
+  KT952629.1 Zebrasoma desjardinii voucher Zdes02 16S ribosomal R...  119     5e-28 
+  KT952630.1 Zebrasoma desjardinii voucher Zdes03 16S ribosomal R...  119     5e-28 
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  119     5e-28 
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  115     7e-27 
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  115     7e-27 
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  115     7e-27 
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  115     7e-27 
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  115     7e-27 
+  AF055627.1 Zebrasoma scopas 16S small subunit ribosomal RNA gen...  113     2e-26 
+  AY264623.1 Naso vlamingii isolate Nv_G1338 16S ribosomal RNA ge...  110     3e-25 
+  EF120855.1 Pseudanthias squamipinnis 16S ribosomal RNA gene, pa...  106     4e-24 
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  106     4e-24 
+  AY057320.1 Zebrasoma scopas clone 1 16S ribosomal RNA gene, par...  97.1    2e-21 
+  AY057321.1 Zebrasoma scopas clone 2 16S ribosomal RNA gene, par...  97.1    2e-21 
+  AY279718.1 Labroides dimidiatus 16S ribosomal RNA gene, partial...  97.1    2e-21 
+  AY057289.1 Acanthurus pyroferus clone 1 16S ribosomal RNA gene,...  97.1    2e-21 
+  AY057290.1 Acanthurus pyroferus clone 2 16S ribosomal RNA gene,...  97.1    2e-21 
+  AY057286.1 Acanthurus nigricans clone 1 16S ribosomal RNA gene,...  97.1    2e-21 
+  AY057287.1 Acanthurus nigricans clone 2 16S ribosomal RNA gene,...  97.1    2e-21 
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  91.6    1e-19 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 372 bits (201),  Expect = 4e-104
+ Identities = 504/643 (78%), Gaps = 49/643 (8%)
+ Strand=Plus/Plus
+
+Query  1     CTGTTTACCAAAAACATCGCCTCTTGCTT-A--AAC-TACATAA-A-GT-TAGCCTGCCC  53
+             ||||||||||||||||||||||||||||| |  | | |  |||| | ||   ||||||||
+Sbjct  2016  CTGTTTACCAAAAACATCGCCTCTTGCTTTACCATCATGTATAAGAGGTCCCGCCTGCCC  2075
+
+Query  54    TGTAATTT-TTTAGCTTGTAGCAGTACATCTTAGGCCAT---TTGGTAGCGTAATCACT-  108
+             ||| |||| |||| |  |  || ||  ||||| | || |     ||||||||||||||| 
+Sbjct  2076  TGTGATTTATTTAAC-GGCCGCGGT--ATCTT-GACCGTGCGAAGGTAGCGTAATCACTT  2131
+
+Query  109   GTCTTTTTAAATGAAGACCTGTATGAAAGGCATCACGAGAGTTTAACTGTCTCTACTTCC  168
+             ||| |||||| |||||||| ||||||||||||||||||||||||||||||||||| || |
+Sbjct  2132  GTC-TTTTAATTGAAGACCCGTATGAAAGGCATCACGAGAGTTTAACTGTCTCTATTTTC  2190
+
+Query  169   CAATCAATGAAATTGATCTTC-CGTACGAAAGCAGGAATAGTTACATTAGACGAGAAGAC  227
+              ||||||||||||||| | || ||| |  || |  |||||  ||||| ||||||||||||
+Sbjct  2191  TAATCAATGAAATTGACCATCTCGTGCAGAACCGAGAATAAATACATAAGACGAGAAGAC  2250
+
+Query  228   CCTATGGAGCTTAAAACACTTAAATTAATTATGTAATTGC--ATTATATTCCAAGGACAT  285
+             |||||||||||| |||||||||| ||||||    ||   |  | ||    ||  || |||
+Sbjct  2251  CCTATGGAGCTTTAAACACTTAAGTTAATTTAAAAAACACAAACTACCACCCTCGGGCAT  2310
+
+Query  286   -AAA-CAA-ATAATACAATATTCTTAATTTGTATGTTTTGGTTGGGGCGACCAA--GGAA  340
+              ||| ||| ||||| |  ||  ||||| |||  | |||||||||||||||||||  ||||
+Sbjct  2311  AAAATCAACATAAT-CTCTA-ACTTAACTTG--T-TTTTGGTTGGGGCGACCAAGGGGAA  2365
+
+Query  341   AAACAAATCCTCCTTATCTGACTAAGTATTA-CTAT-ACTTCAAAAACTAGAACCACAGT  398
+              |||||| || ||||||| || |  || | |   || || || |||| |||||  ||| |
+Sbjct  2366  TAACAAAACCCCCTTATC-GAGT--GTGTGAGAAATCAC-TC-AAAATTAGAATTACAAT  2420
+
+Query  399   TCTAAATGATAAAACATTTATCGAAAAACTGACCCAGGATATCC-TTAAACCTGAATAAT  457
+             ||||| | ||| || || || |||| || |||||||||  | || | |  |||||  |||
+Sbjct  2421  TCTAACTAATAGAAAATCTAACGAACAA-TGACCCAGG--ACCCATCACTCCTGATCAAT  2477
+
+Query  458   GAACCAAGTTACCCTAGGGATAACAGCGCAATCCTTTCCCAG-GTTTCTATCGACAGAAA  516
+             ||||||||||||||||||||||||||||||||||||||| || ||  | |||| | ||||
+Sbjct  2478  GAACCAAGTTACCCTAGGGATAACAGCGCAATCCTTTCCTAGAGTCCCCATCGCC-GAAA  2536
+
+Query  517   GGGCTTACGACCTCGATGTTGGATCAAGGAACATCCTAATGGTGTAACCACT-TCAAGAG  575
+             ||| |||||||||||||||||||||| || |||||||||||||||| || || | ||| |
+Sbjct  2537  GGGTTTACGACCTCGATGTTGGATCA-GG-ACATCCTAATGGTGTAGCCGCTATTAAGGG  2594
+
+Query  576   TT-G-TTGTTCAACGATTAATAGTC-TACGTAGTCTGAGTTCA  615
+             || | ||||||||||||||| |||| |||||  ||||||||||
+Sbjct  2595  TTCGTTTGTTCAACGATTAACAGTCCTACGTGATCTGAGTTCA  2637
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 429051573
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

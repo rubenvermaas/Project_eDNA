@@ -1,0 +1,100 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=e0493614-d8f0-48de-b3ac-7621f976bf0d_t;seqs=1
+
+Length=617
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          198     6e-52
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         198     6e-52
+  KF709954.1 Siganus puellus mitochondrion, complete genome           198     6e-52
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          198     6e-52
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          198     6e-52
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         198     6e-52
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  198     6e-52
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   198     6e-52
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   193     3e-50
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      193     3e-50
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         193     3e-50
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        193     3e-50
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     191     1e-49
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  191     1e-49
+  KT826539.1 Paracanthurus hepatus mitochondrion, complete genome     189     4e-49
+  NC_029237.1 Paracanthurus hepatus mitochondrion, complete genome    189     4e-49
+  KU244264.1 UNVERIFIED: Zebrasoma desjardinii mitochondrion sequ...  187     1e-48
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       187     1e-48
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     187     1e-48
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    187     1e-48
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  187     1e-48
+  AP004447.1 Pterocaesio tile mitochondrial DNA, complete genome      187     1e-48
+  NC_004408.1 Pterocaesio tile mitochondrion, complete genome         187     1e-48
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  187     1e-48
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  187     1e-48
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       187     1e-48
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      187     1e-48
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        187     1e-48
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       187     1e-48
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   187     1e-48
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      187     1e-48
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          187     1e-48
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         187     1e-48
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  187     1e-48
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  187     1e-48
+  EF419265.1 Amblyglyphidodon aureus voucher AMS I.33717-001 16S ...  180     2e-46
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  171     1e-43
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   171     1e-43
+
+
+> KM233212.1 Siganus vulpinus mitochondrion, complete genome
+Length=16505
+
+ Score = 198 bits (107),  Expect = 6e-52
+ Identities = 156/179 (87%), Gaps = 5/179 (3%)
+ Strand=Plus/Plus
+
+Query  428   AACCCGACCAACGGAACAAGTTA-CCTAGGGATAACAGCGCAATCCTATTCTA-AGTCCA  485
+             || |||| ||||||| | ||||| ||||||||||||||||||||||| || || || |||
+Sbjct  2450  AAGCCGATCAACGGACCGAGTTACCCTAGGGATAACAGCGCAATCCTCTTTTAGAGCCCA  2509
+
+Query  486   TATCAACTTAATAGGGTTT-TGGCCTCGATGTTGGATCAGGACATCCCGATGGTGCAGCC  544
+             |||| ||  || |||||||  | ||||||||||||||||||||||||  |||||||||||
+Sbjct  2510  TATCGAC--AAGAGGGTTTACGACCTCGATGTTGGATCAGGACATCCTAATGGTGCAGCC  2567
+
+Query  545   GCTATTAAAGGTTCATTTGTTCAGCGATTAAAGTCCTACGTGATCTGAGTTCGGGCCGG  603
+             |||||||| ||||| |||||||| |||||||||||||||||||||||||||| | ||||
+Sbjct  2568  GCTATTAAGGGTTCGTTTGTTCAACGATTAAAGTCCTACGTGATCTGAGTTCAGACCGG  2626
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 417852837
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

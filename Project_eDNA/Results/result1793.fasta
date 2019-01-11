@@ -1,0 +1,100 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=7c999647-1a17-4b02-b5fb-36e7667ac42e_t;seqs=1
+
+Length=637
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            412     2e-116
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           412     2e-116
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  206     4e-54 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   206     4e-54 
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  189     4e-49 
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  189     4e-49 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 412 bits (223),  Expect = 2e-116
+ Identities = 490/613 (80%), Gaps = 41/613 (7%)
+ Strand=Plus/Minus
+
+Query  1     TCTGAACTCAGATCACGTAGGACTATTAATCGTTGAAGCAAA-GATACGCC-AATAGCAG  58
+             |||||||||||||||||||||||| |||||||||||| |||| || || |  |||||| |
+Sbjct  2639  TCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAA-CAAACGA-ACCCTTAATAGCGG  2582
+
+Query  59    TTACACACCATTAGGATGTCACGATCCAACATCACGAGGTCGTAAGCCCTTTCGTCGTCT  118
+              |  ||||||||||||||||  ||||||||||  ||||||||||| |||||||| ||   
+Sbjct  2581  CT--ACACCATTAGGATGTCCTGATCCAACAT--CGAGGTCGTAAACCCTTTCGGCGATG  2526
+
+Query  119   GGAACTCTGGGAAAGGATTGCGCTATTATCCCTAGGAATTAACTTGGTTCATTATTCAGG  178
+             || ||||| ||||||||||||||| |||||||||||   ||||||||||||||  |||||
+Sbjct  2525  GGGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGG--GTAACTTGGTTCATTGATCAGG  2468
+
+Query  179   GTTTAAGGATATCCTGGGTCATT-TTCGATAAATGTTTTATCATTTTAGAACTGTAGTTC  237
+               | | ||   |||||||||||| |||| || || || ||| |  |||||| |||| |||
+Sbjct  2467  AGTGATGG--GTCCTGGGTCATTGTTCGTTAGATTTTCTATTA-GTTAGAATTGTAATTC  2411
+
+Query  238   CTAGTTTTTAAGTATAGTAAT-ACTTAGTCGATAAGGAAGGATTTGTTTTTCTCCTTGGT  296
+              ||  |||| |||  | |  | ||  | |||||||||  || |||||| ||| |||||||
+Sbjct  2410  -TA-ATTTTGAGT-GATTTCTCACACACTCGATAAGG-GGGTTTTGTTATTCCCCTTGGT  2355
+
+Query  297   CGC--TAACCAAAAACATGTTAAATTAAAGAATATTGTATTATTTGTTTATGTCCTTGGG  354
+             |||   ||||||||||| ||||| ||| ||| ||| || | |  | |||||| ||  |||
+Sbjct  2354  CGCCCCAACCAAAAACAAGTTAAGTTAGAGATTAT-GT-TGA--T-TTTATGCCCGAGGG  2300
+
+Query  355   AGATA--TAATGCAATTACATAATTAATTTAAGTGTTTGAAACTCCATAGGGTCTTCTCG  412
+              | ||  |  ||   ||  | |||||| |||||||||| || ||||||||||||||||||
+Sbjct  2299  TGGTAGTTTGTG-TTTTTTA-AATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCG  2242
+
+Query  413   TCT-A-ATATTTACATATTCGCTTCTGCACGA-ATGATCAATTTCATTGATTAGAAA-TA  468
+             ||| |  |||||  ||  ||| |||||||||| ||| |||||||||||||||||||| ||
+Sbjct  2241  TCTTATGTATTT--ATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAGAAAATA  2184
+
+Query  469   GAGACAGTTAAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTTAAAAAGACAAATGG  528
+             ||||||||||||||||||||||||||||||||| |||||||| ||  ||||||||| || 
+Sbjct  2183  GAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATT--AAAAGACAAGTGA  2126
+
+Query  529   GTACGCTACCTTTGCACCGGTCAAAATACCGCGGCCGTTGAACAT-TGTCTGGGGCAGGC  587
+              ||||||||||| |||| |||||| |||||||||||||| || |  |  |  ||||||||
+Sbjct  2125  TTACGCTACCTTCGCAC-GGTCAAGATACCGCGGCCGTTAAATAAATCACA-GGGCAGGC  2068
+
+Query  588   GGGACCTCTTATA  600
+             |||||||||||||
+Sbjct  2067  GGGACCTCTTATA  2055
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 431851257
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

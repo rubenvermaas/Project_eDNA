@@ -1,0 +1,65 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=55620c47-9e16-4059-9c77-e70efb3259c3_t;seqs=1
+
+Length=698
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  95.3    1e-20
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  95.3    1e-20
+
+
+> JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal 
+RNA gene, partial sequence; mitochondrial
+Length=557
+
+ Score = 95.3 bits (51),  Expect = 1e-20
+ Identities = 123/155 (79%), Gaps = 16/155 (10%)
+ Strand=Plus/Plus
+
+Query  104  GGTCCCACTGCCTGTGAC-A-ATGTTCAACGGCCGCGGTATTTTGACCGATGCAA-GGTA  160
+            |||||  ||||| ||||| | |||||||||||||||||||||||||||| ||||| ||||
+Sbjct  5    GGTCCGCCTGCCAGTGACTATATGTTCAACGGCCGCGGTATTTTGACCG-TGCAAAGGTA  63
+
+Query  161  GCGCCGATAACTTGTCTTTTAA-TGAAAGACC-GT--GAAGAGCACGA-GAGTTTGCTTC  215
+            ||||  || ||||||||||||| || | |||| ||  |||  |||| | |||   |||| 
+Sbjct  64   GCGCA-ATCACTTGTCTTTTAAATGGA-GACCTGTATGAATGGCACCACGAGG--GCTTA  119
+
+Query  216  GGCTCTCTATTTTCT-AAT-CAATGAAATTGATCT  248
+              || |||  ||||| ||  |||||||||||||||
+Sbjct  120  A-CTGTCTCCTTTCTCAAGCCAATGAAATTGATCT  153
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 474546438
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

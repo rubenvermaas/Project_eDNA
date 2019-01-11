@@ -1,0 +1,122 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=277b9d4c-d57a-4563-8c42-41fda7669ba5_t;seqs=1
+
+Length=623
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            429     2e-121
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           429     2e-121
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  187     1e-48 
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  187     1e-48 
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          159     3e-40 
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         159     3e-40 
+  KF709954.1 Siganus puellus mitochondrion, complete genome           159     3e-40 
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          159     3e-40 
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          159     3e-40 
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         159     3e-40 
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       156     4e-39 
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   154     1e-38 
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      154     1e-38 
+  FJ616482.1 Pomacentrus moluccensis voucher FMNH Liz04-14 T-025 ...  143     3e-35 
+  JF457442.1 Dascyllus aruanus voucher NBE0189 16S ribosomal RNA ...  141     1e-34 
+  JF457443.1 Dascyllus aruanus voucher NBE0188 16S ribosomal RNA ...  141     1e-34 
+  JF457444.1 Dascyllus aruanus voucher NBE0187 16S ribosomal RNA ...  141     1e-34 
+  DQ898112.1 Siganus puellus voucher Spue 2 16S ribosomal RNA gen...  137     1e-33 
+  DQ898108.1 Siganus guttatus voucher Sgut 2 16S ribosomal RNA ge...  137     1e-33 
+  EF419268.1 Pomacentrus moluccensis voucher AMS I.43781-005 16S ...  137     1e-33 
+  FJ616447.1 Dascyllus melanurus voucher FMNH Bus03-20 T-373 16S ...  137     1e-33 
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  137     1e-33 
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  132     7e-32 
+  FJ616448.1 Dascyllus reticulatus voucher FMNH Bus03-10 T-224 16...  132     7e-32 
+  FJ616415.1 Amphiprion melanopus voucher FMNH MIN00-06 T-31 16S ...  132     7e-32 
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  130     2e-31 
+  MH718494.1 Amphiprion frenatus isolate KC4F_KH 16S large subuni...  108     1e-24 
+  DQ343915.1 Amphiprion melanopus 16S ribosomal RNA gene, partial...  87.9    1e-18 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 429 bits (232),  Expect = 2e-121
+ Identities = 523/654 (80%), Gaps = 58/654 (9%)
+ Strand=Plus/Minus
+
+Query  1     GGTCTGAACTCAGATCCACATGGGACTGTTAATCGTTGAACAAACGAACCCTTAGCCAAG  60
+             |||||||||||||||| || | ||||||||||||||||||||||||||||||||    ||
+Sbjct  2641  GGTCTGAACTCAGATC-ACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTA--ATAG  2585
+
+Query  61    CAGTTTGCACCATTAGGATATC-TGATCCAACATCGAGGTCGTAAACCCTTTCTTTCGAT  119
+             | |  | |||||||||||| || ||||||||||||||||||||||||||||||   ||||
+Sbjct  2584  C-GGCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGG-CGAT  2527
+
+Query  120   GATAGGGACTCTGAGAAAGGATTGCGCTGTTGTACA-AGGGTAACTTGGTTCATTGATCA  178
+             |   ||||||||  ||||||||||||||||| | |  |||||||||||||||||||||||
+Sbjct  2526  G---GGGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCA  2470
+
+Query  179   GGAA--AT----CCTGGGTCACT-TTCGATAAATATTTTATTAATTAGAACTGTTATTCT  231
+             |||   ||    ||||||||| | |||| || || || ||||| |||||| ||| |||||
+Sbjct  2469  GGAGTGATGGGTCCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAATTCT  2410
+
+Query  232   AATTTTAAGTACTTAATTACTCAGTCGATAAAAGGGGGTTGTT-TTCCCCTTGGTCACT-  289
+             |||||| |||  ||  | || || |||||||  |||  ||||| |||||||||||| |  
+Sbjct  2409  AATTTTGAGTGATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCC  2350
+
+Query  290   -AACCAAAA-C-AGTTAAATTAAAAATATTGTATGTATTTGTTTTATGTCCTTGGGGGGA  346
+              |||||||| | |||||| ||| | ||  ||| || |    ||||||| ||  ||| || 
+Sbjct  2349  CAACCAAAAACAAGTTAAGTTAGAGATTATGT-TG-A----TTTTATGCCCGAGGGTGGT  2296
+
+Query  347   ATTGTAGGGTTTACATGTAAGTTAATTTAAGTGTTTGAAGCTCCATAGGGTCTTCTCGTC  406
+             | | | | ||||   | ||| |||| |||||||||| |||||||||||||||||||||||
+Sbjct  2295  AGTTT-GTGTTTT--T-TAAATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCGTC  2240
+
+Query  407   TAATGTTATTATATTC-C--TTCTGCACGA-ATAGATCAAGTTTCATTGATTAGGAAATA  462
+             | |||| ||| ||||| |  |||||||||| || | |||| ||||||||||||| |||||
+Sbjct  2239  TTATGT-ATT-TATTCTCGGTTCTGCACGAGATGG-TCAA-TTTCATTGATTAGAAAATA  2184
+
+Query  463   GAGACAGTTTAAACTCTCATTGGTGCCTTTTCATACGG-TCTTGCATTTTAAAGACAAGC  521
+             ||||||||| |||||||| | | ||||||| ||||||| |||| || || ||||||||| 
+Sbjct  2183  GAGACAGTT-AAACTCTCGT-GATGCCTTT-CATACGGGTCTT-CAATTAAAAGACAAGT  2128
+
+Query  522   GATTGCGCTACCTTTGC--GGTCAAAATACCGCGGCCGTTGAACATTGTCACAGGGCAGG  579
+             |||| ||||||||| ||  |||||| |||||||||||||| || |   ||||||||||||
+Sbjct  2127  GATTACGCTACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAAA-TCACAGGGCAGG  2069
+
+Query  580   CGGGACCTC--ATAG-T--T--T--AGCAAGAGGCGATGTTTT-GATAAACGGG  623
+             |||||||||  |||  |  |  |  |||||||||||||||||| | ||||| ||
+Sbjct  2068  CGGGACCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAACAGG  2015
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 422052363
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

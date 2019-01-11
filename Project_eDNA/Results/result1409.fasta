@@ -1,0 +1,66 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=de74d106-f7b1-4647-9b95-276cf2b6bc38_t;seqs=1
+
+Length=659
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            141     1e-34
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           141     1e-34
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  135     5e-33
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   135     5e-33
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 141 bits (76),  Expect = 1e-34
+ Identities = 107/122 (88%), Gaps = 2/122 (2%)
+ Strand=Plus/Minus
+
+Query  399   TCTTCTCGTCTAATGTAATTATTC-C-TTTTTGCACGGGAAGATCAATTTCATTGATTGG  456
+             ||||||||||| ||||| |||||| |  || |||||| || | ||||||||||||||| |
+Sbjct  2249  TCTTCTCGTCTTATGTATTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAG  2190
+
+Query  457   GAAGTAGAGACAGTTAAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTAAAAGACAG  516
+              || ||||||||||||||||||||||||||||||||||| |||||||| |||||||||| 
+Sbjct  2189  AAAATAGAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAA  2130
+
+Query  517   GT  518
+             ||
+Sbjct  2129  GT  2128
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 447249519
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,73 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=48f718f1-6986-4d26-94f3-a8b638d94b5d_t;seqs=1
+
+Length=641
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  220     1e-58
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   220     1e-58
+
+
+> AP012317.1 Synchiropus splendidus mitochondrial DNA, complete 
+genome
+Length=16430
+
+ Score = 220 bits (119),  Expect = 1e-58
+ Identities = 217/262 (83%), Gaps = 16/262 (6%)
+ Strand=Plus/Minus
+
+Query  386   TTTAGAAACTCCATAGGGTCTTCTCGTCTAATGTAATTATTCCCT-TT-TGCACGGGAAG  443
+             |||| || ||||||||||||||||||||| |||| ||||| |||  || |||||||| ||
+Sbjct  2245  TTTA-AAGCTCCATAGGGTCTTCTCGTCTTATGTTATTATCCCCGCTTCTGCACGGGGAG  2187
+
+Query  444   ATCAATTTCATTGATTGGGAAGTAGAGACAGTTAAACTCTCGTGATGATGCCTTTCATAC  503
+             |||||||| ||||| ||||| |  ||||||||||| | |||||||||   ||||||||||
+Sbjct  2186  ATCAATTTTATTGACTGGGAGGAGGAGACAGTTAAGCCCTCGTGATG---CCTTTCATAC  2130
+
+Query  504   AGGTCTTCATTTAAAAAGACGAATTGATTACGCTACCTT--CACTTTTGATCAAGATACC  561
+             |||||||||||||||| ||| || |||||||||||||||  |||  || |  || |||||
+Sbjct  2129  AGGTCTTCATTTAAAA-GAC-AAGTGATTACGCTACCTTTGCACGGTT-A--AA-ATACC  2076
+
+Query  562   GCGGCCGTTaaaaaaaTTATCACAGGGCAGGCTGGACCTCTTATAGTT-TTA-AGCAAGA  619
+             |||||||||||| |   | |||| |||||||| |||||||||||  || |||   |||||
+Sbjct  2075  GCGGCCGTTAAACATTATGTCACCGGGCAGGCGGGACCTCTTATTTTTATTATCACAAGA  2016
+
+Query  620   GGCGATATTTTTGATAAACAGG  641
+             |||||| |||||| ||||||||
+Sbjct  2015  GGCGATGTTTTTGGTAAACAGG  1994
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 434650941
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

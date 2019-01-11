@@ -1,0 +1,69 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=8798ee07-4b65-40d3-b6e7-e25ba4e548fe_t;seqs=1
+
+Length=648
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  137     1e-33
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   137     1e-33
+
+
+> AP012317.1 Synchiropus splendidus mitochondrial DNA, complete 
+genome
+Length=16430
+
+ Score = 137 bits (74),  Expect = 1e-33
+ Identities = 168/209 (80%), Gaps = 23/209 (11%)
+ Strand=Plus/Minus
+
+Query  446   GGGAAGATC-ATTTCATTGATTTAGAAGTAGAGACAGTTAAACTCTCTCGTGATGCCTTT  504
+             ||| ||||| |||| ||||| |  || |  ||||||||||| | | ||||||||||||||
+Sbjct  2192  GGGGAGATCAATTTTATTGACTGGGAGGAGGAGACAGTTAAGC-C-CTCGTGATGCCTTT  2135
+
+Query  505   CATACAGGTCTTCATTTAAAAGACGAGTGATT--GCATACCTT--CACGGTCAAGATACC  560
+             |||||||||||||||||||||||| |||||||  || ||||||  |||||| || |||||
+Sbjct  2134  CATACAGGTCTTCATTTAAAAGACAAGTGATTACGC-TACCTTTGCACGGTTAAAATACC  2076
+
+Query  561   GCGGCTTCGTTAAAAAATTAT--CACAGGGC-GGCTAGGGC-TCTTATAGTTTA--A-C-  612
+             |||||  ||||||| | ||||  ||| |||| |||  || | ||||||  ||||  | | 
+Sbjct  2075  GCGGC--CGTTAAACA-TTATGTCACCGGGCAGGC-GGGACCTCTTATT-TTTATTATCA  2021
+
+Query  613   CA-GAGGCGATG-TTTTGATAAACAGGCG  639
+             || ||||||||| ||||| ||||||||||
+Sbjct  2020  CAAGAGGCGATGTTTTTGGTAAACAGGCG  1992
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 439550388
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

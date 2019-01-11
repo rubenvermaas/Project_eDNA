@@ -1,0 +1,57 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=4565d91a-fe22-4923-82d6-8f25fe482559_t;seqs=1
+
+Length=885
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  JF457623.1 Pseudocheilinus evanidus voucher MBIO0560 16S riboso...  52.8    8e-08
+  KY815442.1 Pseudocheilinus evanidus voucher FMNH:ICHTHY:BUS03-0...  52.8    8e-08
+
+
+> JF457623.1 Pseudocheilinus evanidus voucher MBIO0560 16S ribosomal 
+RNA gene, partial sequence; mitochondrial
+Length=563
+
+ Score = 52.8 bits (28),  Expect = 8e-08
+ Identities = 30/31 (97%), Gaps = 0/31 (0%)
+ Strand=Plus/Plus
+
+Query  678  TCAACGGATAAAGTTACTCTAGGGATAACAG  708
+            || ||||||||||||||||||||||||||||
+Sbjct  406  TCTACGGATAAAGTTACTCTAGGGATAACAG  436
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 605431665
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

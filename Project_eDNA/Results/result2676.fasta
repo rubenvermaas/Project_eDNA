@@ -1,0 +1,71 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=7532e1fe-3487-4bfe-bea2-bc4a991977ff_t;seqs=1
+
+Length=607
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        139     4e-34
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       139     4e-34
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  128     8e-31
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   128     8e-31
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  115     6e-27
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  106     4e-24
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  100     2e-22
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  100     2e-22
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  84.2    2e-17
+
+
+> KP965877.1 Genicanthus bellus mitochondrion, complete genome
+Length=16734
+
+ Score = 139 bits (75),  Expect = 4e-34
+ Identities = 142/172 (83%), Gaps = 13/172 (8%)
+ Strand=Plus/Minus
+
+Query  444   ACAGTTAAACTCTCATTGGTGCCTTTCATACGGGTCTTCATTTAAA-GACAAGTGATTAC  502
+             |||||||| | ||| ||| |||| |||||||||||||||||||||| |||||||||||||
+Sbjct  2189  ACAGTTAAGCCCTCGTTG-TGCCGTTCATACGGGTCTTCATTTAAAAGACAAGTGATTAC  2131
+
+Query  503   GCTACCTTTGCA--GTCAAAATGCCGCGGCAGATTGGGCAT-T-GTCACAGGGCAGGCGG  558
+             ||||||||||||  |||||||| ||||||| | ||   ||| | ||||||||||||||| 
+Sbjct  2130  GCTACCTTTGCACGGTCAAAATACCGCGGCCG-TTAAACATATAGTCACAGGGCAGGCGA  2072
+
+Query  559   GACTTCTC-TT-ATGG-TTTGCCTTAGAGGCGATGtttttttGGTAAACAGG  607
+             ||| |||  || ||   |||  |  |||||||||||||||  ||||||||||
+Sbjct  2071  GACCTCTTATTTATTAATTTTGCA-AGAGGCGATGTTTTT--GGTAAACAGG  2023
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 410853627
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,98 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=eba0e65f-d11b-4794-9c78-45a257f6d3c8_t;seqs=1
+
+Length=679
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            387     1e-108
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           387     1e-108
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  235     5e-63 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   235     5e-63 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 387 bits (209),  Expect = 1e-108
+ Identities = 519/658 (79%), Gaps = 63/658 (10%)
+ Strand=Plus/Minus
+
+Query  8     ACTCAGAT--CGTAGGACTATTAATCGTTGAACAAACAGGCCCTTAATAAGCGGATTTAC  65
+             ||||||||  ||||||||| |||||||||||||||||   |||||||| ||||| |  ||
+Sbjct  2634  ACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAAT-AGCGGCTACAC  2576
+
+Query  66    CATTAGGATGTCCTGATCCAACGCATCGAGGTCAGCAAAGCCCTTTCGTCGATAGGAACT  125
+             ||||||||||||||||||||||  ||||||||| | ||| |||||||| |||| || |||
+Sbjct  2575  CATTAGGATGTCCTGATCCAAC--ATCGAGGTC-GTAAA-CCCTTTCGGCGATGGGGACT  2520
+
+Query  126   CTGGGAAAGGATTGCGCTATTATCC-TAGAGGTAACTTGGTTCATTATTCAGGTTGGGAT  184
+             || ||||||||||||||| |||||| ||| ||||||||||||||||  |||||  | |||
+Sbjct  2519  CTAGGAAAGGATTGCGCTGTTATCCCTAG-GGTAACTTGGTTCATTGATCAGG-AGTGAT  2462
+
+Query  185   --ATCCTGGGTCA-T-TT-GATAAATGTTTTTATCATTTAGAACTGTAGTTCTAGTTTTT  239
+                |||||||||| | || | || || ||| ||| | |||||| |||| |||||   |||
+Sbjct  2461  GGGTCCTGGGTCATTGTTCGTTAGAT-TTTCTATTAGTTAGAATTGTAATTCTA--ATTT  2405
+
+Query  240   TAAGTATAGTAATACT-TGTGA-TCGATAAGGAGGATTTGTTTTTCTCCTTGGAGTCGTA  297
+             | ||  | | | | ||     | ||||||||| || |||||| ||| ||||||  ||   
+Sbjct  2404  TGAG--T-G-ATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGG--TC---  2354
+
+Query  298   GCCCCAACCAAAAACATGTTAAGAGTGGAATATTGTATTAT-TTG-TTTTATGTCC----  351
+             |||||||||||||||| ||||||  |    ||  | ||||| ||| ||||||| ||    
+Sbjct  2353  GCCCCAACCAAAAACAAGTTAAG--T----TAGAG-ATTATGTTGATTTTATGCCCGAGG  2301
+
+Query  352   TTGGAATATAATGCAATTACATAATTAATTTAAGTGTTTTTAAGCTCCATAGAG-ATTCT  410
+              ||| |  |  ||   ||  | |||||| ||||||||||  ||||||||||| |  ||||
+Sbjct  2300  GTGGTAGTTTGTG-TTTTTTA-AATTAACTTAAGTGTTT-AAAGCTCCATAGGGTCTTCT  2244
+
+Query  411   CGTCTAATCGCAATTATTCCCGCTTTTGCA-G-GAAGATCAATTTCATTGATTGGGAAGT  468
+             ||||| || | | |||||| || || |||| | || | ||||||||||||||| | || |
+Sbjct  2243  CGTCTTAT-GTATTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAGAAAAT  2185
+
+Query  469   AGAGACAGTTAAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTAAAAGACCAGGTGA  528
+             |||||||||||||||||||||||||||||||||| |||||||| ||||||||| | ||||
+Sbjct  2184  AGAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGAC-AAGTGA  2126
+
+Query  529   TTACGCTTCACCTTCGCACGGTCAAGA-A-TGCCGCCGTTAAAAAATTATCACAGGGCAG  586
+             |||||||  |||||||||||||||||| |  || ||||||||| ||  ||||||||||||
+Sbjct  2125  TTACGCT--ACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAA--ATCACAGGGCAG  2070
+
+Query  587   GCTGGACCTCTTATA---G-T--TTAAGCAAG-GGCGATGTTTTTGGTAAACGAGCGG  637
+             || ||||||||||||   | |  | ||||||| |||||||||||||||||||  ||||
+Sbjct  2069  GCGGGACCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAACAGGCGG  2012
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 461247939
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,107 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=1e4ff8a2-2f59-4d83-95aa-3b3e57ae5889_t;seqs=1
+
+Length=644
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       178     9e-46
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  171     1e-43
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  169     5e-43
+  FJ616482.1 Pomacentrus moluccensis voucher FMNH Liz04-14 T-025 ...  159     3e-40
+  EF419268.1 Pomacentrus moluccensis voucher AMS I.43781-005 16S ...  154     1e-38
+  FJ616447.1 Dascyllus melanurus voucher FMNH Bus03-20 T-373 16S ...  154     1e-38
+  JF457442.1 Dascyllus aruanus voucher NBE0189 16S ribosomal RNA ...  154     1e-38
+  JF457443.1 Dascyllus aruanus voucher NBE0188 16S ribosomal RNA ...  154     1e-38
+  JF457444.1 Dascyllus aruanus voucher NBE0187 16S ribosomal RNA ...  154     1e-38
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  154     1e-38
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  150     2e-37
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  150     2e-37
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       150     2e-37
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      150     2e-37
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        150     2e-37
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       150     2e-37
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   150     2e-37
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      150     2e-37
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          150     2e-37
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         150     2e-37
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  150     2e-37
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  150     2e-37
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     150     2e-37
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  150     2e-37
+  KJ551857.1 Pomacanthus xanthometopon voucher NMMBP:19850 16S ri...  148     7e-37
+  KJ551858.1 Pomacanthus xanthometopon voucher NMMBP:19851 16S ri...  148     7e-37
+  FJ616448.1 Dascyllus reticulatus voucher FMNH Bus03-10 T-224 16...  148     7e-37
+  FJ616415.1 Amphiprion melanopus voucher FMNH MIN00-06 T-31 16S ...  148     7e-37
+  JF457395.1 Chromis viridis voucher NBE1074 16S ribosomal RNA ge...  143     3e-35
+  JF457396.1 Chromis viridis voucher NBE1073 16S ribosomal RNA ge...  143     3e-35
+  JF457397.1 Chromis viridis voucher NBE1072 16S ribosomal RNA ge...  143     3e-35
+  KJ551868.1 Centropyge eibli voucher NMMBP:20397 16S ribosomal R...  143     3e-35
+  EF419265.1 Amblyglyphidodon aureus voucher AMS I.33717-001 16S ...  139     4e-34
+  FJ616426.1 Chromis margaritifer voucher FMNH Bus03-2 T-080 16S ...  135     5e-33
+  MH718494.1 Amphiprion frenatus isolate KC4F_KH 16S large subuni...  132     7e-32
+  FJ616409.1 Amblyglyphidodon aureus voucher FMNH Bus03-15 T-309 ...  132     7e-32
+  AF285944.1 Amblyglyphidodon aureus 16S small subunit ribosomal ...  130     2e-31
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  113     2e-26
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  113     2e-26
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  110     3e-25
+  AY530856.1 Centropyge loriculus 16S ribosomal RNA gene, partial...  97.1    2e-21
+  DQ343915.1 Amphiprion melanopus 16S ribosomal RNA gene, partial...  97.1    2e-21
+  DQ343906.1 Amphiprion bicinctus 16S ribosomal RNA gene, partial...  91.6    1e-19
+  AF119401.1 Dascyllus reticulatus 16S ribosomal RNA gene, mitoch...  71.3    2e-13
+  AF119406.1 Dascyllus melanurus 16S ribosomal RNA gene, mitochon...  71.3    2e-13
+
+
+> NC_004412.1 Salarias fasciatus mitochondrion, complete genome
+Length=16496
+
+ Score = 178 bits (96),  Expect = 9e-46
+ Identities = 146/168 (87%), Gaps = 11/168 (7%)
+ Strand=Plus/Minus
+
+Query  2     GTCTGAACTCAGATCTATACATA-GACTAACTAATCGTTGAACAAACGAGCCCTTAATAG  60
+             |||||||||||||||   || || ||||   |||||||||||||||||| ||||||||||
+Sbjct  2607  GTCTGAACTCAGATC---ACGTAGGACT--TTAATCGTTGAACAAACGAACCCTTAATAG  2553
+
+Query  61    CAGTTACACCATTAGGATGTC-TGATCCAACATCGAGGTCGTAAGCC-TTTCGTCGATAG  118
+             | | | ||||||||||||||| |||||||||||||||||||||| || | | ||||||| 
+Sbjct  2552  CGGCTGCACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTCTTGTCGATAT  2493
+
+Query  119   GAACTCTGGGAGAAAGGATTGCGCTGTTATCCCTGGGGTAACTTGGTT  166
+             | ||||||||||  ||||||||||||||||||||||||||||| ||||
+Sbjct  2492  GGACTCTGGGAG--AGGATTGCGCTGTTATCCCTGGGGTAACT-GGTT  2448
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 436750704
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,107 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=2769d94f-b0bd-4d43-9024-95d3d65285ac_t;seqs=1
+
+Length=613
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            244     8e-66
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           244     8e-66
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        137     1e-33
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       137     1e-33
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  132     6e-32
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  132     6e-32
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       132     6e-32
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      132     6e-32
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  128     8e-31
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  128     8e-31
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  117     2e-27
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  117     2e-27
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  117     2e-27
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  113     2e-26
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   113     2e-26
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  108     1e-24
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  89.8    4e-19
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 244 bits (132),  Expect = 8e-66
+ Identities = 431/566 (76%), Gaps = 57/566 (10%)
+ Strand=Plus/Minus
+
+Query  1     GGTCTGAACTCAGATCACGTAGGACT---ATTCGTTGGTGAAGCAGACCCAT-AT-GCTT  55
+             ||||||||||||||||||||||||||   | ||||||   || |  |||| | || ||  
+Sbjct  2641  GGTCTGAACTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGC--  2584
+
+Query  56    GGTTTGCACCATTAGGATGTCCTGATC-AACATCGAGGTCGTAAACCCTTTCTTCGATAG  114
+             ||  | ||||||||||||||||||||| ||||||||||||||||||||||||  |||| |
+Sbjct  2583  GG-CTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGG  2525
+
+Query  115   GGACTCTGAGAAA-GAGTT-GCTGTTATCCCTAGGGTAACTTGGTTCATTGATCA--A--  168
+             |||||||  |||| || |  |||||||||||||||||||||||||||||||||||  |  
+Sbjct  2524  GGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGAGT  2465
+
+Query  169   -A----TCCTGGGTCATT-TTCGATAAATATTTTTATTA-TTCGAACATT-ATTCTAATT  220
+              |    |||||||||||| |||| || || ||| ||||| || |||   | |||||||||
+Sbjct  2464  GATGGGTCCTGGGTCATTGTTCGTTAGAT-TTTCTATTAGTTAGAATTGTAATTCTAATT  2406
+
+Query  221   TTAGGAGT-ACTTAGTACTCAGTCAATTAAGGGGGATTTGTT-TTCCCCTTGGT----CT  274
+             ||  |||| | ||   || || || | |||||||| |||||| |||||||||||    | 
+Sbjct  2405  TT--GAGTGATTTCTCACACACTCGA-TAAGGGGGTTTTGTTATTCCCCTTGGTCGCCCC  2349
+
+Query  275   AAACAGATTCGAAATTAAAAT-GACTTCATG-TGATTTGTTTATGTCCTTA-GAGGTA--  329
+             || || |  | || ||||  | ||  | ||| |||  | |||||| ||    | ||||  
+Sbjct  2348  AACCAAAAAC-AAGTTAAGTTAGAGATTATGTTGA--T-TTTATGCCCGAGGGTGGTAGT  2293
+
+Query  330   TAG-GGTTACTGGGTTAAATTTAAGTGTTT-GAGCTCCATAGGATTAATATGCATCCCTA  387
+             | | | ||  |   ||||  ||||||||||  |||||||||||  |  | | | | | ||
+Sbjct  2292  TTGTGTTTTTTAAATTAA-CTTAAGTGTTTAAAGCTCCATAGG-GTCTTCT-CGT-CTTA  2237
+
+Query  388   AGTA-TTCTTCTGCTTTCGCTTTACTGATA-GATCAATTTC-GTGATTAGAAAATAGAGA  444
+              ||| || |||| |  |  ||  || || | | ||||||||  |||||||||||||||||
+Sbjct  2236  TGTATTTATTCT-CGGTT-CTGCAC-GAGATGGTCAATTTCATTGATTAGAAAATAGAGA  2180
+
+Query  445   CAGTTAAACTCTCGTGGTGCCTTTCATACGGGTCTTCATTTAAAAGACAAGTGATTACGC  504
+             |||||||||||||||| ||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  2179  CAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGC  2120
+
+Query  505   TTCTGCCTTTGCACGGTCAAAATACC  530
+             | |   ||| |||||||||| |||||
+Sbjct  2119  TAC---CTTCGCACGGTCAAGATACC  2097
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 415053153
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

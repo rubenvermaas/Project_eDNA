@@ -1,0 +1,68 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=d40913b6-aae9-4d5d-8d7f-ea4c4c10527a_t;seqs=1
+
+Length=730
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            130     3e-31
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           130     3e-31
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 130 bits (70),  Expect = 3e-31
+ Identities = 154/191 (81%), Gaps = 19/191 (10%)
+ Strand=Plus/Plus
+
+Query  542   TCCTGATGTAATAGAACTAGAGATTACCCTAGGGATAACTTGGCGCCAATCCTTTCCTTC  601
+             |||||||  ||| |||| | || ||||||||||||||||   ||| ||||||||||| | 
+Sbjct  2467  TCCTGAT-CAAT-GAACCA-AG-TTACCCTAGGGATAAC--AGCG-CAATCCTTTCC-T-  2517
+
+Query  602   AGAGTCCCTATCGAAGAAAGGGTTTACGACCTCGATGTTGGATG-GGACATCTCAATAGA  660
+             |||||||| ||||  ||||||||||||||||||||||||||||  |||||||  ||| | 
+Sbjct  2518  AGAGTCCCCATCGCCGAAAGGGTTTACGACCTCGATGTTGGATCAGGACATCCTAATGGT  2577
+
+Query  661   TT-GCCAACACTTCTTGAGGGGTTCGTTTGTTCAGCGATTAACGGTCCC-CGTGATCTGA  718
+              | |||  |  |  || | ||||||||||||||| |||||||| ||||  ||||||||||
+Sbjct  2578  GTAGCCG-C--TA-TTAA-GGGTTCGTTTGTTCAACGATTAACAGTCCTACGTGATCTGA  2632
+
+Query  719   GTTTTCAGACC  729
+             |||  ||||||
+Sbjct  2633  GTT--CAGACC  2641
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 496943910
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

@@ -1,0 +1,98 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=de98190f-b5f3-4127-a5c7-e01267b87e14_t;seqs=1
+
+Length=652
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            429     2e-121
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           429     2e-121
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  302     5e-83 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   302     5e-83 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 429 bits (232),  Expect = 2e-121
+ Identities = 522/656 (80%), Gaps = 44/656 (7%)
+ Strand=Plus/Minus
+
+Query  1     GGTCTGAACTCCAGATCACGTAGGACTATTAATCGTTGAACAAACAGGCCCTTAATAGCG  60
+             |||||||||| |||||||||||||||| |||||||||||||||||   ||||||||||||
+Sbjct  2641  GGTCTGAACT-CAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCG  2583
+
+Query  61    AGTTACACCATTAGGATGTCCTGATC-AACATCGAGGTCGTAAAGCCCTTTCGTCGATAG  119
+              | ||||||||||||||||||||||| ||||||||||||||||| |||||||| |||| |
+Sbjct  2582  -GCTACACCATTAGGATGTCCTGATCCAACATCGAGGTCGTAAA-CCCTTTCGGCGATGG  2525
+
+Query  120   GAACTCTGGGAAAGGATTGCGCTGTTATCCCTAGG-TAACTTGGTTCATTATTCAGGTTT  178
+             | ||||| ||||||||||||||||||||||||||| ||||||||||||||  |||||   
+Sbjct  2524  GGACTCTAGGAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGG---  2468
+
+Query  179   ACCCA-GGAT-ATGGGTCATT-TTCGATAAATGTTTATCATT--TTAGAACTGTGGTTCT  233
+             |   | || |  ||||||||| |||| || || ||| | |||  |||||| |||  ||||
+Sbjct  2467  AGTGATGGGTCCTGGGTCATTGTTCGTTAGAT-TTTCT-ATTAGTTAGAATTGTAATTCT  2410
+
+Query  234   AGtttttttAAGTATAGTAAT-ACTTAGTCGAT-GGGAGGATTTGTTTTTCTCCTTGGTC  291
+             |    |||| |||  | |  | ||  | |||||  || || |||||| ||| ||||||||
+Sbjct  2409  A---ATTTTGAGT-GATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTC  2354
+
+Query  292   GCCCCAACCAAAAACATGTTAAATTAAAGTATTGTATTATTTGTTTATGTCCCTTGG-AA  350
+             |||||||||||||||| ||||| ||| || ||| | ||   | |||||| ||   ||   
+Sbjct  2353  GCCCCAACCAAAAACAAGTTAAGTTAGAG-ATTATGTT-GAT-TTTATGCCCGAGGGTGG  2297
+
+Query  351   TATAATGCAATTACATAAGTGAATTCAAGTGTTTTAAACTCCATAGAGGTCTTCTCAAAT  410
+             ||   ||   ||   ||| | || | |||||||| || |||||||| |||||||||   |
+Sbjct  2296  TAGTTTG-TGTTTTTTAAATTAACTTAAGTGTTTAAAGCTCCATAG-GGTCTTCTC--GT  2241
+
+Query  411   CTAATGTGAGAATTATTC-CCTTTTTGCACACGGGAAGATCAATTTCATTGATT-GGGAG  468
+             || ||||   | |||||| |  || ||  |||| || | ||||||||||||||| |  | 
+Sbjct  2240  CTTATGT---ATTTATTCTCGGTTCTG--CACGAGATGGTCAATTTCATTGATTAGAAAA  2186
+
+Query  469   TAGAGACGGTTAAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTTA--GACAGGTGA  526
+             ||||||| ||||||||||||||||||||||||||| |||||||| || |  |||| ||||
+Sbjct  2185  TAGAGACAGTTAAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGA  2126
+
+Query  527   TTACGCTACCTTCGCACGGTCAAGATACCGCGGCCGTTAAAAAATTATCACAGGGCAGGC  586
+             ||||||||||||||||||||||||||||||||||||||||| ||  ||||||||||||||
+Sbjct  2125  TTACGCTACCTTCGCACGGTCAAGATACCGCGGCCGTTAAATAA--ATCACAGGGCAGGC  2068
+
+Query  587   TGGACCTCTCTTATA-GTTT-TAA-GC-AGAGGCGGTATTTTTGATAAACAGGCGG  638
+              ||||||||  || | | |  ||| || ||||||| | |||||| |||||||||||
+Sbjct  2067  GGGACCTCTTATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAACAGGCGG  2012
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 442350072
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

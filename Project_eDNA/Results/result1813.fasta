@@ -1,0 +1,68 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=6d160dbb-d7d6-424e-a89c-6428722f9094_t;seqs=1
+
+Length=636
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  JX026504.1 Scarus quoyi 16S ribosomal RNA gene, partial sequenc...  178     9e-46
+  EU601251.1 Scarus quoyi voucher FMNH 110859 16S ribosomal RNA g...  163     2e-41
+  JF457238.1 Anampses lineatus voucher REU0922 16S ribosomal RNA ...  159     3e-40
+  KJ866399.1 Anampses lineatus 16S ribosomal RNA gene, partial se...  93.5    3e-20
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  91.6    1e-19
+
+
+> JX026504.1 Scarus quoyi 16S ribosomal RNA gene, partial sequence; 
+mitochondrial
+Length=592
+
+ Score = 178 bits (96),  Expect = 9e-46
+ Identities = 137/156 (88%), Gaps = 6/156 (4%)
+ Strand=Plus/Plus
+
+Query  469  ACGGAACCAGTTACCCTAGGGATAACAGCGCAATCTT--TCCAGGTTTCCTATCGACGA-  525
+            ||||| | |||||||||||||||||||||||||||||  || ||  ||| ||||||||| 
+Sbjct  440  ACGGACCGAGTTACCCTAGGGATAACAGCGCAATCTTCTTCGAGAGTTCATATCGACGAG  499
+
+Query  526  AAGGAACACGACCTCGATGTTGGATTAGGACATCCTAATGGAGTGTAGCCGCTGTAAAGG  585
+            ||||   |||||||||||||||||| ||||||||||||||  ||| ||||||| | ||||
+Sbjct  500  AAGGTTTACGACCTCGATGTTGGATCAGGACATCCTAATG--GTGCAGCCGCTATTAAGG  557
+
+Query  586  GTTCGTTTGTTCAACGATTAATAGTCCTACGTGATC  621
+            ||||||||||||||||||||| ||||||||||||||
+Sbjct  558  GTTCGTTTGTTCAACGATTAA-AGTCCTACGTGATC  592
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 431151336
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

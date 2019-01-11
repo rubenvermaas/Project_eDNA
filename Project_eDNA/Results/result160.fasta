@@ -1,0 +1,121 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=65010753-fef0-4ed3-9b1e-33e263797a7d_t_1;seqs=1
+
+Length=1053
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            424     2e-119
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           424     2e-119
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       182     1e-46 
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  176     5e-45 
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          174     2e-44 
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         174     2e-44 
+  KF709954.1 Siganus puellus mitochondrion, complete genome           174     2e-44 
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          174     2e-44 
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          174     2e-44 
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         174     2e-44 
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  172     7e-44 
+  JF457442.1 Dascyllus aruanus voucher NBE0189 16S ribosomal RNA ...  172     7e-44 
+  JF457443.1 Dascyllus aruanus voucher NBE0188 16S ribosomal RNA ...  172     7e-44 
+  JF457444.1 Dascyllus aruanus voucher NBE0187 16S ribosomal RNA ...  172     7e-44 
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   169     9e-43 
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      169     9e-43 
+  EF419268.1 Pomacentrus moluccensis voucher AMS I.43781-005 16S ...  163     4e-41 
+  FJ616482.1 Pomacentrus moluccensis voucher FMNH Liz04-14 T-025 ...  159     5e-40 
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  158     2e-39 
+  DQ898112.1 Siganus puellus voucher Spue 2 16S ribosomal RNA gen...  156     7e-39 
+  DQ898108.1 Siganus guttatus voucher Sgut 2 16S ribosomal RNA ge...  156     7e-39 
+  FJ616448.1 Dascyllus reticulatus voucher FMNH Bus03-10 T-224 16...  154     2e-38 
+  FJ616447.1 Dascyllus melanurus voucher FMNH Bus03-20 T-373 16S ...  154     2e-38 
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  154     2e-38 
+  FJ616415.1 Amphiprion melanopus voucher FMNH MIN00-06 T-31 16S ...  154     2e-38 
+  MH718494.1 Amphiprion frenatus isolate KC4F_KH 16S large subuni...  128     1e-30 
+  DQ343915.1 Amphiprion melanopus 16S ribosomal RNA gene, partial...  97.1    4e-21 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 424 bits (229),  Expect = 2e-119
+ Identities = 504/626 (81%), Gaps = 62/626 (10%)
+ Strand=Plus/Minus
+
+Query  1     CAGATCACGTAGGACTGTTAATCGTTGAACAAACGGAGCCCTTAATAGCGAGTTTGCACC  60
+             ||||||||||||||||||||||||||||||||||| | |||||||||||| | |  ||||
+Sbjct  2631  CAGATCACGTAGGACTGTTAATCGTTGAACAAACGAA-CCCTTAATAGCG-GCTA-CACC  2575
+
+Query  61    ATTAGGATGTC-TGATCCAACATCGAGGTCGTAAACCCTTTCTTCGATAGGGACTCTGAG  119
+             ||||||||||| ||||||||||||||||||||||||||||||  |||| |||||||| ||
+Sbjct  2574  ATTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGGGGACTCT-AG  2516
+
+Query  120   AAAAGGATTGCGCTGTTATCC-TAAGGTAGC-GGTTTCATTGATCAGAA---AT----C-  169
+              |||||||||||||||||||| || |||| |  | |||||||||||| |   ||    | 
+Sbjct  2515  GAAAGGATTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGAGTGATGGGTCC  2456
+
+Query  170   TGGGTCATT-TTCGATA-ATATTTTATTAATTAGAACTGTTATTCTAATTTTTAAGT-AC  226
+             ||||||||| |||| || || || ||||| |||||| ||| ||||||||||| | || | 
+Sbjct  2455  TGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGTAATTCTAATTTTGA-GTGAT  2397
+
+Query  227   TTAGTACTCAGTCGATAAGGGGATTT-GTT-T-CCCCTTGGTCT----AACCAAAAACA-  278
+             ||   || || ||||||||||| ||| ||| | ||||||||||     ||||||||||| 
+Sbjct  2396  TTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCCCAACCAAAAACAA  2337
+
+Query  279   GTTAAAATTAGAAATATTATTGTATGTGTTTATGTCCTTGGG-G-TA-TAGG-GTTACAT  334
+             |||||  ||||| || | || || ||  |||||| ||  ||| | || |  | |||   |
+Sbjct  2336  GTTAAG-TTAGAGAT-T-AT-GT-TGATTTTATGCCCGAGGGTGGTAGTTTGTGTTTTTT  2282
+
+Query  335   AG-TTAATTTAGGTGTTTGA-GCTCCACTTAGAAGTCTTCTCGTCTAATATTTATTATAT  392
+             |  |||| ||| |||||| | |||||| | ||  ||||||||||||  ||| |||| |||
+Sbjct  2281  AAATTAACTTAAGTGTTTAAAGCTCCA-T-AGG-GTCTTCTCGTCT--TATGTATT-TAT  2228
+
+Query  393   TCGC--TTCTGCACGA-ATAGATCAATTTCATTGATTAGAAAAT-GA-ACAGTTAAACTC  447
+             || |  |||||||||| || | |||||||||||||||||||||| || ||||||||||||
+Sbjct  2227  TCTCGGTTCTGCACGAGATGG-TCAATTTCATTGATTAGAAAATAGAGACAGTTAAACTC  2169
+
+Query  448   TCGTGGTAC-TTTCATGCGGGTCTTCATTTTAAAGACAAGTGATTACGCTACCTTTGC--  504
+             ||||| | | |||||| |||||||||| || |||||||||||||||||||||||| ||  
+Sbjct  2168  TCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGCTACCTTCGCAC  2109
+
+Query  505   GGTCAAAATA-CGCGGCCGTTGAACATTGTCACAGGGCAGGCGGGACCTCTTATAG-T--  560
+             |||||| ||| |||||||||| || |   ||||||||||||||||||||||||||  |  
+Sbjct  2108  GGTCAAGATACCGCGGCCGTTAAATAAA-TCACAGGGCAGGCGGGACCTCTTATACATGA  2050
+
+Query  561   T--TAT--CAAGAGGCGATGTTTTTG  582
+             |  ||   ||||||||||||||||||
+Sbjct  2049  TGGTAAAGCAAGAGGCGATGTTTTTG  2024
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 723018393
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

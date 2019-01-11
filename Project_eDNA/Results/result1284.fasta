@@ -1,0 +1,132 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=129c66db-c81a-443b-afb0-fbc4db6f67ab_t;seqs=1
+
+Length=674
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          224     1e-59
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         224     1e-59
+  KJ551868.1 Centropyge eibli voucher NMMBP:20397 16S ribosomal R...  200     2e-52
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       196     3e-51
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      196     3e-51
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   193     3e-50
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      193     3e-50
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  193     3e-50
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  193     3e-50
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  191     1e-49
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  191     1e-49
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     187     2e-48
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    187     2e-48
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  183     2e-47
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  183     2e-47
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  182     7e-47
+  AY279718.1 Labroides dimidiatus 16S ribosomal RNA gene, partial...  180     3e-46
+  JF457528.1 Labroides dimidiatus voucher REU1616 16S ribosomal R...  180     3e-46
+  JF457529.1 Labroides dimidiatus voucher NBE0226 16S ribosomal R...  180     3e-46
+  JF457395.1 Chromis viridis voucher NBE1074 16S ribosomal RNA ge...  180     3e-46
+  JF457396.1 Chromis viridis voucher NBE1073 16S ribosomal RNA ge...  180     3e-46
+  JF457397.1 Chromis viridis voucher NBE1072 16S ribosomal RNA ge...  180     3e-46
+  AY530856.1 Centropyge loriculus 16S ribosomal RNA gene, partial...  180     3e-46
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  178     9e-46
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       174     1e-44
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  174     1e-44
+  JF457238.1 Anampses lineatus voucher REU0922 16S ribosomal RNA ...  172     4e-44
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  167     2e-42
+  JF457479.1 Halichoeres marginatus voucher REU1023 16S ribosomal...  165     7e-42
+  JF457481.1 Halichoeres marginatus voucher REU0793 16S ribosomal...  165     7e-42
+  KY815443.1 Pseudocheilinus hexataenia voucher FMNH:ICHTHY:MIN00...  163     3e-41
+  KJ866399.1 Anampses lineatus 16S ribosomal RNA gene, partial se...  161     9e-41
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  158     1e-39
+  KY815442.1 Pseudocheilinus evanidus voucher FMNH:ICHTHY:BUS03-0...  154     2e-38
+  KX301970.1 Salarias fasciatus voucher 1660 16S ribosomal RNA ge...  148     7e-37
+  JF457623.1 Pseudocheilinus evanidus voucher MBIO0560 16S riboso...  143     3e-35
+  JF457624.1 Pseudocheilinus hexataenia voucher NBE0414 16S ribos...  141     1e-34
+  JF457625.1 Pseudocheilinus hexataenia voucher NBE0412 16S ribos...  141     1e-34
+
+
+> KT001113.1 Centropyge eibli mitochondrion, complete genome
+Length=17101
+
+ Score = 224 bits (121),  Expect = 1e-59
+ Identities = 486/652 (75%), Gaps = 66/652 (10%)
+ Strand=Plus/Minus
+
+Query  50    GGTCTGAACTCAGATCACGTAGGACTATTAATGGTCAGACAGGCGAACCCTTAATAGCG-  108
+             |||||||||||||||||||||||||| ||||| ||   |||  |||||||||||||||| 
+Sbjct  2634  GGTCTGAACTCAGATCACGTAGGACT-TTAATCGTTGAACAAACGAACCCTTAATAGCGG  2576
+
+Query  109   ATTTTTCATTAGGGGATGTCCTGATC-AACATCAAGGGTCGT-AA-GCCCTT-TCGATAG  164
+              |    |||||||  ||||||||||| |||||| | |||||| ||  ||||| |||||| 
+Sbjct  2575  CTGCACCATTAGG--ATGTCCTGATCCAACATCGA-GGTCGTAAACCCCCTTGTCGATAT  2519
+
+Query  165   GGACTCTGAGAAGAAAGTTGCGCTGTTATCCCT-AGATAACTTGGTTTCTGCATTGATCC  223
+             || |||| | |||    ||||||||||||||||  | ||||||||  ||  | ||||| |
+Sbjct  2518  GGGCTCT-AAAAGGGGATTGCGCTGTTATCCCTGGGGTAACTTGG--TC--CGTTGAT-C  2465
+
+Query  224   AAGGAAATCCTGGGTCATTTTACTAAATC-GATATTTTATTAATTAGAGATTGTCATTC-  281
+               || | | | || || || || | | || ||  || | ||||||||||   |    || 
+Sbjct  2464  --GGCATTGCCGGATC-TTGTA-T-AGTCAGAGGTTCTGTTAATTAGAG-CGGGAGCTCT  2411
+
+Query  282   TATTTTTA-GAGGTATTAGTACTCAATCGATAAGGGGATTTATTTTTTCCCCTTGGTCAC  340
+             || || || ||| | ||  | | || ||   | |||| ||| || |||||||  |||| |
+Sbjct  2410  TAGTTGTAGGAGATGTT-CT-CCCATTCTGCATGGGGGTTTTTTATTTCCCCGCGGTCGC  2353
+
+Query  341   CCCAACCAAAACAGTTAAATTAGGGAATTATTGTATATTTTGTTTATA-CCCTGAAG-T-  397
+             |||||||   | ||    ||||||| |    |||| |  |||||| ||  | | ||| | 
+Sbjct  2352  CCCAACC--GA-AG--GCATTAGGGCA-GGGTGTA-A-GTTGTTT-TAGTCATTAAGCTG  2302
+
+Query  398   GGATGGCT-ACATAAT-TAATTTAAGTGTTTGAAGCTCCATAGGGTCTTTCTCGTCTATT  455
+             || |   | ||||| | |  ||| ||||  | |||||||| |||||||| ||||||  ||
+Sbjct  2301  GGGTACTTAACATATTCTGCTTT-AGTGCCTAAAGCTCCACAGGGTCTT-CTCGTC--TT  2246
+
+Query  456   ATTTG-TTATATTCGCTTCTGCACGAATAGATCAATTTCATTGATTAGAAATA-GAGACA  513
+             || || ||||   ||||||||||||   |||||||||||||||| | |||| | ||||||
+Sbjct  2245  ATGTGCTTATCCCCGCTTCTGCACGGGGAGATCAATTTCATTGACTTGAAAGAGGAGACA  2186
+
+Query  514   GTTGAAACTCTCGTGATACTTTGCTTTCCATACAGGAGTCTTCATTTTAAAGACAAGTGA  573
+             ||| || | |||||  ||   |||  | ||||| || |||| ||||| ||||||||||||
+Sbjct  2185  GTT-AAGCCCTCGT--TA---TGCCATTCATAC-GG-GTCTCCATTTAAAAGACAAGTGA  2134
+
+Query  574   TTGCGCTACCTTTGCACGGTCAA--TACCGCGGCCGTTGAACAT-T-GTCACAGGGCAGG  629
+             |||||||||||||||||||||||  ||||||||||||| ||||| | |||||||||||||
+Sbjct  2133  TTGCGCTACCTTTGCACGGTCAAAATACCGCGGCCGTTAAACATATAGTCACAGGGCAGG  2074
+
+Query  630   CGGGACCTCT-ATA-GTT--TAT--CAAGAGGCGATGTTTT-GATAAACAGG  674
+             |||||||||| ||  |||  | |  |||||||||||||||| | ||||||||
+Sbjct  2073  CGGGACCTCTTATTTGTTAGTTTTGCAAGAGGCGATGTTTTTGGTAAACAGG  2022
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 457748334
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

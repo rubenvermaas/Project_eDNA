@@ -1,0 +1,111 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=fcfeeaa4-4873-4dc5-ac61-5a3ed39f448c_t;seqs=1
+
+Length=631
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            407     1e-114
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           407     1e-114
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  228     8e-61 
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   228     8e-61 
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  148     7e-37 
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  143     3e-35 
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   143     3e-35 
+  AY264600.1 Acanthurus pyroferus isolate Ap_G1130 16S ribosomal ...  126     3e-30 
+  AY264599.1 Acanthurus olivaceus isolate Ao_G1129 16S ribosomal ...  126     3e-30 
+  AY264596.1 Acanthurus nigricans isolate An_G1124 16S ribosomal ...  126     3e-30 
+  AY264595.1 Acanthurus dussumieri isolate Ad_G1123 16S ribosomal...  126     3e-30 
+  AY264594.1 Acanthurus blochii isolate Ab_G1121 16S ribosomal RN...  126     3e-30 
+  DQ898095.1 Acanthurus blochii voucher Ablo 1 16S ribosomal RNA ...  126     3e-30 
+  AY057289.1 Acanthurus pyroferus clone 1 16S ribosomal RNA gene,...  100     2e-22 
+  AY057290.1 Acanthurus pyroferus clone 2 16S ribosomal RNA gene,...  100     2e-22 
+  AY057286.1 Acanthurus nigricans clone 1 16S ribosomal RNA gene,...  100     2e-22 
+  AY057287.1 Acanthurus nigricans clone 2 16S ribosomal RNA gene,...  100     2e-22 
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 407 bits (220),  Expect = 1e-114
+ Identities = 511/644 (79%), Gaps = 49/644 (8%)
+ Strand=Plus/Minus
+
+Query  12    CTCAGATCACGTAGGACTGT----CGTTGAACAAACGAGCCCATAATAGCGGTTACACCA  67
+             ||||||||||||||||||||    |||||||||||||| ||| ||||||||| |||||||
+Sbjct  2633  CTCAGATCACGTAGGACTGTTAATCGTTGAACAAACGAACCCTTAATAGCGGCTACACCA  2574
+
+Query  68    TTAGGATGTCCTGATC-AACATCGAGGTCGTAA-GCCTTTCGTCGATAGGAACTCTGGGG  125
+             |||||||||||||||| ||||||||||||||||  ||||||| |||| || |||||  ||
+Sbjct  2573  TTAGGATGTCCTGATCCAACATCGAGGTCGTAAACCCTTTCGGCGATGGGGACTCT-AGG  2515
+
+Query  126   AGAAAGAGTTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTATTCAGG-TTTAAGGATA  184
+             | || || ||||||||||||||||||||||||||||||||||  |||||  | | || | 
+Sbjct  2514  A-AAGGA-TTGCGCTGTTATCCCTAGGGTAACTTGGTTCATTGATCAGGAGTGATGGGT-  2458
+
+Query  185   TCTGGGTCATT-TTCGATAAATGTT-TATCATTTAGAACTGTGGTTTCCTAGTTTTTTAA  242
+              |||||||||| |||| || || || ||| | |||||| |||   || |||   |||| |
+Sbjct  2457  CCTGGGTCATTGTTCGTTAGATTTTCTATTAGTTAGAATTGT-AATT-CTA--ATTTTGA  2402
+
+Query  243   GTATAGTAAT-ACTTAGTCGACAGGGAGGATTTGTT-TTCTCCTTAGTCGC--TAACCAA  298
+             ||  | |  | ||  | |||| | || || |||||| ||| |||| |||||   |||| |
+Sbjct  2401  GT-GATTTCTCACACACTCGATAAGGGGGTTTTGTTATTCCCCTTGGTCGCCCCAACC-A  2344
+
+Query  299   AAAAGCAATATTAAAATTAAGAATATTGTATTAT-TTG-TTTTATGTCC-TTGG-AATAT  354
+             |||| |||  || || || ||   |  | ||||| ||| ||||||| ||   ||   || 
+Sbjct  2343  AAAA-CAA-GTT-AAGTT-AG---A--G-ATTATGTTGATTTTATGCCCGAGGGTGGTAG  2294
+
+Query  355   AATGCAATTCACATAATTAATTTAAGTGTTTTAAGCTCCATAAGGTCTTCTCGTCTAATG  414
+               ||   ||   | |||||| |||||||||| |||||||||| ||||||||||||| |||
+Sbjct  2293  TTTGTGTTTTTTA-AATTAACTTAAGTGTTTAAAGCTCCATAGGGTCTTCTCGTCTTATG  2235
+
+Query  415   TAATTATTC-C-CTTTTGCACGGGAAGATCAATTTCATTGATTGGGAAGTAGAGACAGTT  472
+             || |||||| |  || |||||| || | ||||||||||||||| | || |||||||||||
+Sbjct  2234  TATTTATTCTCGGTTCTGCACGAGATGGTCAATTTCATTGATTAGAAAATAGAGACAGTT  2175
+
+Query  473   AAACTCTCGTGATGCCTTTCATACAGGTCTTCATTTAAA-GACAATTGATTACGCTACCT  531
+             |||||||||||||||||||||||| |||||||| ||||| ||||| ||||||||||||||
+Sbjct  2174  AAACTCTCGTGATGCCTTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGCTACCT  2115
+
+Query  532   TCCTTTTAGTCAAGATACCGCGGCCATTaaaaaaaTTATCACAGGGCAGGCTGGACCTCT  591
+             ||      ||||||||||||||||| ||||| ||||   |||||||||||| ||||||||
+Sbjct  2114  TCGCACG-GTCAAGATACCGCGGCCGTTAAATAAAT---CACAGGGCAGGCGGGACCTCT  2059
+
+Query  592   TATGGATT-T--T-AAGCAAGAGGCGATGTTTTTGATAAACAGG  631
+             |||  ||  |  | ||||||||||||||||||||| ||||||||
+Sbjct  2058  TATACATGATGGTAAAGCAAGAGGCGATGTTTTTGGTAAACAGG  2015
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 427651731
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

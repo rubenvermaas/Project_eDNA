@@ -1,0 +1,110 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=10a58c57-ccb2-4c1e-b13b-f3476408e9e6_t;seqs=1
+
+Length=625
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  122     4e-29
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          115     7e-27
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         115     7e-27
+  KF709954.1 Siganus puellus mitochondrion, complete genome           115     7e-27
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          115     7e-27
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          115     7e-27
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         115     7e-27
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  115     7e-27
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   115     7e-27
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       110     3e-25
+  AP005997.1 Pterapogon kauderni mitochondrial DNA, complete genome   110     3e-25
+  NC_022511.1 Pterapogon kauderni mitochondrion, complete genome      110     3e-25
+  KM978959.1 Chelmon rostratus mitochondrion, complete genome         110     3e-25
+  NC_025953.1 Chelmon rostratus mitochondrion, complete genome        110     3e-25
+  JF457480.1 Halichoeres marginatus voucher NBE0648 16S ribosomal...  108     1e-24
+  KU244264.1 UNVERIFIED: Zebrasoma desjardinii mitochondrion sequ...  104     1e-23
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     104     1e-23
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    104     1e-23
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  104     1e-23
+  AP004447.1 Pterocaesio tile mitochondrial DNA, complete genome      104     1e-23
+  NC_004408.1 Pterocaesio tile mitochondrion, complete genome         104     1e-23
+  KT826539.1 Paracanthurus hepatus mitochondrion, complete genome     104     1e-23
+  NC_029237.1 Paracanthurus hepatus mitochondrion, complete genome    104     1e-23
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  104     1e-23
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  104     1e-23
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       104     1e-23
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      104     1e-23
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        104     1e-23
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       104     1e-23
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   104     1e-23
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      104     1e-23
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          104     1e-23
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         104     1e-23
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  104     1e-23
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  104     1e-23
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     104     1e-23
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  104     1e-23
+  EF419265.1 Amblyglyphidodon aureus voucher AMS I.33717-001 16S ...  97.1    2e-21
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  87.9    1e-18
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   87.9    1e-18
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            56.5    4e-09
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           56.5    4e-09
+
+
+> FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, 
+partial sequence; tRNA-Val gene, complete sequence; and 16S 
+ribosomal RNA gene, partial sequence; mitochondrial
+Length=1787
+
+ Score = 122 bits (66),  Expect = 4e-29
+ Identities = 162/207 (78%), Gaps = 11/207 (5%)
+ Strand=Plus/Minus
+
+Query  367   TAAAGCTCCATAGGGTCTTCTCGTCTT--G-CTGTGTCGCCCGCCTCTTTTTGGGCAGGT  423
+             |||||||||||||||||||||||||||  | || | | |||||| |||    ||| || |
+Sbjct  1449  TAAAGCTCCATAGGGTCTTCTCGTCTTATGTCTATAT-GCCCGCTTCTGCACGGGGAGAT  1391
+
+Query  424   CAATTTCACTGGT-TAAAGTAAGGGGAACAGCTGAACCCTCGTGGAGCCATTCATACAGA  482
+             ||| |||| ||   | ||  |||| || ||| | | |||||||   ||||||||||||| 
+Sbjct  1390  CAAGTTCATTGACCTGAAA-AAGGAGA-CAGTTAAGCCCTCGTTATGCCATTCATACAGG  1333
+
+Query  483   TTCCCTATTTAAGGAACAAGTGATTTATGCTG-CTTTGCACGGTTAGGGTACCGCGGCCG  541
+             | ||| |||||||  ||||||||||   |||  |||||||||||||||||||||||||||
+Sbjct  1332  TCCCC-ATTTAAGAGACAAGTGATTGC-GCTACCTTTGCACGGTTAGGGTACCGCGGCCG  1275
+
+Query  542   TTAAGCATGTGTCACTGGGCGGGGCGG  568
+             |||| |  ||||||| |||| || |||
+Sbjct  1274  TTAAACTAGTGTCACAGGGCAGG-CGG  1249
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 423452205
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

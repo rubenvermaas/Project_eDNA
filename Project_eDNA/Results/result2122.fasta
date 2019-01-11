@@ -1,0 +1,86 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=c5d10dae-3967-4669-ba1a-26ba005047fa_t;seqs=1
+
+Length=625
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            163     2e-41
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           163     2e-41
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     141     1e-34
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  141     1e-34
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        135     5e-33
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       135     5e-33
+  DQ343906.1 Amphiprion bicinctus 16S ribosomal RNA gene, partial...  132     7e-32
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  130     2e-31
+  KJ551857.1 Pomacanthus xanthometopon voucher NMMBP:19850 16S ri...  130     2e-31
+  KJ551858.1 Pomacanthus xanthometopon voucher NMMBP:19851 16S ri...  130     2e-31
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  130     2e-31
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  115     7e-27
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   115     7e-27
+  EF616906.1 Hemitaurichthys polylepis 16S ribosomal RNA gene, pa...  108     1e-24
+  JF457505.1 Hemitaurichthys polylepis voucher MBIO0937 16S ribos...  106     4e-24
+  JF457506.1 Hemitaurichthys polylepis voucher MBIO0936 16S ribos...  106     4e-24
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  99.0    7e-22
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  95.3    9e-21
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       95.3    9e-21
+  DQ532936.1 Pholidichthys leucotaenia 16S large subunit ribosoma...  89.8    4e-19
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 163 bits (88),  Expect = 2e-41
+ Identities = 157/188 (84%), Gaps = 14/188 (7%)
+ Strand=Plus/Minus
+
+Query  375   TTAAGTGTTT-GAGCTCCGCAAGATCTTCTCGTCTGATAT-TATTATATTTAAGAAGCTG  432
+             ||||||||||  ||||||  | | |||||||||||  ||| |||| ||||   |   |||
+Sbjct  2273  TTAAGTGTTTAAAGCTCCATAGGGTCTTCTCGTCT--TATGTATT-TATTCTCGGTTCTG  2217
+
+Query  433   CA-GATA-GATCAATTTCATTGATTAGAAAATAGAGACAGTTAAACTCTCGTGGGGTGCC  490
+             || || | | |||||||||||||||||||||||||||||||||||||||||||   ||||
+Sbjct  2216  CACGAGATGGTCAATTTCATTGATTAGAAAATAGAGACAGTTAAACTCTCGTG--ATGCC  2159
+
+Query  491   TTTCATACAGGTCTTCATTTAAAAGACAAGTGATTACGCTAC-T--G--CGGTCAAAATA  545
+             |||||||| |||||||| |||||||||||||||||||||||| |  |  ||||||| |||
+Sbjct  2158  TTTCATACGGGTCTTCAATTAAAAGACAAGTGATTACGCTACCTTCGCACGGTCAAGATA  2099
+
+Query  546   CCGCGGCC  553
+             ||||||||
+Sbjct  2098  CCGCGGCC  2091
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 423452205
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

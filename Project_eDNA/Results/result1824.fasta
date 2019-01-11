@@ -1,0 +1,131 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=030201c9-2f8f-424b-949c-2d155b21d15b_t;seqs=1
+
+Length=635
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            329     2e-91
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           329     2e-91
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  206     4e-54
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   206     4e-54
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     178     9e-46
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  178     9e-46
+  KT826539.1 Paracanthurus hepatus mitochondrion, complete genome     169     5e-43
+  NC_029237.1 Paracanthurus hepatus mitochondrion, complete genome    169     5e-43
+  NC_009830.1 Acanthurus leucosternon mitochondrion, complete genome  167     2e-42
+  EU136032.1 Acanthurus leucosternon mitochondrion, complete genome   167     2e-42
+  KP033453.1 Pygoplites diacanthus mitochondrion, complete genome     163     2e-41
+  NC_026545.1 Pygoplites diacanthus mitochondrion, complete genome    163     2e-41
+  KP898265.1 Pygoplites diacanthus voucher 276 mitochondrion, com...  163     2e-41
+  KP965877.1 Genicanthus bellus mitochondrion, complete genome        163     2e-41
+  NC_027597.1 Genicanthus bellus mitochondrion, complete genome       163     2e-41
+  KM233212.1 Siganus vulpinus mitochondrion, complete genome          161     9e-41
+  NC_025588.1 Siganus vulpinus mitochondrion, complete genome         161     9e-41
+  KJ420577.1 Siganus guttatus mitochondrion, complete genome          161     9e-41
+  NC_024088.1 Siganus guttatus mitochondrion, complete genome         161     9e-41
+  JQ938991.1 Pholidichthys leucotaenia voucher KU1854 16S ribosom...  159     3e-40
+  KT001113.1 Centropyge eibli mitochondrion, complete genome          159     3e-40
+  NC_027971.1 Centropyge eibli mitochondrion, complete genome         159     3e-40
+  KF709954.1 Siganus puellus mitochondrion, complete genome           158     1e-39
+  NC_024086.1 Siganus puellus mitochondrion, complete genome          158     1e-39
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  158     1e-39
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  158     1e-39
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       158     1e-39
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      158     1e-39
+  AP006006.1 Centropyge loricula mitochondrial DNA, complete genome   158     1e-39
+  NC_009872.1 Centropyge loricula mitochondrion, complete genome      158     1e-39
+  KP013100.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 m...  158     1e-39
+  NC_028287.1 Centropyge bispinosa voucher LodgeLab Cbispinosa_1 ...  158     1e-39
+  KU244264.1 UNVERIFIED: Zebrasoma desjardinii mitochondrion sequ...  156     4e-39
+  AP004447.1 Pterocaesio tile mitochondrial DNA, complete genome      152     5e-38
+  NC_004408.1 Pterocaesio tile mitochondrion, complete genome         152     5e-38
+  KF415301.1 Amblygobius phalaena voucher NMBE 1066574 12S riboso...  147     2e-36
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  137     1e-33
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 329 bits (178),  Expect = 2e-91
+ Identities = 509/659 (77%), Gaps = 61/659 (9%)
+ Strand=Plus/Plus
+
+Query  9     CCGCCTGTTTACCAAAAACATCGCCTCTTTGC-TTA--A--A-CTATAAGAGGTCCAGCC  62
+             ||||||||||||||||||||||||||||| || |||  |  |  |||||||||||| |||
+Sbjct  2012  CCGCCTGTTTACCAAAAACATCGCCTCTT-GCTTTACCATCATGTATAAGAGGTCCCGCC  2070
+
+Query  63    TGCC-TGTGATAATTTTTAACGGCCGCGGTATCTTGACCATTTTGAAAGGTAGCGTAATC  121
+             |||| ||||||  | |||||||||||||||||||||||| |   | ||||||||||||||
+Sbjct  2071  TGCCCTGTGAT-TTATTTAACGGCCGCGGTATCTTGACCGTGC-G-AAGGTAGCGTAATC  2127
+
+Query  122   ACCTGTCTTTTAAATGAAGACCTGTATGAAAGGCATCAC--GAGTTTAACTGTCTCTACT  179
+             || |||||||||| |||||||| ||||||||||||||||  ||||||||||||||||| |
+Sbjct  2128  ACTTGTCTTTTAATTGAAGACCCGTATGAAAGGCATCACGAGAGTTTAACTGTCTCTATT  2187
+
+Query  180   TCCCAATCAATTAG-T---CT-TCCCGTGCAAAAAGCGGGAATAATTACGATG-GAGCAA  233
+             | | ||||||| |  |   |  || |||||| ||  || |||||| ||| ||  || | |
+Sbjct  2188  TTCTAATCAATGAAATTGACCATCTCGTGCAGAAC-CGAGAATAAATAC-ATAAGA-CGA  2244
+
+Query  234   GGAAGACCCTATAGA-CTTAAAACAAGT--GTTA-TGTAATTG-CATTTA-TATT-CCAA  286
+              ||||||||||| || ||| |||||  |  |||| | |||    ||   | ||   ||  
+Sbjct  2245  -GAAGACCCTATGGAGCTTTAAACACTTAAGTTAATTTAAAAAACACAAACTACCACCCT  2303
+
+Query  287   -GGACATAAACAAATAATACAATATTCT-TAATTTAACATGTTTTTTAGTTGGGGCGACC  344
+              || |||||| |  | | ||| || ||| ||| ||||| |||||||  ||||||||||||
+Sbjct  2304  CGGGCATAAA-A--TCA-ACA-TAATCTCTAACTTAACTTGTTTTTG-GTTGGGGCGACC  2357
+
+Query  345   AAAAGGAGAAAAGAAACAAATCCTCATATCGACTAAGT-ATTACTATACTTAAAACT-GA  402
+             ||  || ||| | | | ||| || | |||||| |  || |  | |  ||| |||| | ||
+Sbjct  2358  AAG-GG-GAATA-ACA-AAACCCCCTTATCGAGTGTGTGAGAAATC-ACTCAAAATTAGA  2412
+
+Query  403   ACCACAGTTCTAAATGATAAAAACATTTATCGAAAAATGACCCAGGATATCCAGCAAACC  462
+             |  ||| |||||| | ||| ||| || || |||| ||||||||||||   ||| ||  ||
+Sbjct  2413  ATTACAATTCTAACTAATAGAAA-ATCTAACGAACAATGACCCAGGAC--CCATCACTCC  2469
+
+Query  463   TGAATAATGAACCAAGTTA-CCTAGGGATAACAGCACCGTCCTTTCCAAGAGTTCCTATC  521
+             |||  |||||||||||||| ||||||||||||||| |  |||||||| ||||| || |||
+Sbjct  2470  TGATCAATGAACCAAGTTACCCTAGGGATAACAGCGCAATCCTTTCCTAGAGTCCCCATC  2529
+
+Query  522   GACAGAAAGGGGCTTACGACCTCGAC-TTGGATCAGGACATCCCTATTAAGATTGTAACC  580
+             | | |||||||  ||||||||||||  |||||||||||||||| || |  | | ||| ||
+Sbjct  2530  GCC-GAAAGGGT-TTACGACCTCGATGTTGGATCAGGACATCC-TAATG-G-T-GTAGCC  2583
+
+Query  581   GCTGT---GCG-TCGTTTGTTCAACGATTAATAGTCCCTACGTGATCTGAGTTCAGACC  635
+             ||| |   | | ||||||||||||||||||| ||| |||||||||||||||||||||||
+Sbjct  2584  GCTATTAAGGGTTCGTTTGTTCAACGATTAACAGT-CCTACGTGATCTGAGTTCAGACC  2641
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 430451415
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

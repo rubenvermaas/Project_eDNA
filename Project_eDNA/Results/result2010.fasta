@@ -1,0 +1,96 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=8c3b997b-f841-4723-8848-d2fbc4de89fc_t;seqs=1
+
+Length=629
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            206     4e-54
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           206     4e-54
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 206 bits (111),  Expect = 4e-54
+ Identities = 488/657 (74%), Gaps = 77/657 (12%)
+ Strand=Plus/Plus
+
+Query  4     TTTATCAAAAACATCGCCTCTTGCTT-A--AAC-TG----CGA-GACCAG-CTGCCCTGT  53
+             |||| ||||||||||||||||||||| |  | | ||     || | || | |||||||||
+Sbjct  2019  TTTACCAAAAACATCGCCTCTTGCTTTACCATCATGTATAAGAGGTCCCGCCTGCCCTGT  2078
+
+Query  54    GATGTTTTTACAACGG-CGCAGTATCTTGACCGTGCGAAGGTAGCGTAATCCACCTGTCT  112
+             ||| | |||  ||||| ||| ||||||||||||||||||||||||||||| ||| |||||
+Sbjct  2079  GATTTATTT--AACGGCCGCGGTATCTTGACCGTGCGAAGGTAGCGTAAT-CACTTGTCT  2135
+
+Query  113   TTTAAATGAAGACTAACAATATGAAAGGCATCACG-GAGTTTAACTGTCACCACTTCCCA  171
+             ||||| |||||||   |  |||||||||||||||| ||||||||||||| | | || | |
+Sbjct  2136  TTTAATTGAAGACC--CG-TATGAAAGGCATCACGAGAGTTTAACTGTCTCTATTTTCTA  2192
+
+Query  172   ATCAAGTAGAATTGATCTTCCCGTGCAAAAGCGGGGAATATGGCATTACATTAGACAGGA  231
+             ||||| |  |||||| | || |||||| || || | ||||    || |||| ||||  ||
+Sbjct  2193  ATCAA-TGAAATTGACCATCTCGTGCAGAACCGAG-AATAA---AT-ACATAAGACGAGA  2246
+
+Query  232   AGACCCTATGG-GCTTACAAAACACTTAAATTAGTATATGTAGTACGTGCATTCCAAGGT  290
+             ||||||||||| ||||   |||||||||| ||| | ||   |  ||   | | |||   |
+Sbjct  2247  AGACCCTATGGAGCTTT--AAACACTTAAGTTAATTTAAAAAACACAAAC-TACCACCCT  2303
+
+Query  291   TG--CATAAA--CAA-ATAATACAATATTCTTA-CTGTTTTTTGGATTTAGGGCGACAAA  344
+              |  ||||||  ||| ||||| |  ||  |||| ||  ||||||| ||  ||||||| ||
+Sbjct  2304  CGGGCATAAAATCAACATAAT-CTCTAA-CTTAACTTGTTTTTGG-TTG-GGGCGACCAA  2359
+
+Query  345   GGGAGAAAAACAAATCCTCCCCGCTATC-AC-GGCT-AGTAAACCTATACTTAAAACTAG  401
+             ||| ||| |||||| || |||   |||| |  |  | || ||| |   ||| |||| |||
+Sbjct  2360  GGG-GAATAACAAAACC-CCCT--TATCGAGTGTGTGAG-AAATC---ACTCAAAATTAG  2411
+
+Query  402   AACCACGATTCTAAATGATAAGCACATTTATCAAAGGAT-ATCCTT-A---A--AC-C-T  452
+             ||  || ||||||| | || || | || || | ||  || | ||   |   |  || | |
+Sbjct  2412  AATTACAATTCTAACTAAT-AGAAAATCTAACGAACAATGACCCAGGACCCATCACTCCT  2470
+
+Query  453   GAATAATAGACCAGGGTTACC-TAGGGACTAACAAAGCGCAATCCTTTCCAAG-GTTCT-  509
+             ||  |||  |||| | ||||| |||||| ||||  ||||||||||||||| || || |  
+Sbjct  2471  GATCAATGAACCAAG-TTACCCTAGGGA-TAAC--AGCGCAATCCTTTCCTAGAGTCCCC  2526
+
+Query  510   ATCGACGAAAGGG----CGACCTCGATGTTGGATCGAGACATCCTAATGGTGCTTAAACG  565
+             |||| ||||||||    ||||||||||||||||||  ||||||||||||||| | |  | 
+Sbjct  2527  ATCGCCGAAAGGGTTTACGACCTCGATGTTGGATCAGGACATCCTAATGGTG-T-AG-C-  2582
+
+Query  566   CGCCTATTAAAAGGGCTCGTTTGTTCAACGATTAATAGTCCTACGTGATCTGATTTC  622
+             ||| ||||  ||||| ||||||||||||||||||| ||||||||||||||||| |||
+Sbjct  2583  CGC-TATT--AAGGGTTCGTTTGTTCAACGATTAACAGTCCTACGTGATCTGAGTTC  2636
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 426251889
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

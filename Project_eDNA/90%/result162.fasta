@@ -1,0 +1,62 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=68db7d53-a2b8-4230-827a-eb4caddd2373_t;seqs=1
+
+Length=1046
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  100     3e-22
+  EF120855.1 Pseudanthias squamipinnis 16S ribosomal RNA gene, pa...  95.3    1e-20
+
+
+> FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, 
+partial sequence; tRNA-Val gene, complete sequence; and 16S 
+ribosomal RNA gene, partial sequence; mitochondrial
+Length=1787
+
+ Score = 100 bits (54),  Expect = 3e-22
+ Identities = 64/69 (93%), Gaps = 0/69 (0%)
+ Strand=Plus/Minus
+
+Query  522   ACAGGTCCCTATTTAAGGAACAAGTGATTATGCTACCTTTGCACGGTTAGGGTACCGCGG  581
+             ||||||||| |||||||  ||||||||||  |||||||||||||||||||||||||||||
+Sbjct  1337  ACAGGTCCCCATTTAAGAGACAAGTGATTGCGCTACCTTTGCACGGTTAGGGTACCGCGG  1278
+
+Query  582   CCGTTAAAC  590
+             |||||||||
+Sbjct  1277  CCGTTAAAC  1269
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 718118946
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

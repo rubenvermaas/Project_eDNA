@@ -1,0 +1,85 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=c76a89e4-1025-4010-8d20-e705ce8502d3_t;seqs=1
+
+Length=628
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome     159     3e-40
+  JQ030887.1 Amphiprion bicinctus isolate RSRCmb2010 mitochondrio...  159     3e-40
+  KR870991.1 Genicanthus melanospilos mitochondrion, complete genome  141     1e-34
+  NC_027967.1 Genicanthus melanospilos mitochondrion, complete ge...  141     1e-34
+  KT001111.1 Genicanthus lamarck mitochondrion, complete genome       141     1e-34
+  NC_027972.1 Genicanthus lamarck mitochondrion, complete genome      141     1e-34
+  FJ616442.1 Chrysiptera springeri voucher FMNH Bus03-15 T-307 16...  137     1e-33
+  AY530850.1 Genicanthus melanospilos 16S ribosomal RNA gene, par...  135     5e-33
+  AY530849.1 Genicanthus lamarck 16S ribosomal RNA gene, partial ...  135     5e-33
+  KJ551856.1 Pomacanthus xanthometopon voucher NMMBP:19849 16S ri...  130     2e-31
+  KJ551857.1 Pomacanthus xanthometopon voucher NMMBP:19850 16S ri...  130     2e-31
+  KJ551858.1 Pomacanthus xanthometopon voucher NMMBP:19851 16S ri...  130     2e-31
+  DQ343906.1 Amphiprion bicinctus 16S ribosomal RNA gene, partial...  119     5e-28
+  KX301969.1 Salarias fasciatus voucher ML147_12 16S ribosomal RN...  110     3e-25
+  NC_004412.1 Salarias fasciatus mitochondrion, complete genome       110     3e-25
+
+
+> NC_016701.1 Amphiprion bicinctus mitochondrion, complete genome
+Length=16645
+
+ Score = 159 bits (86),  Expect = 3e-40
+ Identities = 194/242 (80%), Gaps = 23/242 (10%)
+ Strand=Plus/Minus
+
+Query  398   CTCGTCTAATGTTATTATATTTAAACTTCCTTGCACAGAATAGATCAATTTCATTGATTA  457
+             ||||||| ||||||||||  |    ||| | ||||| | | |||||||||||||||| | 
+Sbjct  2243  CTCGTCTTATGTTATTAT--TCCCGCTT-C-TGCACGGGA-AGATCAATTTCATTGACT-  2190
+
+Query  458   GAGAAAATAGGGGAACAGTTAAACTATTG--GTGCCTTTCATAC-GGTCTTCATTTAAAA  514
+             | ||||| ||| | |||||||| |  | |  ||||| ||||||| |||||||||||||||
+Sbjct  2189  G-GAAAA-AGGAG-ACAGTTAAGCCCTCGTCGTGCCATTCATACAGGTCTTCATTTAAAA  2133
+
+Query  515   GACAAGTGATTGCA-TACCTTTGCACGATTAAA-TACCGCGGCCGTTGAACATT--GTCA  570
+             |||||||||||||  |||||| ||||| | ||| ||||||||||||| ||||||  ||||
+Sbjct  2132  GACAAGTGATTGCGCTACCTTCGCACGGTCAAAGTACCGCGGCCGTTAAACATTTAGTCA  2073
+
+Query  571   CAGGGCAGGCGCGGGACCTCTT-TACTTAGTTTTTGG-G-GGCG-TGTTTTTGACAAACA  626
+             | ||||||||  || ||||||| || |||||||||   | |||| ||||||||  |||||
+Sbjct  2072  CTGGGCAGGCA-GG-ACCTCTTATA-TTAGTTTTTCAAGAGGCGATGTTTTTGGTAAACA  2016
+
+Query  627   GG  628
+             ||
+Sbjct  2015  GG  2014
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 425551968
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

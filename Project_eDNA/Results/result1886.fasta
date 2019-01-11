@@ -1,0 +1,68 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=58c03edb-d729-450e-9faf-8e46d4e7506a_t;seqs=1
+
+Length=633
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  KM881715.1 Taeniura lymma mitochondrion, complete genome            176     3e-45
+  NC_026210.1 Taeniura lymma mitochondrion, complete genome           176     3e-45
+
+
+> KM881715.1 Taeniura lymma mitochondrion, complete genome
+Length=17652
+
+ Score = 176 bits (95),  Expect = 3e-45
+ Identities = 158/186 (85%), Gaps = 14/186 (8%)
+ Strand=Plus/Plus
+
+Query  449   CTGAATAATGAACCAAGAGTTTACCCTAGGGATAACAGCGCAATCCTTTCCCAGAGTTCC  508
+             ||||  |||||||| | || ||||||||||||||||||||||||||||||| ||||| ||
+Sbjct  2469  CTGATCAATGAACC-A-AG-TTACCCTAGGGATAACAGCGCAATCCTTTCCTAGAGTCCC  2525
+
+Query  509   TATCACGGCAGAAAGGGCTTACGACCTGAAGTATTGGATCAGGACATC-TAATGAATTGT  567
+              |||   || ||||||| |||||||||  | | ||||||||||||||| |||||   |||
+Sbjct  2526  CATC---GCCGAAAGGGTTTACGACCTCGA-TGTTGGATCAGGACATCCTAATG--GTGT  2579
+
+Query  568   AACCGCTATTAAGGGTTCGTTTGTTCAGCGATTAATAGTCCCTACGTGATCTCGCAGGTT  627
+             | ||||||||||||||||||||||||| ||||||| ||||| |||||||||| | || ||
+Sbjct  2580  AGCCGCTATTAAGGGTTCGTTTGTTCAACGATTAACAGTCC-TACGTGATCT-G-AG-TT  2635
+
+Query  628   CAGACC  633
+             ||||||
+Sbjct  2636  CAGACC  2641
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 429051573
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

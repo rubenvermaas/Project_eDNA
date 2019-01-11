@@ -1,0 +1,65 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=05e07a26-9892-450e-96f3-9637c406d76e_t;seqs=1
+
+Length=649
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  AP012317.1 Synchiropus splendidus mitochondrial DNA, complete g...  137     1e-33
+  NC_024195.1 Synchiropus splendidus mitochondrion, complete genome   137     1e-33
+
+
+> AP012317.1 Synchiropus splendidus mitochondrial DNA, complete 
+genome
+Length=16430
+
+ Score = 137 bits (74),  Expect = 1e-33
+ Identities = 130/156 (83%), Gaps = 8/156 (5%)
+ Strand=Plus/Plus
+
+Query  113   AGCGTAATCTGCCTGTCTTTTAAATGAAGACCTGTATGAAAAGGCATC-CGCAGAGTTTA  171
+             |||||||||  | |||||||||||||||||||||||||||| |||||| || || | |||
+Sbjct  2098  AGCGTAATC-ACTTGTCTTTTAAATGAAGACCTGTATGAAA-GGCATCACG-AGGGCTTA  2154
+
+Query  172   GCTGTCTACTACTTCCCAATCAATGAAATTGGTCTTCCCGTCACAAAAGCGGGAATAGTT  231
+              |||||| || | ||||| ||||| |||||| ||| |||||  || ||||||| ||| | 
+Sbjct  2155  ACTGTCTCCTCC-TCCCAGTCAATAAAATTGATCTCCCCGTG-CAGAAGCGGGGATAATA  2212
+
+Query  232   ACATTAGACGAAGAAGACCCTATGG-GCTTAAAACA  266
+             |||| ||||| |||||||||||||| |||| |||||
+Sbjct  2213  ACATAAGACG-AGAAGACCCTATGGAGCTTTAAACA  2247
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 440250309
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

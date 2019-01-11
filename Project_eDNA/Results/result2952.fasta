@@ -1,0 +1,70 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: BurgerZoo_Koraal_16S.fasta
+           123 sequences; 702,381 total letters
+
+
+
+Query= consensus=13cd32b3-21fa-4933-a214-be523ede6e70_t;seqs=1
+
+Length=598
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, pa...  147     2e-36
+  EF120855.1 Pseudanthias squamipinnis 16S ribosomal RNA gene, pa...  141     1e-34
+
+
+> FJ548776.1 Pseudanthias squamipinnis 12S ribosomal RNA gene, 
+partial sequence; tRNA-Val gene, complete sequence; and 16S 
+ribosomal RNA gene, partial sequence; mitochondrial
+Length=1787
+
+ Score = 147 bits (79),  Expect = 2e-36
+ Identities = 177/222 (80%), Gaps = 15/222 (7%)
+ Strand=Plus/Minus
+
+Query  345   TAAAGCTCCATAGGGTCTTTTCAAAATGTTGCTGTGT-CATGCCCGCCTCTTCACGGGTA  403
+             ||||||||||||||||||| ||    | ||  ||| |  |||||||| ||| |||||| |
+Sbjct  1449  TAAAGCTCCATAGGGTCTTCTC---GTCTT-ATGTCTATATGCCCGCTTCTGCACGGGGA  1394
+
+Query  404   GGTCAATTTCACTG--GTTAAAGTAAGGAGACAGCTGAAGACCCTCGATGGAGCCATTCA  461
+             | |||| |||| ||   | |||  |||||||||| | ||| |||||| |   ||||||||
+Sbjct  1393  GATCAAGTTCATTGACCTGAAA--AAGGAGACAG-TTAAG-CCCTCG-TTATGCCATTCA  1339
+
+Query  462   TACAGATACCTATTTAAGGAACAAGTGATTATGCTACCTTTGCACGGTTAGGGTACCGCG  521
+             ||||| | || |||||||  ||||||||||  ||||||||||||||||||||||||||||
+Sbjct  1338  TACAGGTCCCCATTTAAGAGACAAGTGATTGCGCTACCTTTGCACGGTTAGGGTACCGCG  1279
+
+Query  522   GCCGTTAAACATGTGTCGCACTGGGCAGGCGTG-CCTCTAAT  562
+             ||||||||||  ||||| ||  ||||||||| | ||||| ||
+Sbjct  1278  GCCGTTAAACTAGTGTCACA--GGGCAGGCGGGACCTCTTAT  1239
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 404554338
+
+
+  Database: BurgerZoo_Koraal_16S.fasta
+    Posted date:  Dec 18, 2018  12:00 PM
+  Number of letters in database: 702,381
+  Number of sequences in database:  123
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
