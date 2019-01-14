@@ -4,12 +4,13 @@ This is my biodiversity analyser tool, to detect fish in the North Sea. With the
 
 Programs needes:
 - VSEARCH
+'''
   git clone https://github.com/torognes/vsearch.git
   cd vsearch
   ./autogen.sh
   ./configure
   make
-  
+ '''
 - Porechop
   git clone https://github.com/rrwick/Porechop.git
   cd Porechop
