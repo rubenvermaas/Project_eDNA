@@ -6,7 +6,8 @@ A tool for predicting biodiversity, to detect fish in the North Sea. With the us
 
 # Installation 
 
-```git clone https://github.com/rubenV252/Project_eDNA.git
+```
+git clone https://github.com/rubenV252/Project_eDNA.git
 ```
 
 Programs needes:
