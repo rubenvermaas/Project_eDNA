@@ -1,6 +1,13 @@
 # Project envoirmental DNA
 
-This is my biodiversity analyser tool, to detect fish in the North Sea. With the use of envoirmental DNA samples
+A tool for predicting biodiversity, to detect fish in the North Sea. With the use of envoirmental DNA samples
+
+
+
+# Installation 
+
+```git clone https://github.com/rubenV252/Project_eDNA.git
+```
 
 Programs needes:
 - VSEARCH
@@ -37,6 +44,9 @@ Programs needes:
 ```
   pip3 install pyqt5
 ```
+
+
+
 
 
 >This Readme is still under construction
