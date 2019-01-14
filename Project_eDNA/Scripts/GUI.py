@@ -104,22 +104,22 @@ class window(QMainWindow):
         self.btn1.move(20, 470)
         self.btn1.clicked.connect(self.pipeline)
 
-        self.checkBox2 = QCheckBox("Filtering:", self)
-        self.checkBox2.setChecked(False)
-        self.checkBox2.move(10, 120)
+        self.filtering = QCheckBox("Filtering:", self)
+        self.filtering.setChecked(False)
+        self.filtering.move(10, 120)
 
-        self.checkBox1 = QCheckBox("Adapters", self)
-        self.checkBox1.setChecked(False)
-        self.checkBox1.move(110, 80)
+        self.adapters = QCheckBox("Adapters", self)
+        self.adapters.setChecked(False)
+        self.adapters.move(110, 80)
 
-        self.checkBox = QCheckBox("Fastq file", self)
-        self.checkBox.setChecked(False)
-        self.checkBox.move(10, 80)
+        self.fastq = QCheckBox("Fastq file", self)
+        self.fastq.setChecked(False)
+        self.fastq.move(10, 80)
 
-        self.checkBox3 = QCheckBox("Exclude singletons", self)
-        self.checkBox3.setChecked(False)
-        self.checkBox3.resize(150, 25)
-        self.checkBox3.move(10, 255)
+        self.singletons = QCheckBox("Exclude singletons", self)
+        self.singletons.setChecked(False)
+        self.singletons.resize(150, 25)
+        self.singletons.move(10, 255)
 
         box = self.myTextBox = QTextEdit(self)
         box.resize(732, 25)
@@ -170,7 +170,9 @@ class window(QMainWindow):
 
         self.completed = 0
 
-        if self.checkBox1.isChecked() and self.checkBox.isChecked() and self.checkBox2.isChecked():
+        #pipeline when fastq, filtering, adapter and singletons checkboxes are clicked
+
+        if self.fastq.isChecked() and self.adapters.isChecked() and self.filtering.isChecked() and self.singletons.isChecked():
             while self.completed <100:
                 start = time.time()
                 self.Remove_tmp()
@@ -209,7 +211,43 @@ class window(QMainWindow):
                 print(end1 - start1)
                 self.plot()
 
-        elif self.checkBox1.isChecked():
+        elif self.fastq.isChecked() and self.adapters.isChecked() and self.filtering.isChecked():
+            while self.completed <100:
+                start = time.time()
+                self.Remove_tmp()
+                self.completed += 1.0
+                self.progress.setValue(self.completed)
+                self.Filtlong()
+                self.completed += 5.0
+                self.progress.setValue(self.completed)
+                self.Fastq_omzetter()
+                self.completed += 4.0
+                self.progress.setValue(self.completed)
+                self.Porechop()
+                self.completed += 25.0
+                self.progress.setValue(self.completed)
+                self.Clustering()
+                self.completed += 30.0
+                self.progress.setValue(self.completed)
+                self.splitter()
+                self.completed += 5.0
+                self.progress.setValue(self.completed)
+                self.local_Blast()
+                self.completed += 20.0
+                self.progress.setValue(self.completed)
+                self.hitter()
+                self.completed += 5.0
+                self.progress.setValue(self.completed)
+                self.listmk()
+                self.completed += 5.0
+                self.progress.setValue(self.completed)
+                end = time.time()
+                end1 = end/60
+                start1 = start/60
+                print(end1 - start1)
+                self.plot()
+
+        elif self.adapters.isChecked() and self.filtering.isChecked() and self.singletons.isChecked():
             while self.completed < 100:
                 self.Remove_tmp()
                 self.completed += 5.0
@@ -245,149 +283,9 @@ class window(QMainWindow):
             self.listmk()
             self.plot()
 
-    #This function will create a plot with the frequency results
+        # This function will remove all temporaly files if at the start of a new analisis, so that the resultst will not overlap
 
-    def plot(self):
-
-        file = open("Names.txt", "r")
-        Taxa = file.readlines()
-        d = defaultdict(int)
-        print(d)
-        acession = re.compile("[A-Z]{2}_?[0-9]{6}\.1")
-
-        for item in Taxa:
-            for word in item.split("\n"):
-                d[word] += 1
-        print(d.keys())
-        del d['']
-        ax = self.figure.add_subplot(111)
-        ax.set_title("eDNA  classification results")
-        ax.set_ylabel("Frequency")
-        ax.set_xlabel("Organisme")
-        ax.bar(range(len(d)), list(d.values()), align="center")
-        ax.set_xticks(range(len(d)))
-        ax.set_xticklabels(list(d.keys()), rotation=0)
-
-
-        #ax.set_xticks(range(len(d)), list(d.keys()), rotation="50")
-        # ax.get_xaxis().set_visible(False)
-        self.canvas.draw()
-
-    def style_choice(self, text):
-        self.styleChoice.setText(text)
-        QApplication.setStyle(QStyleFactory.create(text))
-
-    #This function will call on filtlong on the command  line to set a threshhold for read lenght and for
-
-    def Filtlong(self):
-
-        file = open(self.fileName, 'r')
-        file2 = file.readlines()
-        result = open('inputReads.fastq', 'w')
-
-        for i in file2:
-            result.write(i)
-
-        result.close()
-
-        length = self.box1.text()
-        score = self.box2.text()
-        path = "Testfasta.fasta"
-
-        os.system('filtlong --min_mean_q ' + score + ' --min_length ' + length + ' inputReads.fastq > output.fastq')
-
-    #This function turns a fastq file to an fasta file
-
-    def Fastq_omzetter(self):
-
-        from io import StringIO
-
-        File = open("output.fastq", "r")
-        self.File2 = open("Testfasta.fasta", "w")
-
-        handle = StringIO("")
-        SeqIO.convert(File, "fastq", handle, "fasta")
-        self.File2.write(handle.getvalue())
-
-    #This function will call on Porchop on the commandline to trimm the adapters from the reads
-
-    def Porechop(self):
-
-        InputPore = "Testfasta.fasta"
-
-        self.command_line = ["porechop", "-i", InputPore,
-                             "-o", "output_reads.fasta"]
-        subprocess.call(self.command_line)
-
-
-    #This function will call on VSearch on the commandline to cluster the reads into OTU's
-
-    def Clustering(self): #works
-
-        ID = str(self.box3.text())
-
-        Input = "output_reads.fasta"  # str(self.fileName)
-
-        self.command_line = ["vsearch", "-cluster_fast", Input,
-                             "-id", ID , "-consout", "Test.fasta"]
-        subprocess.call(self.command_line)
-
-    #This function splits the consencus clusters in single FASTA files
-
-    def splitter(self): #works
-
-        i = 0
-
-        with open("Test.fasta", "r") as file:
-            data = file.read()
-            seqs1 = re.split(">", data)
-
-        for seqs2 in seqs1:
-            filename = "result" + str(i)
-            result = open("/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + filename + ".fasta", "w")
-            result.write(">" + seqs2)
-            i += 1
-
-    #This function will filter out the clusters with 3 or less sequences, tis option can be selected at the GUI
-
-    def Singleton(self):
-
-        src_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/"  # Specify base directory
-        result_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Singletons/"
-
-        reseqs = re.compile("(seqs=)[1]\n") #searches for seq= 1 to 3
-
-        self.result = seqs = []
-
-        for filename in os.listdir(src_dict):
-            path = os.path.join(src_dict, filename)
-            x = open(path, "r")
-            regex = re.findall(reseqs, x.read())
-            if regex:
-                shutil.move(path, result_dict)
-                #print("moved", path)
-            else:
-                seqs.append(filename)
-
-            x.close()
-
-    #This function will run a BLAST with the found concensus clusters against the selected local blast database
-
-    def local_Blast(self):
-
-        l = 1
-
-        database = self.box4.text()
-
-        for seq in self.result:
-            l += 1
-            command_line = ["blastn", "-query", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + seq, "-out", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/" + seq, "-evalue", "0.00001", "-num_alignments", "1", "-task", "megablast", "-num_threads", "4", "-db", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Databases/" + database]
-            subprocess.call(command_line)
-
-
-    #This function will remove all temporaly files if at the start of a new analisis, so that the resultst will not overlap
-
-    def Remove_tmp(self): #works
+    def Remove_tmp(self):  # works
 
         Fasta = '/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/'
         Results = '/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/'
@@ -425,6 +323,117 @@ class window(QMainWindow):
                     os.unlink(file_path)
             except Exception as e:
                 print(e)
+
+    # This function will call on filtlong on the command  line to set a threshhold for read lenght and for
+
+    def Filtlong(self):
+
+        file = open(self.fileName, 'r')
+        file2 = file.readlines()
+        result = open('inputReads.fastq', 'w')
+
+        for i in file2:
+            result.write(i)
+
+        result.close()
+
+        length = self.box1.text()
+        score = self.box2.text()
+        path = "Testfasta.fasta"
+
+        os.system('filtlong --min_mean_q ' + score + ' --min_length ' + length + ' inputReads.fastq > output.fastq')
+
+
+    #This function turns a fastq file to an fasta file
+
+    def Fastq_omzetter(self):
+
+        from io import StringIO
+
+        File = open("output.fastq", "r")
+        self.File2 = open("Testfasta.fasta", "w")
+
+        handle = StringIO("")
+        SeqIO.convert(File, "fastq", handle, "fasta")
+        self.File2.write(handle.getvalue())
+
+    # This function will call on Porchop on the commandline to trimm the adapters from the reads
+
+    def Porechop(self):
+
+        InputPore = "Testfasta.fasta"
+
+        self.command_line = ["porechop", "-i", InputPore,
+                             "-o", "output_reads.fasta"]
+        subprocess.call(self.command_line)
+
+    # This function will call on VSearch on the commandline to cluster the reads into OTU's
+
+    def Clustering(self):  # works
+
+        ID = str(self.box3.text())
+
+        Input = "output_reads.fasta"  # str(self.fileName)
+
+        self.command_line = ["vsearch", "-cluster_fast", Input,
+                            "-id", ID, "-consout", "Test.fasta"]
+        subprocess.call(self.command_line)
+
+    # This function splits the consencus clusters in single FASTA files
+
+    def splitter(self):  # works
+
+        i = 0
+
+        with open("Test.fasta", "r") as file:
+            data = file.read()
+            seqs1 = re.split(">", data)
+
+        for seqs2 in seqs1:
+            filename = "result" + str(i)
+            result = open("/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + filename + ".fasta", "w")
+            result.write(">" + seqs2)
+            i += 1
+
+    # This function will filter out the clusters with 1 sequence, this option can be selected at the GUI
+
+    def Singleton(self):
+
+        src_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/"
+        result_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Singletons/"
+
+        reseqs = re.compile("(seqs=)[1]\n")  # searches for seq=1
+
+        self.result = seqs = []
+
+        for filename in os.listdir(src_dict):
+            path = os.path.join(src_dict, filename)
+            x = open(path, "r")
+            regex = re.findall(reseqs, x.read())
+            if regex:
+                shutil.move(path, result_dict)
+                # print("moved", path)
+            else:
+                seqs.append(filename)
+
+            x.close()
+
+    # This function will run a BLAST with the found concensus clusters against the selected local blast database
+
+    def local_Blast(self):
+
+        l = 1
+
+        database = self.box4.text()
+
+        for seq in self.result:
+            l += 1
+            command_line = ["blastn", "-query", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + seq,
+                            "-out", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/" + seq,
+                            "-evalue", "0.00001", "-num_alignments", "1", "-task", "megablast", "-num_threads", "4",
+                            "-db", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Databases/" + database]
+            subprocess.call(command_line)
+
 
     #This function searches for the results with an identity score of higer then 90. If there are Homo sapiens found that hit for 90% he will filter those out
 
@@ -484,6 +493,34 @@ class window(QMainWindow):
         self.Pop_up()
 
 
+    #This function will create a plot with the frequency results
+
+    def plot(self):
+
+        file = open("Names.txt", "r")
+        Taxa = file.readlines()
+        d = defaultdict(int)
+        print(d)
+        acession = re.compile("[A-Z]{2}_?[0-9]{6}\.1")
+
+        for item in Taxa:
+            for word in item.split("\n"):
+                d[word] += 1
+        print(d.keys())
+        del d['']
+        ax = self.figure.add_subplot(111)
+        ax.set_title("eDNA  classification results")
+        ax.set_ylabel("Frequency")
+        ax.set_xlabel("Organisme")
+        ax.bar(range(len(d)), list(d.values()), align="center")
+        ax.set_xticks(range(len(d)))
+        ax.set_xticklabels(list(d.keys()), rotation=0)
+        self.canvas.draw()
+
+    def style_choice(self, text):
+        self.styleChoice.setText(text)
+        QApplication.setStyle(QStyleFactory.create(text))
+
 
     #This function will give a pop-up message if the analysis is completed
 
@@ -492,20 +529,7 @@ class window(QMainWindow):
 
         return popup
 
-    def Pop_up1(self):
-        popup = QMessageBox.about(self, "Process", "Fasta is done")
-
-        return popup
-
-    def Pop_up2(self):
-        popup = QMessageBox.about(self, "Process", "Adapter trimming is done")
-
-        return popup
-
-    def Pop_up3(self):
-        popup = QMessageBox.about(self, "Process", "Nothing has happend")
-
-        return popup
+    #This function will give a pop-up message if you close the application
 
     def close_application(self):
 
