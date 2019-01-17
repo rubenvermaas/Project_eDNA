@@ -33,6 +33,11 @@ Programs needes:
 ```
 - Local BLAST DB
 
+Download the right version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/
+```
+tar zxvpf ncbi-blast+2.2.29-x64-linux.tar.gz
+```
+
 Packages needed:
 
 - Mathplotlib
