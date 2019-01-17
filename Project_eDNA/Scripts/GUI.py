@@ -11,7 +11,6 @@ import shutil
 import os
 import time
 import csv
-import mplcursors
 
 class window(QMainWindow):
 
@@ -42,10 +41,10 @@ class window(QMainWindow):
         openFile.setStatusTip('Open File')
         openFile.triggered.connect(self.file_open)
 
-        saveFile = QAction('&Save File', self)
-        saveFile.setShortcut('Ctrl+s')
-        saveFile.setStatusTip('Save File')
-        saveFile.triggered.connect(self.file_save)
+        working_dir = QAction('&Working dir', self)
+        working_dir.setShortcut('Ctrl+s')
+        working_dir.setStatusTip('Select working dir')
+        working_dir.triggered.connect(self.working_dir)
 
         self.statusBar()
 
@@ -53,7 +52,7 @@ class window(QMainWindow):
         fileMenu = mainMenu.addMenu('&File')
         fileMenu.addAction(goHome)
         fileMenu.addAction(openFile)
-        fileMenu.addAction(saveFile)
+        fileMenu.addAction(working_dir)
         fileMenu.addAction(extractAction)
 
         editorMenu = mainMenu.addMenu('&Edit')
@@ -74,14 +73,24 @@ class window(QMainWindow):
 
     #This function will save written files
 
-    def file_save(self):
-        name, _ = QFileDialog.getSaveFileName(self, 'Save File', options=QFileDialog.DontUseNativeDialog)
-        file = open(name, 'w')
-        text = self.textEdit.toPlainText()
-        file.write(text)
-        file.close()
+    #def file_save(self):
+     #   name, _ = QFileDialog.getSaveFileName(self, 'Save File', options=QFileDialog.DontUseNativeDialog)
+     #   file = open(name, 'w')
+      #  text = self.textEdit.toPlainText()
+      #  file.write(text)
+       # file.close()
 
-    #This function will open selected files
+    #This function will open directory
+
+    def dir_open(self):
+
+        self.fileDir = QFileDialog.getExistingDirectory(self, 'Select Directory')
+        self.myTextBox.setText(self.fileDir)
+
+        if self.fileDir:
+            return self.fileDir
+
+   #This function will open a file
 
     def file_open(self):
         self.fileName, _ = QFileDialog.getOpenFileName(self, 'Open File', options=QFileDialog.DontUseNativeDialog)
@@ -90,14 +99,29 @@ class window(QMainWindow):
         if self.fileName:
             return self.fileName
 
+    # This function saves a text file wit the working dir
+
+    def working_dir(self):
+        working_dir = open("Working_dir.txt", "w")
+        fileDir = QFileDialog.getExistingDirectory(self, 'Select Directory')
+        working_dir.write(fileDir)
+        working_dir.close()
+
+        working_dir.close()
+
     #This function controles where all the buttons, checkboxes, labels, etc are located and add them to different functions
 
     def home(self):
 
-        btn = QPushButton('Load', self)
-        btn.clicked.connect(self.file_open)
+        btn = QPushButton('Load Dir', self)
+        btn.clicked.connect(self.dir_open)
         btn.resize(btn.sizeHint())
-        btn.move(10, 50)
+        btn.move(10, 55)
+
+        btn2 = QPushButton('Load File', self)
+        btn2.clicked.connect(self.file_open)
+        btn2.resize(btn2.sizeHint())
+        btn2.move(10, 25)
 
         self.btn1 = QPushButton('Run', self)
         self.btn1.resize(btn.sizeHint())
@@ -123,7 +147,7 @@ class window(QMainWindow):
 
         box = self.myTextBox = QTextEdit(self)
         box.resize(732, 25)
-        box.move(100,50)
+        box.move(100,25)
 
         self.box1 = QLineEdit(self)
         self.box1.resize(50, 25)
@@ -170,11 +194,22 @@ class window(QMainWindow):
 
         self.completed = 0
 
+        #open working dir before the analysis is ran
+        working_file = open("Working_dir.txt", "r")
+        self.working_file1 = working_file.read()
+
+        if self.working_file1 == "":
+            self.Pop_up_wkdir()
+        else:
+            pass
+
         #pipeline when fastq, filtering, adapter and singletons checkboxes are clicked
 
         if self.fastq.isChecked() and self.adapters.isChecked() and self.filtering.isChecked() and self.singletons.isChecked():
             while self.completed <100:
                 start = time.time()
+
+                #pre-processing
                 self.Remove_tmp()
                 self.completed += 1.0
                 self.progress.setValue(self.completed)
@@ -187,6 +222,8 @@ class window(QMainWindow):
                 self.Porechop()
                 self.completed += 25.0
                 self.progress.setValue(self.completed)
+
+                #analysis
                 self.Clustering()
                 self.completed += 25.0
                 self.progress.setValue(self.completed)
@@ -202,6 +239,8 @@ class window(QMainWindow):
                 self.hitter()
                 self.completed += 5.0
                 self.progress.setValue(self.completed)
+
+                #results
                 self.listmk()
                 self.completed += 5.0
                 self.progress.setValue(self.completed)
@@ -287,13 +326,22 @@ class window(QMainWindow):
 
     def Remove_tmp(self):  # works
 
-        Fasta = '/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/'
-        Results = '/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/'
-        best_hits = '/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/90%/'
-        Singletons = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Singletons/"
+        Barcodes = self.working_file1 + '/Barcodes'
+        Fasta = self.working_file1 + '/Fasta/'
+        Results = self.working_file1 + '/Results/'
+        best_hits = self.working_file1 + '/90%/'
+        Singletons = self.working_file1 + '/Singletons/'
 
         for the_file in os.listdir(Fasta):
             file_path = os.path.join(Fasta, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            except Exception as e:
+                print(e)
+
+        for the_file in os.listdir(Barcodes):
+            file_path = os.path.join(Barcodes, the_file)
             try:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
@@ -328,18 +376,18 @@ class window(QMainWindow):
 
     def Filtlong(self):
 
-        file = open(self.fileName, 'r')
-        file2 = file.readlines()
         result = open('inputReads.fastq', 'w')
 
-        for i in file2:
-            result.write(i)
+        for filename in os.listdir(self.fileDir):
+            with open(os.path.join(self.fileDir, filename)) as f:
+                content = f.readlines()
+                for i in content:
+                  result.write(i)
 
         result.close()
 
         length = self.box1.text()
         score = self.box2.text()
-        path = "Testfasta.fasta"
 
         os.system('filtlong --min_mean_q ' + score + ' --min_length ' + length + ' inputReads.fastq > output.fastq')
 
@@ -351,7 +399,7 @@ class window(QMainWindow):
         from io import StringIO
 
         File = open("output.fastq", "r")
-        self.File2 = open("Testfasta.fasta", "w")
+        self.File2 = open("fasta_file.fasta", "w")
 
         handle = StringIO("")
         SeqIO.convert(File, "fastq", handle, "fasta")
@@ -361,10 +409,10 @@ class window(QMainWindow):
 
     def Porechop(self):
 
-        InputPore = "Testfasta.fasta"
+        InputPore = "fasta_file.fasta"
 
         self.command_line = ["porechop", "-i", InputPore,
-                             "-o", "output_reads.fasta"]
+                             "-b", self.working_file1 + "/Barcodes"]
         subprocess.call(self.command_line)
 
     # This function will call on VSearch on the commandline to cluster the reads into OTU's
@@ -381,7 +429,7 @@ class window(QMainWindow):
 
     # This function splits the consencus clusters in single FASTA files
 
-    def splitter(self):  # works
+    def splitter(self):
 
         i = 0
 
@@ -391,7 +439,7 @@ class window(QMainWindow):
 
         for seqs2 in seqs1:
             filename = "result" + str(i)
-            result = open("/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + filename + ".fasta", "w")
+            result = open(self.working_file1 + "/Fasta/" + filename + ".fasta", "w")
             result.write(">" + seqs2)
             i += 1
 
@@ -399,8 +447,8 @@ class window(QMainWindow):
 
     def Singleton(self):
 
-        src_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/"
-        result_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Singletons/"
+        src_dict = self.working_file1 + "/Fasta/"
+        result_dict = self.working_file1 +"/Singletons/"
 
         reseqs = re.compile("(seqs=)[1]\n")  # searches for seq=1
 
@@ -428,10 +476,10 @@ class window(QMainWindow):
 
         for seq in self.result:
             l += 1
-            command_line = ["blastn", "-query", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Fasta/" + seq,
-                            "-out", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/" + seq,
+            command_line = ["blastn", "-query", self.working_file1 + "/Fasta/" + seq,
+                            "-out", self.working_file1 + "/Results/" + seq,
                             "-evalue", "0.00001", "-num_alignments", "1", "-task", "megablast", "-num_threads", "4",
-                            "-db", "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Databases/" + database]
+                            "-db", self.working_file1 + "/Databases/" + database]
             subprocess.call(command_line)
 
 
@@ -441,12 +489,12 @@ class window(QMainWindow):
 
         self.lijst = List = []
 
-        src_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/Results/"  # Specify base directory
-        result_dict = "/home/ruben/PycharmProjects/Stage_Wagenigen/Project_eDNA/90%/"
+        src_dict = self.working_file1 + "/Results/"  # Specify base directory
+        result_dict = self.working_file1 + "/90%/"
 
         pattern = re.compile("\(9\d%\)")  # CPatter to search for 90% and higher
-        Name_organism = re.compile(">\s[A-Z]{1,}_?[0-9]{5,}\.[0-9]\s[A-Z][a-z]{2,}\s[a-z]{2,}")  # CPatter to search for Name
-        Homo_sapiens = re.compile(">\s[A-Z]{1,}_?[0-9]{5,}\.[0-9]\sHomo\ssapiens")  # CPattern to search for acession and Homo sapiens
+        Name_organism = re.compile(">\s[A-Z]{1,}_?[0-9]{5,}\.[0-9]\s[A-Z][a-z]{2,}\s[a-z]{2,}")  # Regex to search for Organisme name
+        Homo_sapiens = re.compile(">\s[A-Z]{1,}_?[0-9]{5,}\.[0-9]\sHomo\ssapiens")  # Regex to search for acession and Homo sapiens
 
         for filename in os.listdir(src_dict):
             path = os.path.join(src_dict, filename)
@@ -526,6 +574,12 @@ class window(QMainWindow):
 
     def Pop_up(self):
         popup = QMessageBox.about(self, "Process", "Analysis is done!")
+
+        return popup
+
+
+    def Pop_up_wkdir(self):
+        popup = QMessageBox.about(self, "Error", "No working directory selected")
 
         return popup
 
