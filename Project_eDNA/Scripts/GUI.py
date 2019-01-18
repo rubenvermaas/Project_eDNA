@@ -71,14 +71,6 @@ class window(QMainWindow):
         self.textEdit = QTextEdit()
         self.setCentralWidget(self.textEdit)
 
-    #This function will save written files
-
-    #def file_save(self):
-     #   name, _ = QFileDialog.getSaveFileName(self, 'Save File', options=QFileDialog.DontUseNativeDialog)
-     #   file = open(name, 'w')
-      #  text = self.textEdit.toPlainText()
-      #  file.write(text)
-       # file.close()
 
     #This function will open directory
 
@@ -116,12 +108,7 @@ class window(QMainWindow):
         btn = QPushButton('Load Dir', self)
         btn.clicked.connect(self.dir_open)
         btn.resize(btn.sizeHint())
-        btn.move(10, 55)
-
-        btn2 = QPushButton('Load File', self)
-        btn2.clicked.connect(self.file_open)
-        btn2.resize(btn2.sizeHint())
-        btn2.move(10, 25)
+        btn.move(10, 40)
 
         self.btn1 = QPushButton('Run', self)
         self.btn1.resize(btn.sizeHint())
@@ -147,7 +134,7 @@ class window(QMainWindow):
 
         box = self.myTextBox = QTextEdit(self)
         box.resize(732, 25)
-        box.move(100,25)
+        box.move(100,40)
 
         self.box1 = QLineEdit(self)
         self.box1.resize(50, 25)
@@ -220,35 +207,32 @@ class window(QMainWindow):
                 self.completed += 4.0
                 self.progress.setValue(self.completed)
                 self.Porechop()
-                self.completed += 25.0
+                self.completed += 40.0
                 self.progress.setValue(self.completed)
 
-                #analysis
-                self.Clustering()
-                self.completed += 25.0
-                self.progress.setValue(self.completed)
-                self.splitter()
-                self.completed += 5.0
-                self.progress.setValue(self.completed)
-                self.Singleton()
-                self.completed += 5.0
-                self.progress.setValue(self.completed)
-                self.local_Blast()
-                self.completed += 20.0
-                self.progress.setValue(self.completed)
-                self.hitter()
-                self.completed += 5.0
-                self.progress.setValue(self.completed)
+                for dirpath, _, filenames in os.walk(self.working_file1 + "/Barcodes/"):
+                    for f in filenames:
+                        self.barcode = os.path.abspath(os.path.join(dirpath, f))
 
-                #results
-                self.listmk()
-                self.completed += 5.0
-                self.progress.setValue(self.completed)
-                end = time.time()
-                end1 = end/60
-                start1 = start/60
-                print(end1 - start1)
+                        #analysis
+                        self.Clustering()
+                        self.splitter()
+                        self.Singleton()
+                        self.local_Blast()
+                        self.hitter()
+
+                        #results
+                        self.listmk()
+                        self.Remove_tmp1()
+                        self.completed += 50.0
+                        self.progress.setValue(self.completed)
+
                 self.plot()
+
+                end = time.time()
+                end1 = end / 60
+                start1 = start / 60
+                print(end1 - start1)
 
         elif self.fastq.isChecked() and self.adapters.isChecked() and self.filtering.isChecked():
             while self.completed <100:
@@ -372,6 +356,46 @@ class window(QMainWindow):
             except Exception as e:
                 print(e)
 
+    def Remove_tmp1(self):  # works
+
+        Fasta = self.working_file1 + '/Fasta/'
+        Results = self.working_file1 + '/Results/'
+        best_hits = self.working_file1 + '/90%/'
+        Singletons = self.working_file1 + '/Singletons/'
+
+        for the_file in os.listdir(Fasta):
+            file_path = os.path.join(Fasta, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            except Exception as e:
+                print(e)
+
+        for the_file in os.listdir(Results):
+            file_path = os.path.join(Results, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            except Exception as e:
+                print(e)
+
+        for the_file in os.listdir(best_hits):
+            file_path = os.path.join(best_hits, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            except Exception as e:
+                print(e)
+
+        for the_file in os.listdir(Singletons):
+            file_path = os.path.join(Singletons, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            except Exception as e:
+                print(e)
+
+
     # This function will call on filtlong on the command  line to set a threshhold for read lenght and for
 
     def Filtlong(self):
@@ -421,7 +445,7 @@ class window(QMainWindow):
 
         ID = str(self.box3.text())
 
-        Input = "output_reads.fasta"  # str(self.fileName)
+        Input = str(self.barcode)
 
         self.command_line = ["vsearch", "-cluster_fast", Input,
                             "-id", ID, "-consout", "Test.fasta"]
@@ -549,7 +573,7 @@ class window(QMainWindow):
         Taxa = file.readlines()
         d = defaultdict(int)
         print(d)
-        acession = re.compile("[A-Z]{2}_?[0-9]{6}\.1")
+        acession = re.compile("[A-Z]{2}_?[0-9]{6}\.1") #regular expression to search for acession
 
         for item in Taxa:
             for word in item.split("\n"):
